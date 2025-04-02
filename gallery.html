@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="معرض صور نعمان حباسي - كاتب وروائي ومدير مؤسسة عامة وتعاون ثقافي">
+<meta name="keywords" content="نعمان حباسي, معرض صور, ثقافة, فن, تراث, تونس">
+<meta property="og:title" content="معرض الصور - نعمان حباسي">
+<meta property="og:description" content="استكشف معرض صور نعمان حباسي وأنشطته الثقافية والفنية">
+<meta property="og:image" content="images/og-gallery.jpg">
+<meta property="og:url" content="https://www.noomanehabassi.com/gallery.html">
+<title>معرض الصور - نعمان حباسي، كاتب وروائي وخبير في الإدارة الثقافية</title>
+<link rel="icon" href="habassi - details/noomane.png" type="image/x-icon" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+<link href="styles.css" rel="stylesheet">
+<link rel="stylesheet" href="gallery-styles.css">
+</head>
+<body>
+<!-- Timer Bar - Fixed at the top -->
+<div class="timer-bar">
+  <div class="container">
+      <div class="timer-content">
+          <div class="date-display">
+              <i class="fas fa-calendar-alt"></i>
+              <span id="current-date">جاري تحميل التاريخ...</span>
+          </div>
+          <div class="time-display">
+              <i class="fas fa-clock"></i>
+              <span id="current-time">جاري تحميل الوقت...</span>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Main Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class="container">
+    <a class="navbar-brand" href="index.html">نعمان حباسي</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">من أنا</a></li>
+            <li class="nav-item"><a class="nav-link" href="experience.html">الخبرات</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">المشاريع</a></li>
+            <li class="nav-item"><a class="nav-link" href="media.html">الوسائط</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">معرض الصور</a></li>
+            <li class="nav-item"><a class="nav-link" href="publications.html">المؤلفات</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بي</a></li>
+        </ul>
+        <!-- Language Switcher -->
+        <div class="language-switcher">
+            <button class="btn btn-sm btn-outline-light active">العربية</button>
+            <button class="btn btn-sm btn-outline-light">English</button>
+            <button class="btn btn-sm btn-outline-light">Français</button>
+        </div>
+        <!-- Search Button -->
+        <button class="btn btn-sm btn-outline-light ms-2" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+</div>
+</nav>
+
+<!-- Breadcrumbs -->
+<div class="breadcrumbs-container" style="margin-top: 39px;">
+  <div class="container">
+      <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+              <li class="breadcrumb-item active" aria-current="page">معرض الصور</li>
+          </ol>
+      </nav>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<header class="hero-section text-center">
+  <div class="container">
+      <h1 class="display-4 mb-4 animate__animated animate__fadeInUp">معرض الصور</h1>
+      <p class="lead mb-0 animate__animated animate__fadeInUp animate__delay-1s">استكشف لحظات من مسيرتي المهنية والثقافية من خلال هذه المجموعة المختارة من الصور</p>
+  </div>
+</header>
+
+<main>
+  <!-- Gallery Filter Section -->
+  <section class="py-5 section-light">
+      <div class="container">
+          <div class="gallery-filters text-center mb-5" data-aos="fade-up">
+              <button class="filter-btn active" data-filter="all">الكل</button>
+              <button class="filter-btn" data-filter="events">فعاليات ثقافية</button>
+              <button class="filter-btn" data-filter="awards">تكريمات وجوائز</button>
+              <button class="filter-btn" data-filter="meetings">لقاءات رسمية</button>
+              <button class="filter-btn" data-filter="media">ظهور إعلامي</button>
+              <button class="filter-btn" data-filter="field">زيارات ميدانية</button>
+          </div>
+          
+          <!-- Gallery Grid -->
+          <div class="gallery-grid">
+              <!-- Events Category -->
+              <div class="gallery-item" data-category="events" data-aos="fade-up">
+                  <a href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.15.06_18ee4516.jpg-Eq0NtHkOI1kQGZBDeWA8WhRd5hS8D2.jpeg" data-lightbox="gallery" data-title="المهرجان الموسيقي بالكاف">
+                      <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.15.06_18ee4516.jpg-Eq0NtHkOI1kQGZBDeWA8WhRd5hS8D2.jpeg" alt="المهرجان الموسيقي بالكاف" class="img-fluid">
+                      <div class="gallery-overlay">
+                          <div class="gallery-info">
+                              <h3>المهرجان الموسيقي</h3>
+                              <p>المشاركة في افتتاح المهرجان الموسيقي بالكاف</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <div class="gallery-item" data-category="events" data-aos="fade-up">
+                  <a href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.24.21_0d3e7ebf.jpg-seVSLP3jnLYfITyq1fNDcaaP5ZfrBt.jpeg" data-lightbox="gallery" data-title="مهرجان الأفلام التونسي">
+                      <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.24.21_0d3e7ebf.jpg-seVSLP3jnLYfITyq1fNDcaaP5ZfrBt.jpeg" alt="مهرجان الأفلام التونسي" class="img-fluid">
+                      <div class="gallery-overlay">
+                          <div class="gallery-info">
+                              <h3>مهرجان الأفلام</h3>
+                              <p>المشاركة في حفل توزيع جوائز مهرجان الأفلام التونسي</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <div class="gallery-item" data-category="events" data-aos="fade-up">
+                  <a href="/images/WhatsApp Image 2025-03-26 à 02.45.17_214383dd.jpg" data-lightbox="gallery" data-title="فعالية ثقافية في دار الثقافة">
+                      <img src="/images/WhatsApp Image 2025-03-26 à 02.45.17_214383dd.jpg" alt="فعالية ثقافية في دار الثقافة" class="img-fluid">
+                      <div class="gallery-overlay">
+                          <div class="gallery-info">
+                              <h3>فعالية ثقافية</h3>
+                              <p>تنظيم فعالية ثقافية في دار الثقافة بالكاف</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <!-- Awards Category -->
+              <div class="gallery-item" data-category="awards" data-aos="fade-up">
+                  <a href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.24.04_7343ea50.jpg-2YG28j5TPu41X3yWCZdRm9cOFD2XKH.jpeg" data-lightbox="gallery" data-title="تكريم من وزارة الثقافة">
+                      <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.24.04_7343ea50.jpg-2YG28j5TPu41X3yWCZdRm9cOFD2XKH.jpeg" alt="تكريم من وزارة الثقافة" class="img-fluid">
+                      <div class="gallery-overlay">
+                          <div class="gallery-info">
+                              <h3>تكريم رسمي</h3>
+                              <p>تكريم من وزارة الثقافة التونسية لجهوده في تطوير العمل الثقافي</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <div class="gallery-item" data-category="awards" data-aos="fade-up">
+                  <a href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.16.33_20599931.jpg-vU4zWj5R2xagVXVi8xIDuN63o9xn8K.jpeg" data-lightbox="gallery" data-title="تكريم المبدعين الشباب">
+                      <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.16.33_20599931.jpg-vU4zWj5R2xagVXVi8xIDuN63o9xn8K.jpeg" alt="تكريم المبدعين الشباب" class="img-fluid">
+                      <div class="gallery-overlay">
+                          <div class="gallery-info">
+                              <h3>تكريم الإبداع</h3>
+                              <p>تكريم المبدعين الشباب في مجال الثقافة والفنون</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <!-- Meetings Category -->
+              <div class="gallery-item" data-category="meetings" data-aos="fade-up">
+                  <a href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.24.59_981cb842.jpg-h4lFkY75xh1ScvyapbP4RN2gwESthq.jpeg" data-lightbox="gallery" data-title="لقاء دبلوماسي في السعودية">
+                      <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.24.59_981cb842.jpg-h4lFkY75xh1ScvyapbP4RN2gwESthq.jpeg" alt="لقاء دبلوماسي في السعودية" class="img-fluid">
+                      <div class="gallery-overlay">
+                          <div class="gallery-info">
+                              <h3>لقاء دبلوماسي</h3>
+                              <p>لقاء مع مسؤولين سعوديين لبحث سبل التعاون الثقافي</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <div class="gallery-item" data-category="meetings" data-aos="fade-up">
+                  <a href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.23.16_678266a3.jpg-ofMOl9JDAWEFx7FuTlVYKSq38GQV63.jpeg" data-lightbox="gallery" data-title="لقاء رسمي مع مسؤولين">
+                      <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.23.16_678266a3.jpg-ofMOl9JDAWEFx7FuTlVYKSq38GQV63.jpeg" alt="لقاء رسمي مع مسؤولين" class="img-fluid">
+                      <div class="gallery-overlay">
+                          <div class="gallery-info">
+                              <h3>لقاء رسمي</h3>
+                              <p>لقاء مع مسؤولين لبحث سبل تطوير العمل الثقافي</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <!-- Media Category -->
+              <div class="gallery-item" data-category="media" data-aos="fade-up">
+                  <a href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.16.17_d2dbdb2c.jpg-Hw9csei4BFIXBngUn3kqDfSr62twIf.jpeg" data-lightbox="gallery" data-title="مؤتمر صحفي">
+                      <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.16.17_d2dbdb2c.jpg-Hw9csei4BFIXBngUn3kqDfSr62twIf.jpeg" alt="مؤتمر صحفي" class="img-fluid">
+                      <div class="gallery-overlay">
+                          <div class="gallery-info">
+                              <h3>مؤتمر صحفي</h3>
+                              <p>تقديم كلمة في مؤتمر صحفي حول المشاريع الثقافية</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <div class="gallery-item" data-category="media" data-aos="fade-up">
+                  <a href="/images/WhatsApp Image 2025-03-26 à 02.46.04_1bc176df.jpg" data-lightbox="gallery" data-title="لقاء تلفزيوني">
+                      <img src="/images/WhatsApp Image 2025-03-26 à 02.46.04_1bc176df.jpg" alt="لقاء تلفزيوني" class="img-fluid">
+                      <div class="gallery-overlay">
+                          <div class="gallery-info">
+                              <h3>لقاء تلفزيوني</h3>
+                              <p>مشاركة في برنامج تلفزيوني للحديث عن الثقافة والتراث</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <!-- Field Visits Category -->
+              <div class="gallery-item" data-category="field" data-aos="fade-up">
+                  <a href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.15.23_7f7c5cc1.jpg-UahPevYphxWhijiuMeK6S9D1q6VIuu.jpeg" data-lightbox="gallery" data-title="زيارة ميدانية لموقع أثري">
+                      <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.15.23_7f7c5cc1.jpg-UahPevYphxWhijiuMeK6S9D1q6VIuu.jpeg" alt="زيارة ميدانية لموقع أثري" class="img-fluid">
+                      <div class="gallery-overlay">
+                          <div class="gallery-info">
+                              <h3>زيارة ميدانية</h3>
+                              <p>زيارة ميدانية لموقع أثري في ولاية الكاف</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <div class="gallery-item" data-category="field" data-aos="fade-up">
+                  <a href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.14.42_bcd8e970.jpg-91nV3lFlRnxpy8aYDiSY5SLnYQFxGu.jpeg" data-lightbox="gallery" data-title="زيارة ميدانية لمشروع ثقافي">
+                      <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.14.42_bcd8e970.jpg-91nV3lFlRnxpy8aYDiSY5SLnYQFxGu.jpeg" alt="زيارة ميدانية لمشروع ثقافي" class="img-fluid">
+                      <div class="gallery-overlay">
+                          <div class="gallery-info">
+                              <h3>زيارة ميدانية</h3>
+                              <p>زيارة ميدانية لمشروع ثقافي في ولاية الكاف</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <!-- More Gallery Items -->
+              <div class="gallery-item" data-category="events" data-aos="fade-up">
+                  <a href="/images/WhatsApp Image 2025-03-26 à 02.45.47_a3409b16.jpg" data-lightbox="gallery" data-title="مهرجان الكاف للمسرح">
+                      <img src="/images/WhatsApp Image 2025-03-26 à 02.45.47_a3409b16.jpg" alt="مهرجان الكاف للمسرح" class="img-fluid">
+                      <div class="gallery-overlay">
+                          <div class="gallery-info">
+                              <h3>مهرجان المسرح</h3>
+                              <p>افتتاح مهرجان الكاف للمسرح</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+              
+              <div class="gallery-item" data-category="media" data-aos="fade-up">
+                  <a href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.23.47_05048ef4.jpg-5PPTaGJXSqe97qBb9Ww5GG3paIceQA.jpeg" data-lightbox="gallery" data-title="حفل ثقافي">
+                      <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.23.47_05048ef4.jpg-5PPTaGJXSqe97qBb9Ww5GG3paIceQA.jpeg" alt="حفل ثقافي" class="img-fluid">
+                      <div class="gallery-overlay">
+                          <div class="gallery-info">
+                              <h3>حفل ثقافي</h3>
+                              <p>المشاركة في حفل ثقافي مع شخصيات بارزة</p>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+          </div>
+          
+      </div>
+  </section>
+  
+  <!-- Gallery Stats Section -->
+  <section class="py-5 section-dark">
+      <div class="container">
+          <h2 class="section-title text-center text-white mb-5" data-aos="fade-up">إحصائيات المعرض</h2>
+          
+          <div class="row">
+              <div class="col-md-3 mb-4" data-aos="fade-up">
+                  <div class="stat-card">
+                      <div class="stat-icon">
+                          <i class="fas fa-camera"></i>
+                      </div>
+                      <div class="stat-number" id="total-photos">27</div>
+                      <div class="stat-title">إجمالي الصور</div>
+                  </div>
+              </div>
+              
+              <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                  <div class="stat-card">
+                      <div class="stat-icon">
+                          <i class="fas fa-calendar-alt"></i>
+                      </div>
+                      <div class="stat-number" id="total-events">15</div>
+                      <div class="stat-title">فعالية ثقافية</div>
+                  </div>
+              </div>
+              
+              <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                  <div class="stat-card">
+                      <div class="stat-icon">
+                          <i class="fas fa-award"></i>
+                      </div>
+                      <div class="stat-number" id="total-awards">8</div>
+                      <div class="stat-title">تكريم وجائزة</div>
+                  </div>
+              </div>
+              
+              <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                  <div class="stat-card">
+                      <div class="stat-icon">
+                          <i class="fas fa-globe"></i>
+                      </div>
+                      <div class="stat-number" id="total-countries">5</div>
+                      <div class="stat-title">دولة</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+</main>
+
+<footer class="text-center py-3">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+              <h5>نعمان حباسي</h5>
+              <p>نعمان حباسي، كاتب وروائي، يتمتع بخبرة متميزة في إدارة المؤسسات الثقافية والإشراف على المشاريع الثقافية الكبرى. خبير في تنسيق الفعاليات وتنظيم الأنشطة الثقافية المتنوعة، مع مهارات قيادية تمكنه من إدارة الفرق وتحقيق الأهداف الاستراتيجية للمؤسسات.</p>
+          </div>
+          <div class="col-md-4">
+              <h5>تواصل معنا</h5>
+              <p>البريد الإلكتروني: noomaneh@live.fr<br>الهاتف: 98483759</p>
+          </div>
+          <div class="col-md-4">
+              <h5>تابعنا</h5>
+              <div class="social-links">
+                  <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="social-link">
+                      <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/habassi-noomane-35492ab0" target="_blank" class="social-link">
+                      <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="https://www.instagram.com/habbassinoomane/profilec" target="_blank" class="social-link">
+                      <i class="fab fa-instagram"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+      
+      <hr class="my-3" style="background-color: rgba(255,255,255,0.2);">
+      <p>&copy; 2025 جميع الحقوق محفوظة لنعمان حباسي</p>
+  </div>
+</footer>
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" aria-label="العودة إلى الأعلى">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<button id="darkModeToggle" aria-label="تبديل الوضع الليلي">
+  <i class="fas fa-moon"></i>
+</button>
+
+<!-- Search Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="searchModalLabel">بحث في الموقع</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form id="searchForm">
+                  <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="ابحث عن..." aria-label="Search term">
+                      <button class="btn btn-primary" type="submit">بحث</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Image Viewer Modal -->
+<div class="modal fade" id="imageViewerModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-body p-0">
+              <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+              <img id="modalImage" src="/placeholder.svg" alt="صورة مكبرة" class="img-fluid w-100">
+          </div>
+          <div class="modal-footer">
+              <h5 id="modalImageTitle" class="me-auto"></h5>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">إغلاق</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script src="script.js"></script>
+
+<script>
+  // Gallery Filter Functionality
+  document.addEventListener("DOMContentLoaded", function() {
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const galleryItems = document.querySelectorAll(".gallery-item");
+      
+      // Initialize lightbox
+      lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': true,
+          'albumLabel': "صورة %1 من %2",
+          'fadeDuration': 300
+      });
+      
+      // Filter functionality
+      filterButtons.forEach(button => {
+          button.addEventListener("click", function() {
+              // Remove active class from all buttons
+              filterButtons.forEach(btn => btn.classList.remove("active"));
+              
+              // Add active class to clicked button
+              this.classList.add("active");
+              
+              // Get filter value
+              const filterValue = this.getAttribute("data-filter");
+              
+              // Filter gallery items
+              galleryItems.forEach(item => {
+                  if (filterValue === "all" || item.getAttribute("data-category") === filterValue) {
+                      item.style.display = "block";
+                      // Add animation
+                      item.classList.add("animate__animated", "animate__fadeIn");
+                      setTimeout(() => {
+                          item.classList.remove("animate__animated", "animate__fadeIn");
+                      }, 500);
+                  } else {
+                      item.style.display = "none";
+                  }
+              });
+          });
+      });
+      
+      // Load More Button Functionality
+      const loadMoreBtn = document.getElementById("loadMoreBtn");
+      let currentItems = 10;
+      
+      if (loadMoreBtn) {
+          loadMoreBtn.addEventListener("click", function() {
+              const hiddenItems = Array.from(galleryItems).slice(currentItems);
+              const itemsToShow = hiddenItems.slice(0, 6);
+              
+              if (itemsToShow.length === 0) {
+                  loadMoreBtn.textContent = "لا توجد المزيد من الصور";
+                  loadMoreBtn.disabled = true;
+                  return;
+              }
+              
+              itemsToShow.forEach(item => {
+                  item.style.display = "block";
+                  item.classList.add("animate__animated", "animate__fadeIn");
+                  setTimeout(() => {
+                      item.classList.remove("animate__animated", "animate__fadeIn");
+                  }, 500);
+              });
+              
+              currentItems += itemsToShow.length;
+              
+              if (currentItems >= galleryItems.length) {
+                  loadMoreBtn.textContent = "لا توجد المزيد من الصور";
+                  loadMoreBtn.disabled = true;
+              }
+          });
+          
+          // Initially hide items beyond the first 10
+          Array.from(galleryItems).slice(currentItems).forEach(item => {
+              item.style.display = "none";
+          });
+      }
+      
+      // Animate stats on scroll
+      const statNumbers = document.querySelectorAll(".stat-number");
+      let animated = false;
+      
+      function animateStats() {
+          if (animated) return;
+          
+          const statsSection = document.querySelector(".section-dark");
+          if (!statsSection) return;
+          
+          const statsSectionTop = statsSection.getBoundingClientRect().top;
+          const windowHeight = window.innerHeight;
+          
+          if (statsSectionTop < windowHeight - 100) {
+              statNumbers.forEach(stat => {
+                  const targetValue = parseInt(stat.textContent);
+                  let currentValue = 0;
+                  const duration = 2000; // 2 seconds
+                  const increment = targetValue / (duration / 16); // 60fps
+                  
+                  const timer = setInterval(() => {
+                      currentValue += increment;
+                      if (currentValue >= targetValue) {
+                          clearInterval(timer);
+                          currentValue = targetValue;
+                      }
+                      stat.textContent = Math.floor(currentValue);
+                  }, 16);
+              });
+              
+              animated = true;
+          }
+      }
+      
+      window.addEventListener("scroll", animateStats);
+      
+      // Form submission
+      const photoForm = document.querySelector(".photo-submission-form");
+      if (photoForm) {
+          photoForm.addEventListener("submit", function(e) {
+              e.preventDefault();
+              alert("تم استلام الصور بنجاح! سيتم مراجعتها ونشرها قريباً.");
+              this.reset();
+          });
+      }
+  });
+</script>
+</body>
+</html>
+

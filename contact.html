@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بي - نعمان حباسي</title>
+    <link rel="icon" href="habassi - details/noomane.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Timer Bar - Fixed at the top -->
+    <div class="timer-bar">
+        <div class="container">
+            <div class="timer-content">
+                <div class="date-display">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span id="current-date">جاري تحميل التاريخ...</span>
+                </div>
+                <div class="time-display">
+                    <i class="fas fa-clock"></i>
+                    <span id="current-time">جاري تحميل الوقت...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">نعمان حباسي</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">من أنا</a></li>
+                <li class="nav-item"><a class="nav-link" href="experience.html">الخبرات</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">المشاريع</a></li>
+                <li class="nav-item"><a class="nav-link" href="media.html">الوسائط</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">معرض الصور</a></li>
+                <li class="nav-item"><a class="nav-link" href="publications.html">المؤلفات</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بي</a></li>
+            </ul>
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="btn btn-sm btn-outline-light active">العربية</button>
+                <button class="btn btn-sm btn-outline-light">English</button>
+                <button class="btn btn-sm btn-outline-light">Français</button>
+            </div>
+            <!-- Search Button -->
+            <button class="btn btn-sm btn-outline-light ms-2" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+<div class="breadcrumbs-container" style="margin-top: 39px;">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                <li class="breadcrumb-item active" aria-current="page">اتصل بي </li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+    <header class="hero-section text-center" style="margin-top: 39px;">
+        <div class="container">
+            <h1 class="display-4 mb-4" data-aos="fade-up">اتصل بي</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-5 section-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-4" data-aos="fade-right">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h2 class="card-title">معلومات الاتصال</h2>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-envelope me-2"></i> البريد الإلكتروني: noomaneh@live.fr أو cc.lekef@culture.tn</li>
+                                    <li><i class="fas fa-phone me-2"></i> الهاتف: 98483759 أو 21787887</li>
+                                    <li><i class="fas fa-map-marker-alt me-2"></i> العنوان: الكاف، تونس</li>
+                                    <li><i class="fab fa-facebook me-2"></i> صفحات الفيسبوك:
+                                        <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="text-primary">نعمان حباسي</a> أو
+                                        <a href="https://www.facebook.com/Habassi-Noomane-141188206606447" target="_blank" class="text-primary">Habassi Noomane</a>
+                                    </li>
+                                    <li><i class="fab fa-linkedin me-2"></i> لينكد إن:
+                                        <a href="http://linkedin.com/in/habassi-noomane-35492ab0" target="_blank" class="text-primary">Habassi Noomane</a>
+                                    </li>
+                                    <li><i class="fab fa-instagram me-2"></i> انستغرام:
+                                        <a href="https://www.instagram.com/habbassinoomane/profilec" target="_blank" class="text-primary">habbassinoomane</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4" data-aos="fade-left">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h2 class="card-title">أترك تعليقًا</h2>
+                                <form 
+    id="commentForm"
+    name="contact"
+    netlify
+    netlify-honeypot="bot-field"
+    data-netlify-recaptcha="true"
+>
+    <input type="hidden" name="form-name" value="contact">
+    
+    <!-- Hidden anti-spam field -->
+    <p class="d-none">
+        <label>لا تملأ هذا الحقل: <input name="bot-field"></label>
+    </p>
+
+    <!-- Your existing Arabic form fields (keep all attributes) -->
+    <div class="mb-3">
+        <label for="name" class="form-label">الاسم</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">البريد الإلكتروني</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <div class="mb-3">
+        <label for="comment" class="form-label">التعليق</label>
+        <textarea class="form-control" id="comment" name="comment" rows="4" required></textarea>
+    </div>
+    
+    <!-- reCAPTCHA -->
+    <div data-netlify-recaptcha></div>
+    
+    <button type="submit" class="btn btn-primary">إرسال التعليق</button>
+</form>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Keep existing footer and other elements -->
+                
+                    <!-- Modified Script Section -->
+                   
+
+    <footer class="text-center py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>نعمان حباسي</h5>
+                    <p>مدير مؤسسة عامة وتعاون ثقافي<br>كاتب وروائي، خبير في الإدارة الثقافية</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>تواصل معنا</h5>
+                    <p>البريد الإلكتروني: noomaneh@live.fr<br>الهاتف: 98483759</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>تابعنا</h5>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/habassi-noomane-35492a" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/habbassinoomane/profilec" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Visitor Counter -->
+            <div class="visitor-counter mt-4">
+                <h5>إحصائيات الزوار</h5>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="counter-item">
+                            <span class="counter-number" id="all-time-visits">0</span>
+                            <span class="counter-label">إجمالي الزيارات</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="counter-item">
+                            <span class="counter-number" id="monthly-visits">0</span>
+                            <span class="counter-label">زيارات الشهر</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="counter-item">
+                            <span class="counter-number" id="weekly-visits">0</span>
+                            <span class="counter-label">زيارات الأسبوع</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="counter-item">
+                            <span class="counter-number" id="daily-visits">0</span>
+                            <span class="counter-label">زيارات اليوم</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-3" style="background-color: rgba(255,255,255,0.2);">
+            <p>&copy; 2025 جميع الحقوق محفوظة لنعمان حباسي</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" aria-label="العودة إلى الأعلى">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <button id="darkModeToggle" aria-label="تبديل الوضع الليلي">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="searchModalLabel">بحث في الموقع</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="searchForm">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="ابحث عن..." aria-label="Search term">
+                            <button class="btn btn-primary" type="submit">بحث</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for success message -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">تم إرسال التعليق بنجاح</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    تم إرسال تعليقك بنجاح إلى البريد الإلكتروني الخاص بنعمان حباسي. شكرًا لك على تواصلك!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        // Form handling
+        document.getElementById("commentForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            
+            const form = e.target;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+
+            try {
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري الإرسال...';
+
+                const formData = new FormData(form);
+                
+                await fetch("/", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: new URLSearchParams(formData).toString()
+                });
+
+                // Show success modal
+                const successModal = new bootstrap.Modal('#successModal');
+                successModal.show();
+                form.reset();
+
+            } catch (error) {
+                alert("حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى.");
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+            }
+        });
+    </script>
+</body>
+</html>
+

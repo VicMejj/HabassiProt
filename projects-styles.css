@@ -1,0 +1,442 @@
+/* Projects Filter Styles */
+.projects-filters {
+  margin-bottom: 2rem;
+}
+
+.filter-btn {
+  background: none;
+  border: 2px solid var(--bs-primary);
+  color: var(--bs-primary);
+  padding: 0.5rem 1.5rem;
+  margin: 0 0.25rem 0.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: var(--bs-primary);
+  color: white;
+}
+
+/* Project Card Styles */
+.project-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--bs-primary);
+  color: white;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: white;
+  color: var(--bs-primary);
+  transform: scale(1.1);
+}
+
+.project-content {
+  padding: 1.5rem;
+}
+
+.project-category {
+  display: inline-block;
+  background-color: rgba(13, 110, 253, 0.1);
+  color: var(--bs-primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.project-content h3 {
+  margin-bottom: 1rem;
+  color: var(--bs-primary);
+}
+
+.project-content p {
+  margin-bottom: 1.5rem;
+  color: #6c757d;
+}
+
+.project-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 1rem;
+}
+
+.project-status {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.project-footer .project-status:contains("مكتمل") {
+    background-color: rgba(25, 135, 84, 0.1);
+    color: #198754;
+}
+
+.project-footer .project-status:contains("قيد التنفيذ") {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: #ffc107;
+}
+
+.project-footer .project-status:contains("مستمر") {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: var(--bs-primary);
+}
+
+.project-date {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+/* Impact Card Styles */
+.impact-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 2rem 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  height: 100%;
+}
+
+.impact-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.impact-icon {
+  font-size: 2.5rem;
+  color: var(--bs-primary);
+  margin-bottom: 1rem;
+}
+
+.impact-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.impact-title {
+  font-size: 1.2rem;
+  color: var(--bs-primary);
+  margin-bottom: 1rem;
+}
+
+.impact-description {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0;
+}
+
+/* Impact Testimonial Styles */
+.impact-testimonial {
+  height: 100%;
+}
+
+.impact-testimonial-content {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 2rem;
+  position: relative;
+  height: 100%;
+}
+
+.impact-testimonial-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: var(--bs-primary);
+  opacity: 0.2;
+}
+
+.impact-testimonial-content p {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.impact-testimonial-author {
+  display: flex;
+  align-items: center;
+}
+
+.impact-testimonial-author-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 1rem;
+  border: 3px solid var(--bs-primary);
+}
+
+.impact-testimonial-author-info h4 {
+  margin-bottom: 0.25rem;
+  color: white;
+}
+
+.impact-testimonial-author-info p {
+  margin-bottom: 0;
+  color: var(--bs-primary);
+}
+
+/* Future Project Styles */
+.future-project-card {
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.future-project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.future-project-icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  background-color: var(--bs-primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.future-project-content {
+  flex-grow: 1;
+}
+
+.future-project-content h3 {
+  margin-bottom: 1rem;
+  color: var(--bs-primary);
+}
+
+.future-project-content p {
+  margin-bottom: 1.5rem;
+  color: #6c757d;
+}
+
+.future-project-details {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 1rem;
+}
+
+.future-project-detail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.future-project-detail i {
+  color: var(--bs-primary);
+  margin-left: 0.5rem;
+  width: 20px;
+  text-align: center;
+}
+
+/* Collaboration Styles */
+.collaboration-content {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 2rem;
+  height: 100%;
+}
+
+.collaboration-partners {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 2rem;
+  height: 100%;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.partner-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.partner-item:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Modal Styles */
+.modal-content {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.modal-header {
+  background-color: var(--bs-primary);
+  color: white;
+  border-bottom: none;
+}
+
+.modal-header .btn-close {
+  color: white;
+}
+
+.modal-body {
+  padding: 2rem;
+}
+
+.modal-body h4 {
+  color: var(--bs-primary);
+  margin-bottom: 1rem;
+}
+
+.modal-body ul {
+  padding-right: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-body li {
+  margin-bottom: 0.5rem;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+/* Dark Mode Styles */
+.dark-mode .project-card {
+  background-color: #2d2d2d;
+}
+
+.dark-mode .project-content h3 {
+  color: var(--bs-primary);
+}
+
+.dark-mode .project-content p {
+  color: #e0e0e0;
+}
+
+.dark-mode .project-footer {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .project-date {
+  color: #adb5bd;
+}
+
+.dark-mode .future-project-card {
+  background-color: #2d2d2d;
+}
+
+.dark-mode .future-project-content h3 {
+  color: var(--bs-primary);
+}
+
+.dark-mode .future-project-content p {
+  color: #e0e0e0;
+}
+
+.dark-mode .future-project-details {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .project-image {
+    height: 180px;
+  }
+
+  .future-project-card {
+    flex-direction: column;
+  }
+
+  .future-project-icon {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .project-image {
+    height: 200px;
+  }
+}
+

@@ -1,0 +1,114 @@
+/* Print Stylesheet */
+@media print {
+  /* Hide elements not needed for printing */
+  .timer-bar,
+  .navbar,
+  .breadcrumbs-container,
+  #scrollToTopBtn,
+  #darkModeToggle,
+  .hero-section,
+  footer,
+  .visitor-counter,
+  .social-links,
+  .share-buttons,
+  .related-articles,
+  .subscription-form,
+  .language-switcher,
+  .search-button {
+    display: none !important;
+  }
+
+  /* Basic styling for print */
+  body {
+    font-family: "Tajawal", serif;
+    color: #000;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+  }
+
+  .content-page {
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .content-title {
+    font-size: 24pt;
+    margin-bottom: 10pt;
+  }
+
+  .content-meta {
+    font-size: 10pt;
+    color: #666;
+    margin-bottom: 20pt;
+  }
+
+  .content-body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  /* Add page breaks where needed */
+  h1,
+  h2 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  p,
+  blockquote,
+  ul,
+  ol {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Add URL after links */
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 90%;
+    color: #666;
+  }
+
+  /* Don't show URL for internal links */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  /* Add page numbers */
+  @page {
+    margin: 2cm;
+  }
+
+  @page :first {
+    margin-top: 3cm;
+  }
+
+  /* Print header */
+  .content-header {
+    text-align: center;
+    border-bottom: 1pt solid #ccc;
+    padding-bottom: 10pt;
+    margin-bottom: 20pt;
+  }
+
+  /* Print footer with author info */
+  .content-page:after {
+    content: "© نعمان حباسي - طبع بتاريخ " attr(data-print-date);
+    display: block;
+    text-align: center;
+    font-size: 9pt;
+    color: #666;
+    margin-top: 30pt;
+    border-top: 1pt solid #ccc;
+    padding-top: 10pt;
+  }
+}
+

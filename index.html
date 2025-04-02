@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نعمان حباسي - الصفحة الرئيسية</title>
+    <link rel="icon" href="habassi - details/noomane.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Timer Bar - Fixed at the top -->
+    <div class="timer-bar">
+        <div class="container">
+            <div class="timer-content">
+                <div class="date-display">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span id="current-date">جاري تحميل التاريخ...</span>
+                </div>
+                <div class="time-display">
+                    <i class="fas fa-clock"></i>
+                    <span id="current-time">جاري تحميل الوقت...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">نعمان حباسي</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">من أنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="experience.html">الخبرات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">المشاريع</a></li>
+                    <li class="nav-item"><a class="nav-link" href="media.html">الوسائط</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">معرض الصور</a></li>
+                    <li class="nav-item"><a class="nav-link" href="publications.html">المؤلفات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بي</a></li>
+                </ul>
+                <!-- Language Switcher -->
+                <div class="language-switcher">
+                    <button class="btn btn-sm btn-outline-light active">العربية</button>
+                    <button class="btn btn-sm btn-outline-light">English</button>
+                    <button class="btn btn-sm btn-outline-light">Français</button>
+                </div>
+                <!-- Search Button -->
+                <button class="btn btn-sm btn-outline-light ms-2" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- Banner Section -->
+<section class="main-banner">
+    <img src="habassi - details/banner.jpg" alt="نعمان حباسي - كاتب وروائي" class="banner-image">
+    <div class="banner-overlay">
+        <div class="container">
+            <div class="banner-content">
+                <h1 class="display-4 mb-4">مرحبًا بكم في موقع نعمان حباسي</h1>
+                <p class="lead mb-5">خبير في إدارة المؤسسات الثقافية والمشاريع الإبداعية</p>
+                <a href="about.html" class="btn btn-primary btn-lg">تعرف علي أكثر</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center" style="margin-top: 39px;">
+        <div class="container">
+            <h1 class="display-4 mb-4" data-aos="fade-up">مرحبًا بكم في موقع نعمان حباسي</h1>
+            <p class="lead mb-5" data-aos="fade-up" data-aos-delay="200">نعمان حباسي، كاتب وروائي، يتمتع بخبرة متميزة في                 إدارة المؤسسات الثقافية واإلشراف على المشاريع الثقافية الكبرى. خبير في تنسيق الفعاليات وتنظيم 
+                األنشطة الثقافية المتنوعة، مع مهارات قيادية تمكنه من إدارة الفرق وتحقيق األهداف االستراتيجية 
+                .للمؤسسات</p>
+            <a href="about.html" class="btn btn-primary btn-lg" data-aos="fade-up" data-aos-delay="400">تعرف علي أكثر</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Slideshow Section -->
+        <section class="py-5 section-light">
+            <div class="container">
+                <h2 class="section-title text-center mb-4" data-aos="fade-up">آخر التحديثات</h2>
+                <div id="latestUpdatesCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#latestUpdatesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#latestUpdatesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#latestUpdatesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#latestUpdatesCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#latestUpdatesCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="habassi - details/nooman1.jpg" class="d-block w-100" alt="آخر تحديث 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>مثّلت أبرز الاستعدادات لتنظيم أيام قرطاج السينمائية</h3>
+                                <p>إشراف وزيرة الشؤون الثقافية السيدة أمينة الصرارفي وبحضور الهيئة المديرة للمهرجان، إلى جانب عدد من إطارات الوزارة</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="habassi - details/nooman2.jpg" class="d-block w-100" alt="آخر تحديث 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>اختتام الدورة التكوينية</h3>
+                                <p> تحية شكر و تشجيع إلى كل المشاركين في هذه الدورة</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="habassi - details/nooman4.jpg" class="d-block w-100" alt="آخر تحديث 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>الندوة الصحفية للمهرجان الدولي للسينما في الصحراء</h3>
+                                <p>قاعة صوفي القلي بمدينة الثقافة. </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="habassi - details/nooman5.jpg" class="d-block w-100" alt="آخر تحديث 4">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>مهرجانات أفلام النساء وورشات التكوين</h3>
+                                <p> المدير العام للمركز الوطني للسينما و الصورة – مبادرة كتابات </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="habassi - details/nooman6.jpg" class="d-block w-100" alt="آخر تحديث 5">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3> إطار الاجتماعات الدورية مع منظوري الوزارة</h3>
+                                <p>اجتمعت السيدة أمينة الصرارفي اليوم الاثنين 14 أكتوبر 2024 بالمديرين العامين للمؤسسات العمومية ذات الصبغة الغير ادارية.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#latestUpdatesCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">السابق</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#latestUpdatesCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">التالي</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-5 section-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h2 class="section-title" data-aos="fade-up">نبذة عني</h2>
+                        <div class="row">
+                            <div class="col-md-6" data-aos="fade-right">
+                                <p>
+                                    أنا نعمان حباسي، كاتب وروائي، يتمتع بخبرة متميزة في إدارة المؤسسات الثقافية والإشراف على المشاريع الثقافية الكبرى. خبير في تنسيق الفعاليات وتنظيم الأنشطة الثقافية المتنوعة، مع مهارات قيادية تمكنني من إدارة الفرق وتحقيق الأهداف الاستراتيجية للمؤسسات.
+                                </p>
+                            </div>
+                            <div class="col-md-6" data-aos="fade-left">
+                                <p>
+                                    أتميز بإبداع أدبي وقدرة مثبتة على تعزيز الثقافة الوطنية من خلال مشاريع مبتكرة. حاصل على ماجستير مهني في التراث والسمعي البصري، وشهادة في الإدارة الثقافية من ألمانيا، والأستاذية في التنشيط الثقافي والشبابي.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="sidebar">
+                            <h3 class="sidebar-title">أقسام الموقع</h3>
+                            <div class="sidebar-content">
+                                <a href="about.html" class="sidebar-link">من أنا</a>
+                                <a href="experience.html" class="sidebar-link">الخبرات</a>
+                                <a href="projects.html" class="sidebar-link">المشاريع</a>
+                                <a href="media.html" class="sidebar-link">الوسائط</a>
+                                <a href="contact.html" class="sidebar-link">اتصل بي</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest News Section -->
+        <section class="py-5 section-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h2 class="section-title" data-aos="fade-up">أحدث الأخبار</h2>
+                        
+                        <div class="news-item" data-aos="fade-up">
+                            <div class="news-image">
+                                <img src="habassi - details/nooman1.jpg" alt="مهرجان الجاز">
+                            </div>
+                            <div class="news-content">
+                                <h3 class="news-title">أبرز الاستعدادات لتنظيم أيام قرطاج السينمائية</h3>
+                                <p>تمثيل تونس لإقامة شراكات دولية في المجال السينمائي.</p>
+                                <div class="news-date">2024</div>
+                            </div>
+                        </div>
+                        
+                        <div class="news-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="news-image">
+                                <img src="habassi - details/nooman2.jpg" alt="تكريم في مهرجان أسوان">
+                            </div>
+                            <div class="news-content">
+                                <h3 class="news-title">اختتام الدورة التكوينية</h3>
+                                <p> تحية شكر و تشجيع إلى كل المشاركين في هذه الدورة </p>
+                                <div class="news-date">2024</div>
+                            </div>
+                        </div>
+                        
+                        <div class="news-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="news-image">
+                                <img src="habassi - details/nooman4.jpg" alt="مهرجان وهران الدولي">
+                            </div>
+                            <div class="news-content">
+                                <h3 class="news-title"> الندوة الصحفية للمهرجان الدولي للسينما</h3>
+                                <p>قاعة صوفي القلي بمدينة الثقافة.</p>
+                                <div class="news-date">2024</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="sidebar">
+                            <h3 class="sidebar-title">المناصب الحالية</h3>
+                            <div class="sidebar-content">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">مكلف بإدارة المركز الوطني للسينما والصورة</h5>
+                                        <p class="card-text">ديسمبر 2023 - ديسمبر 2024</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">أستاذ متعاقد في الجامعة</h5>
+                                        <p class="card-text">سبتمبر 2022 - مارس 2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="py-5 section-dark">
+            <div class="container">
+                <h2 class="section-title text-center mb-5" data-aos="fade-up">أبرز المشاريع</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4" data-aos="fade-up">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">الأيام السينمائية الدولية بقرطاج</h3>
+                                <p class="card-text">حدث مخصص لتعزيز السينما وروابطها مع أشكال فنية أخرى، من خلال العروض وورش العمل واللقاءات المهنية.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">محمية المبدعين</h3>
+                                <p class="card-text">برنامج مبتكر مخصص للفنون الحية، مؤسسًا أول محمية فنية في المنطقة الجبلية بالكاف.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">إحياء ذكرى صليحة</h3>
+                                <p class="card-text">حدث موسيقي وطني يحتفي بإرث صليحة، أيقونة الموسيقى التونسية.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="projects.html" class="btn btn-primary">عرض جميع المشاريع</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>نعمان حباسي</h5>
+                    <p>مدير مؤسسة عامة وتعاون ثقافي<br>كاتب وروائي، خبير في الإدارة الثقافية</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>تواصل معنا</h5>
+                    <p>البريد الإلكتروني: noomaneh@live.fr<br>الهاتف: 98483759</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>تابعنا</h5>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/habassi-noomane-35492a" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/habbassinoomane/profilec" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Visitor Counter -->
+            <div class="visitor-counter mt-4">
+                <h5>إحصائيات الزوار</h5>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="counter-item">
+                            <span class="counter-number" id="all-time-visits">0</span>
+                            <span class="counter-label">إجمالي الزيارات</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="counter-item">
+                            <span class="counter-number" id="monthly-visits">0</span>
+                            <span class="counter-label">زيارات الشهر</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="counter-item">
+                            <span class="counter-number" id="weekly-visits">0</span>
+                            <span class="counter-label">زيارات الأسبوع</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="counter-item">
+                            <span class="counter-number" id="daily-visits">0</span>
+                            <span class="counter-label">زيارات اليوم</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-3" style="background-color: rgba(255,255,255,0.2);">
+            <p>&copy; 2025 جميع الحقوق محفوظة لنعمان حباسي</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" aria-label="العودة إلى الأعلى">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <button id="darkModeToggle" aria-label="تبديل الوضع الليلي">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Add the search modal at the end of the body, before the scripts -->
+    <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="searchModalLabel">بحث في الموقع</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="searchForm">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="ابحث عن..." aria-label="Search term">
+                            <button class="btn btn-primary" type="submit">بحث</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
