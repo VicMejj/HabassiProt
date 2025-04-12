@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #0d6efd;
-  --secondary-color: #6c757d;
+  --primary-color: #0a9396;
+  --secondary-color: #005f73;
   --light-bg: #f8f9fa;
   --dark-bg: #212529;
   --text-light: #212529;
@@ -9,6 +9,8 @@
   --border-dark: rgba(255, 255, 255, 0.1);
   --shadow-light: 0 4px 15px rgba(0, 0, 0, 0.1);
   --shadow-dark: 0 4px 15px rgba(0, 0, 0, 0.3);
+  --header-bg-color: #0a9396;
+  --footer-bg-color: #005f73;
 }
 
 /* Light mode improvements */

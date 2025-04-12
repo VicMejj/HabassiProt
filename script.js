@@ -143,42 +143,102 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // Visitor counter
-async function updateVisitorCounter() {
-  try {
-      const response = await fetch('/.netlify/functions/counter');
-      const data = await response.json();
-      
-      // Arabic number formatting
-      const formatter = new Intl.NumberFormat('ar-EG');
-      
-      document.getElementById('all-time-visits').textContent = formatter.format(data.all);
-      document.getElementById('monthly-visits').textContent = formatter.format(data.monthly);
-      document.getElementById('weekly-visits').textContent = formatter.format(data.weekly);
-      document.getElementById('daily-visits').textContent = formatter.format(data.daily);
-      
-  } catch (error) {
-      console.error('حدث خطأ في تحديث العداد:', error);
+function updateVisitorCounter() {
+  // Get current date
+  const now = new Date()
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime()
+  const thisWeek = today - now.getDay() * 24 * 60 * 60 * 1000
+  const thisMonth = new Date(now.getFullYear(), now.getMonth(), 1).getTime()
+
+  // Initialize counters from localStorage or set to default values
+  let allTimeVisits = Number.parseInt(localStorage.getItem("allTimeVisits") || "0")
+  let monthlyVisits = Number.parseInt(localStorage.getItem("monthlyVisits") || "0")
+  let weeklyVisits = Number.parseInt(localStorage.getItem("weeklyVisits") || "0")
+  let dailyVisits = Number.parseInt(localStorage.getItem("dailyVisits") || "0")
+
+  // Check if we need to reset any counters
+  const lastVisit = Number.parseInt(localStorage.getItem("lastVisit") || "0")
+  const lastVisitDate = new Date(lastVisit)
+
+  // Reset daily counter if it's a new day
+  if (lastVisit && lastVisitDate.getDate() !== now.getDate()) {
+    dailyVisits = 0
   }
+
+  // Reset weekly counter if it's a new week
+  if (lastVisit && new Date(lastVisit).getTime() < thisWeek) {
+    weeklyVisits = 0
+  }
+
+  // Reset monthly counter if it's a new month
+  if (lastVisit && lastVisitDate.getMonth() !== now.getMonth()) {
+    monthlyVisits = 0
+  }
+
+  // Increment counters
+  allTimeVisits++
+  monthlyVisits++
+  weeklyVisits++
+  dailyVisits++
+
+  // Save to localStorage
+  localStorage.setItem("allTimeVisits", allTimeVisits.toString())
+  localStorage.setItem("monthlyVisits", monthlyVisits.toString())
+  localStorage.setItem("weeklyVisits", weeklyVisits.toString())
+  localStorage.setItem("dailyVisits", dailyVisits.toString())
+  localStorage.setItem("lastVisit", now.getTime().toString())
+
+  // Update the DOM with animation
+  const allTimeElement = document.getElementById("all-time-visits")
+  const monthlyElement = document.getElementById("monthly-visits")
+  const weeklyElement = document.getElementById("weekly-visits")
+  const dailyElement = document.getElementById("daily-visits")
+
+  function animateCounter(element, value) {
+    if (!element) return
+
+    // Animate counting up
+    const duration = 1000
+    const startTime = performance.now()
+    const startValue = Number.parseInt(element.textContent) || 0
+    const endValue = value
+
+    function updateCounter(currentTime) {
+      const elapsedTime = currentTime - startTime
+      if (elapsedTime < duration) {
+        const progress = elapsedTime / duration
+        const currentValue = Math.floor(startValue + progress * (endValue - startValue))
+        element.textContent = currentValue.toString()
+        requestAnimationFrame(updateCounter)
+      } else {
+        element.textContent = endValue.toString()
+      }
+    }
+
+    requestAnimationFrame(updateCounter)
+  }
+
+  if (allTimeElement) animateCounter(allTimeElement, allTimeVisits)
+  if (monthlyElement) animateCounter(monthlyElement, monthlyVisits)
+  if (weeklyElement) animateCounter(weeklyElement, weeklyVisits)
+  if (dailyElement) animateCounter(dailyElement, dailyVisits)
 }
 
-// Update on every page load
-updateVisitorCounter();
+// Only count a visit once per session
+if (!sessionStorage.getItem("visitCounted")) {
+  updateVisitorCounter()
+  sessionStorage.setItem("visitCounted", "true")
+} else {
+  // Just display the current counts without incrementing
+  const allTimeElement = document.getElementById("all-time-visits")
+  const monthlyElement = document.getElementById("monthly-visits")
+  const weeklyElement = document.getElementById("weekly-visits")
+  const dailyElement = document.getElementById("daily-visits")
 
-function animateCounter(elementId, value) {
-  const element = document.getElementById(elementId);
-  if (!element) return;
-  
-  element.style.opacity = '0';
-  setTimeout(() => {
-    element.textContent = value;
-    element.style.opacity = '1';
-  }, 300);
-}
-
-// Only run once per session
-if (!sessionStorage.getItem('visitCounted')) {
-  updateVisitorCounter();
-  sessionStorage.setItem('visitCounted', 'true');
+  if (allTimeElement) allTimeElement.textContent = localStorage.getItem("allTimeVisits") || "0"
+  if (monthlyElement) monthlyElement.textContent = localStorage.getItem("monthlyVisits") || "0"
+  if (weeklyElement) weeklyElement.textContent = localStorage.getItem("weeklyVisits") || "0"
+  if (dailyElement) dailyElement.textContent = localStorage.getItem("dailyVisits") || "0"
 }
 
   // Enhanced Slideshow Animation

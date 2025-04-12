@@ -526,7 +526,7 @@ footer {
 }
 
 .carousel-item.animate__fadeIn {
-  animation-duration: 1s;
+  animation-duration: 0.5s;
 }
 
 .carousel-item.animate__fadeOut {

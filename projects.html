@@ -3,809 +3,538 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="مشاريع نعمان حباسي - مشاريع ثقافية وفنية وتراثية">
-<meta name="keywords" content="نعمان حباسي, مشاريع ثقافية, محمية المبدعين, المسلك الأسطوري, تراث, ثقافة, تونس">
+<meta name="description" content="مشاريع نعمان حباسي - مشاريع ثقافية وفنية في مجال الثقافة والتراث">
+<meta name="keywords" content="نعمان حباسي, مشاريع, مشاريع ثقافية, ثقافة, تراث, تونس">
 <meta property="og:title" content="المشاريع - نعمان حباسي">
-<meta property="og:description" content="تعرف على مشاريع نعمان حباسي الثقافية والفنية والتراثية">
+<meta property="og:description" content="تعرف على مشاريع نعمان حباسي الثقافية والفنية في مجال الثقافة والتراث">
 <meta property="og:image" content="images/og-projects.jpg">
 <meta property="og:url" content="https://www.noomanehabassi.com/projects.html">
 <title>المشاريع - نعمان حباسي، كاتب وروائي وخبير في الإدارة الثقافية</title>
-<link rel="icon" href="habassi - details/noomane.png" type="image/x-icon" />
+<link rel="icon" href="habassi - details/project-management.png" type="image/x-icon" />
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 <link href="styles.css" rel="stylesheet">
-<link href="projects-styles.css" rel="stylesheet">
+<link href="experience-projects-styles.css" rel="stylesheet">
 </head>
 <body>
 <!-- Timer Bar - Fixed at the top -->
 <div class="timer-bar">
 <div class="container">
-    <div class="timer-content">
-        <div class="date-display">
-            <i class="fas fa-calendar-alt"></i>
-            <span id="current-date">جاري تحميل التاريخ...</span>
-        </div>
-        <div class="time-display">
-            <i class="fas fa-clock"></i>
-            <span id="current-time">جاري تحميل الوقت...</span>
-        </div>
-    </div>
+  <div class="timer-content">
+      <div class="date-display">
+          <i class="fas fa-calendar-alt"></i>
+          <span id="current-date">جاري تحميل التاريخ...</span>
+      </div>
+      <div class="time-display">
+          <i class="fas fa-clock"></i>
+          <span id="current-time">جاري تحميل الوقت...</span>
+      </div>
+  </div>
 </div>
 </div>
 
 <!-- Main Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark">
 <div class="container">
-  <a class="navbar-brand" href="index.html">نعمان حباسي</a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav me-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">من أنا</a></li>
-          <li class="nav-item"><a class="nav-link" href="experience.html">الخبرات</a></li>
-          <li class="nav-item"><a class="nav-link active" href="projects.html">المشاريع</a></li>
-          <li class="nav-item"><a class="nav-link" href="media.html">الوسائط</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">معرض الصور</a></li>
-          <li class="nav-item"><a class="nav-link" href="publications.html">المؤلفات</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بي</a></li>
-      </ul>
-      <!-- Search Button -->
-      <button class="btn btn-sm btn-outline-light ms-2" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
-          <i class="fas fa-search"></i>
-      </button>
-  </div>
+<a class="navbar-brand" href="index.html">نعمان حباسي</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav me-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">من أنا</a></li>
+        <li class="nav-item"><a class="nav-link" href="experience.html">الخبرات</a></li>
+        <li class="nav-item"><a class="nav-link active" href="projects.html">المشاريع</a></li>
+        <li class="nav-item"><a class="nav-link" href="media.html">الوسائط</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">معرض الصور</a></li>
+        <li class="nav-item"><a class="nav-link" href="publications.html">المؤلفات</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بي</a></li>
+    </ul>
+     <!-- Language Switcher -->
+     <div class="language-switcher">
+        <button class="btn btn-sm btn-outline-light active">العربية</button>
+        <button class="btn btn-sm btn-outline-light">English</button>
+        <button class="btn btn-sm btn-outline-light">Français</button>
+    </div>
+    <!-- Search Button -->
+    <button class="btn btn-sm btn-outline-light ms-2" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
+        <i class="fas fa-search"></i>
+    </button>
+</div>
 </div>
 </nav>
 
 <!-- Breadcrumbs -->
 <div class="breadcrumbs-container" style="margin-top: 39px;">
 <div class="container">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
-            <li class="breadcrumb-item active" aria-current="page">المشاريع</li>
-        </ol>
-    </nav>
+  <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+          <li class="breadcrumb-item active" aria-current="page">المشاريع</li>
+      </ol>
+  </nav>
 </div>
 </div>
 
 <!-- Hero Section -->
 <header class="hero-section text-center">
 <div class="container">
-    <h1 class="display-4 mb-4 animate__animated animate__fadeInUp">المشاريع</h1>
-    <p class="lead mb-0 animate__animated animate__fadeInUp animate__delay-1s">استكشف مشاريعي الثقافية والفنية والتراثية التي تهدف إلى تعزيز الهوية الثقافية وتحقيق التنمية المستدامة</p>
+  <h1 class="display-4 mb-4 animate__animated animate__fadeInUp">المشاريع الثقافية والفنية</h1>
+  <p class="lead mb-0 animate__animated animate__fadeInUp animate__delay-1s">تعرف على مشاريعي الثقافية والفنية في مجال الثقافة والتراث</p>
 </div>
 </header>
 
 <main>
+<!-- Featured Project Section -->
+<section class="py-5 section-light">
+  <div class="container">
+      
+      <div class="featured-project" data-aos="fade-up">
+          <div class="featured-project-row">
+              <div class="featured-project-image">
+                  <img src="habassi - details/nooman18.jpg" alt="الأيام السينمائية الدولية بقرطاج" class="img-fluid">
+              </div>
+              <div class="featured-project-content">
+                  <span class="featured-project-category">مهرجان سينمائي</span>
+                  <h3 class="featured-project-title">الأيام السينمائية الدولية بقرطاج</h3>
+                  <div class="featured-project-meta">
+                      <span><i class="fas fa-calendar-alt"></i> 2023 - 2024</span>
+                      <span><i class="fas fa-map-marker-alt"></i> تونس</span>
+                      <span><i class="fas fa-users"></i> آلاف المشاركين</span>
+                  </div>
+                  <p class="featured-project-description">حدث مخصص لتعزيز السينما وروابطها مع أشكال أخرى من الفن، من خلال العروض وورش العمل واللقاءات المهنية، مما يعزز الحوار بين الثقافات والابتكار الفني.</p>
+                  <p class="featured-project-description">يجمع هذا المهرجان المرموق صناع الأفلام والنقاد والجمهور من جميع أنحاء العالم، ويوفر منصة لعرض الأفلام العربية والأفريقية، ويسهم في تطوير صناعة السينما في المنطقة.</p>
+                  <div class="featured-project-actions">
+                      <a href="gallery.html" class="btn btn-outline-primary">مشاهدة الصور <i class="fas fa-images ms-2"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
 <!-- Projects Filter Section -->
-<section class="py-5 section-light">
-    <div class="container">
-        <div class="projects-filters text-center mb-5" data-aos="fade-up">
-            <button class="filter-btn active" data-filter="all">الكل</button>
-            <button class="filter-btn" data-filter="cultural">مشاريع ثقافية</button>
-            <button class="filter-btn" data-filter="heritage">مشاريع تراثية</button>
-            <button class="filter-btn" data-filter="tourism">مشاريع سياحية</button>
-            <button class="filter-btn" data-filter="development">مشاريع تنموية</button>
-        </div>
-        
-        <div class="row projects-grid">
-            <!-- Project 1: محمية المبدعين -->
-            <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="cultural" data-aos="fade-up">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.16.33_20599931.jpg-vU4zWj5R2xagVXVi8xIDuN63o9xn8K.jpeg" alt="محمية المبدعين" class="img-fluid">
-                        <div class="project-overlay">
-                            <a href="#projectModal1" data-bs-toggle="modal" class="project-link">
-                                <i class="fas fa-eye"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-category">مشروع ثقافي</span>
-                        <h3>محمية المبدعين</h3>
-                        <p>مشروع ثقافي فريد من نوعه في المنطقة الجبلية بالكاف، يهدف إلى توفير مساحة آمنة للفنانين والمبدعين لتطوير أعمالهم الفنية والإبداعية في بيئة طبيعية ملهمة.</p>
-                        <div class="project-footer">
-                            <span class="project-status">قيد التنفيذ</span>
-                            <span class="project-date">2022 - الآن</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Project 2: المسلك الأسطوري -->
-            <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="heritage tourism" data-aos="fade-up" data-aos-delay="100">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.15.23_7f7c5cc1.jpg-UahPevYphxWhijiuMeK6S9D1q6VIuu.jpeg" alt="المسلك الأسطوري" class="img-fluid">
-                        <div class="project-overlay">
-                            <a href="#projectModal2" data-bs-toggle="modal" class="project-link">
-                                <i class="fas fa-eye"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-category">مشروع تراثي سياحي</span>
-                        <h3>المسلك الأسطوري</h3>
-                        <p>مشروع سياحي ثقافي يهدف إلى إنشاء مسار سياحي في ولاية الكاف يربط بين المواقع الأثرية والتاريخية والأسطورية، مع توظيف الأساطير والحكايات المحلية في الترويج السياحي.</p>
-                        <div class="project-footer">
-                            <span class="project-status">مكتمل</span>
-                            <span class="project-date">2019 - 2021</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Project 3: مهرجان الكاف للمسرح -->
-            <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="cultural" data-aos="fade-up" data-aos-delay="200">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.15.06_18ee4516.jpg-Eq0NtHkOI1kQGZBDeWA8WhRd5hS8D2.jpeg" alt="مهرجان الكاف للمسرح" class="img-fluid">
-                        <div class="project-overlay">
-                            <a href="#projectModal3" data-bs-toggle="modal" class="project-link">
-                                <i class="fas fa-eye"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-category">مشروع ثقافي</span>
-                        <h3>مهرجان الكاف للمسرح</h3>
-                        <p>مهرجان سنوي للمسرح في مدينة الكاف، يهدف إلى تعزيز الحركة المسرحية وتقديم عروض مسرحية متنوعة من تونس والعالم العربي، مع تنظيم ورش تدريبية وندوات فكرية.</p>
-                        <div class="project-footer">
-                            <span class="project-status">مستمر</span>
-                            <span class="project-date">2018 - الآن</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Project 4: مشروع توثيق التراث الشفوي -->
-            <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="heritage" data-aos="fade-up">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.14.42_bcd8e970.jpg-91nV3lFlRnxpy8aYDiSY5SLnYQFxGu.jpeg" alt="مشروع توثيق التراث الشفوي" class="img-fluid">
-                        <div class="project-overlay">
-                            <a href="#projectModal4" data-bs-toggle="modal" class="project-link">
-                                <i class="fas fa-eye"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-category">مشروع تراثي</span>
-                        <h3>توثيق التراث الشفوي</h3>
-                        <p>مشروع بحثي يهدف إلى توثيق التراث الشفوي في منطقة الكاف، بما في ذلك الأساطير والحكايات الشعبية والأمثال والأغاني التراثية، باستخدام التقنيات السمعية البصرية الحديثة.</p>
-                        <div class="project-footer">
-                            <span class="project-status">مكتمل</span>
-                            <span class="project-date">2015 - 2017</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Project 5: مشروع الثقافة للجميع -->
-            <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="cultural development" data-aos="fade-up" data-aos-delay="100">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.23.47_05048ef4.jpg-5PPTaGJXSqe97qBb9Ww5GG3paIceQA.jpeg" alt="مشروع الثقافة للجميع" class="img-fluid">
-                        <div class="project-overlay">
-                            <a href="#projectModal5" data-bs-toggle="modal" class="project-link">
-                                <i class="fas fa-eye"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-category">مشروع ثقافي تنموي</span>
-                        <h3>الثقافة للجميع</h3>
-                        <p>مبادرة تهدف إلى تعزيز الوصول إلى الأنشطة الثقافية في المناطق النائية والمهمشة في ولاية الكاف، من خلال تنظيم فعاليات ثقافية متنقلة وورش تدريبية للشباب.</p>
-                        <div class="project-footer">
-                            <span class="project-status">مستمر</span>
-                            <span class="project-date">2019 - الآن</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Project 6: مشروع التراث والسياحة المستدامة -->
-            <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="heritage tourism development" data-aos="fade-up" data-aos-delay="200">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.24.59_981cb842.jpg-h4lFkY75xh1ScvyapbP4RN2gwESthq.jpeg" alt="مشروع التراث والسياحة المستدامة" class="img-fluid">
-                        <div class="project-overlay">
-                            <a href="#projectModal6" data-bs-toggle="modal" class="project-link">
-                                <i class="fas fa-eye"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-category">مشروع تراثي سياحي تنموي</span>
-                        <h3>التراث والسياحة المستدامة</h3>
-                        <p>مشروع يهدف إلى توظيف التراث الثقافي في تحقيق التنمية المستدامة من خلال تطوير السياحة الثقافية والبيئية في ولاية الكاف، بالتعاون مع المجتمع المحلي والمؤسسات الدولية.</p>
-                        <div class="project-footer">
-                            <span class="project-status">قيد التنفيذ</span>
-                            <span class="project-date">2021 - الآن</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Load More Button -->
-        <div class="text-center mt-4" data-aos="fade-up">
-            <button id="loadMoreBtn" class="btn btn-primary btn-lg">تحميل المزيد <i class="fas fa-plus ms-2"></i></button>
-        </div>
-    </div>
-</section>
-
-<!-- Projects Impact Section -->
 <section class="py-5 section-dark">
-    <div class="container">
-        <h2 class="section-title text-center text-white mb-5" data-aos="fade-up">تأثير المشاريع</h2>
+  <div class="container">
+      <h2 class="section-title" data-aos="fade-up">المشاريع</h2>
+      
+      <div class="project-filters" data-aos="fade-up">
+          <button class="filter-btn active" data-filter="all">الكل</button>
+          <button class="filter-btn" data-filter="cultural-festivals">مهرجانات ثقافية</button>
+          <button class="filter-btn" data-filter="heritage-projects">مشاريع تراثية</button>
+          <button class="filter-btn" data-filter="workshops">ورش عمل</button>
+      </div>
+      
+      <div class="projects-grid" data-aos="fade-up">
+          <!-- Project 1 -->
+          <div class="project-item" data-category="cultural-festivals">
+              <div class="project-card">
+                  <div class="project-image">
+                      <img src="gallery_pics/faalaya_3.jpg" alt="شاشات الحمامات" class="img-fluid">
+                      <div class="project-overlay">
+                       
+                          <a href="https://www.facebook.com/story.php?story_fbid=797396959230104&id=100068794227013&mibextid=wwXIfr&rdid=Zwc5ldxJPuBRjycp#" class="project-link">
+                              <i class="fas fa-link"></i>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="project-content">
+                      <span class="project-category">مهرجان سينمائي</span>
+                      <h3 class="project-title">شاشات الحمامات</h3>
+                      <p class="project-description">حدث مخصص لتعزيز السينما التونسية، يسلط الضوء على الإنتاجات المحلية في المهرجانات الصيفية من خلال العروض والمناقشات والتبادلات المهنية.</p>
+                      <div class="project-footer">
+                          <span class="project-date">2023 - 2024</span>
+                          <div class="project-tags">
+                              <span class="project-tag">سينما</span>
+                              <span class="project-tag">ثقافة</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Project 2 -->
+          <div class="project-item" data-category="heritage-projects">
+              <div class="project-card">
+                  <div class="project-image">
+                      <img src="gallery_pics/faalaya_2.jpg" alt="الأيام الشعرية بسيكا" class="img-fluid">
+                      <div class="project-overlay">
+                         
+                          <a href="https://www.facebook.com/permalink.php?story_fbid=pfbid0vhn6CRqvT9UQUdWAxR1deviVQpXNEAHhTNf2P7getG4rg1p6pdUPwnydm1eGrfCjl&id=100063718321208" class="project-link">
+                              <i class="fas fa-link"></i>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="project-content">
+                      <span class="project-category">مهرجان أدبي</span>
+                      <h3 class="project-title">الأيام الشعرية بسيكا</h3>
+                      <p class="project-description">إنشاء مساحة فريدة للاحتفال بالشعر، مع برنامج متعدد التخصصات يجمع بين الشعر والموسيقى والفنون البصرية.</p>
+                      <div class="project-footer">
+                          <span class="project-date">2022</span>
+                          <div class="project-tags">
+                              <span class="project-tag">شعر</span>
+                              <span class="project-tag">أدب</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Project 3 -->
+          <div class="project-item" data-category="cultural-festivals">
+              <div class="project-card">
+                  <div class="project-image">
+                      <img src="gallery_pics/faalya_6.jpg" alt="مهرجان المسرح الدولي للأطفال عمار بوثلجة" class="img-fluid">
+                      <div class="project-overlay">
+                        
+                          <a href="https://www.facebook.com/story.php?story_fbid=691101589859642&id=100068794227013&mibextid=wwXIfr&rdid=n2G4J2QzPwGXylKV#" class="project-link">
+                              <i class="fas fa-link"></i>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="project-content">
+                      <span class="project-category">أيام القيروان السينمائية </span>
+                      <h3 class="project-title">أيام القيروان السينمائية في دورته الخامسة المهداة إلى فلسطين</h3>
+                      <div class="project-footer">
+                          <span class="project-date">2021</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
         
-        <div class="row">
-            <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up">
-                <div class="impact-card">
-                    <div class="impact-icon">
-                        <i class="fas fa-users"></i>
+          
+          <!-- Project 5 -->
+          <div class="project-item" data-category="heritage-projects">
+              <div class="project-card">
+                  <div class="project-image">
+                      <img src="gallery_pics/mahrajen_001.jpg" alt="إحياء ذكرى صليحة" class="img-fluid">
+                      <div class="project-overlay">
+                         
+                          <a href="https://www.facebook.com/story.php?story_fbid=1602728963163033&id=100002778358278&mibextid=wwXIfr&rdid=p5CxzrpyLHT3bUma#" class="project-link">
+                              <i class="fas fa-link"></i>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="project-content">
+                      <span class="project-category">مهرجان موسيقي</span>
+                      <h3 class="project-title">إحياء ذكرى صليحة</h3>
+                      <p class="project-description">حدث موسيقي وطني يحتفي بإرث صليحة، أيقونة الموسيقى التونسية. يسلط هذا الموعد الضوء على دورها الرئيسي في تطور الموسيقى التونسية وثراء أغانيها المستوحاة من أسلوب الكاف.</p>
+                      <div class="project-footer">
+                          <span class="project-date">2019 </span>
+                          <div class="project-tags">
+                              <span class="project-tag">موسيقى</span>
+                              <span class="project-tag">تراث</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Project 6 -->
+          <div class="project-item" data-category="cultural-festivals">
+              <div class="project-card">
+                  <div class="project-image">
+                      <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.23.16_678266a3.jpg-ofMOl9JDAWEFx7FuTlVYKSq38GQV63.jpeg" alt="مهرجان صيف العرائس" class="img-fluid">
+                      <div class="project-overlay">
+                          <a href="https://www.facebook.com/story.php?story_fbid=838667098436423&id=100068794227013&mibextid=wwXIfr&rdid=pAEVkleR5uPUQcJi#" class="project-link">
+                              <i class="fas fa-link"></i>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="project-content">
+                      <span class="project-category">مهرجان</span>
+                      <h3 class="project-title">الدورة 12 لمهرجان وهران السينمائي الدولي للفيلم العربي</h3>
+                      <p class="project-description">📍 جائزة احسن فيلم قصير الوهر الذهبي لفيلم "ليني افريكو " لمروان لبيب. 📍 تنويه خاص من لجنة تحكيم الأفلام الوثائقية الطويلة لفيلم "الكابيتانة" لحسام صانصة مبروك لكافة فرق العمل في الأفلام المتوجة و مزيد من التألق للسينما التونسية</p>
+                      <div class="project-footer">
+                          <span class="project-date">2023</span>
+                          <div class="project-tags">
+                              <span class="project-tag">مسرح</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!--#7-->
+
+          <div class="project-item" data-category="cultural-festivals">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="gallery_pics/mahrajen_1.jpg" alt="مهرجان صيف العرائس" class="img-fluid">
+                    <div class="project-overlay">
+                        <a href="https://www.facebook.com/story.php?story_fbid=723899389304171&id=100050523487913&mibextid=wwXIfr&rdid=UXQpIaYdtztAG5Ji#" class="project-link">
+                            <i class="fas fa-link"></i>
+                        </a>
                     </div>
-                    <div class="impact-number" id="beneficiaries-count">5000+</div>
-                    <div class="impact-title">مستفيد</div>
-                    <p class="impact-description">عدد المستفيدين المباشرين من المشاريع الثقافية والتراثية</p>
                 </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="impact-card">
-                    <div class="impact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="impact-number" id="locations-count">15</div>
-                    <div class="impact-title">موقع</div>
-                    <p class="impact-description">عدد المواقع التي تم تنفيذ المشاريع فيها في ولاية الكاف</p>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="impact-card">
-                    <div class="impact-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <div class="impact-number" id="partners-count">20</div>
-                    <div class="impact-title">شريك</div>
-                    <p class="impact-description">عدد الشركاء المحليين والدوليين المتعاونين في تنفيذ المشاريع</p>
-                </div>
-            </div>
-            
-            <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="impact-card">
-                    <div class="impact-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <div class="impact-number" id="jobs-count">120</div>
-                    <div class="impact-title">فرصة عمل</div>
-                    <p class="impact-description">عدد فرص العمل التي تم توفيرها من خلال المشاريع الثقافية والتراثية</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row mt-5">
-            <div class="col-lg-6 mb-4" data-aos="fade-up">
-                <div class="impact-testimonial">
-                    <div class="impact-testimonial-content">
-                        <i class="fas fa-quote-right impact-testimonial-icon"></i>
-                        <p>"لقد ساهمت مشاريع نعمان حباسي الثقافية في تغيير نظرة المجتمع المحلي للثقافة والتراث، وأصبحت الثقافة جزءاً أساسياً من حياة الناس في ولاية الكاف. كما ساهمت هذه المشاريع في تعزيز السياحة الثقافية وخلق فرص عمل جديدة للشباب."</p>
-                        <div class="impact-testimonial-author">
-                            <img src="/placeholder.svg?height=60&width=60" alt="محمد العلوي" class="impact-testimonial-author-img">
-                            <div class="impact-testimonial-author-info">
-                                <h4>محمد العلوي</h4>
-                                <p>رئيس بلدية الكاف</p>
-                            </div>
+                <div class="project-content">
+                    <span class="project-category">المهرجان </span>
+                    <h3 class="project-title">المهرجان الدولي لسينما المناجـــم بالجريصـــة</h3>
+                    <p class="project-description">تكريمات المهرجان الدولي لسينما المناجم بالجريصة في دورته الرابعة تحت إشراف المعتمد الاول  السيد نزار جـمعاوي</p>
+                    <div class="project-footer">
+                        <span class="project-date">2022</span>
+                        <div class="project-tags">
+                            <span class="project-tag">مسرح</span>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="impact-testimonial">
-                    <div class="impact-testimonial-content">
-                        <i class="fas fa-quote-right impact-testimonial-icon"></i>
-                        <p>"مشروع محمية المبدعين هو مشروع رائد في مجال دعم الإبداع والفنون في تونس. لقد وفر هذا المشروع بيئة مثالية للفنانين والمبدعين لتطوير أعمالهم الفنية والإبداعية، وساهم في تعزيز الحركة الثقافية والفنية في المنطقة."</p>
-                        <div class="impact-testimonial-author">
-                            <img src="/placeholder.svg?height=60&width=60" alt="سلمى الحمروني" class="impact-testimonial-author-img">
-                            <div class="impact-testimonial-author-info">
-                                <h4>سلمى الحمروني</h4>
-                                <p>فنانة تشكيلية ومستفيدة من مشروع محمية المبدعين</p>
-                            </div>
+        </div>
+
+        <div class="project-item" data-category="workshops">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Nooman/Nooman_essman.jpg" alt="مهرجان صيف العرائس" class="img-fluid">
+                    <div class="project-overlay">
+                        <a href="https://www.facebook.com/story.php?story_fbid=2427579517631523&id=100011384941955&mibextid=wwXIfr&rdid=jNJH2OAuTkcNBiBN#" class="project-link">
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <span class="project-category">لقاء</span>
+                    <h3 class="project-title">فرص التعاون في مجال الصناعة الثقافية والسينما والصورة بين البلدين</h3>
+                    <p class="project-description">سعدت باستقبال السيد نعمان الحباسي المدير العام للمركز الوطني للسينما والصورة، حيث كان ذلك مناسبة للحديث عن فرص التعاون في مجال الصناعة الثقافية والسينما والصورة بين البلدين. </p>
+                    <div class="project-footer">
+                        <span class="project-date">2024</span>
+                        <div class="project-tags">
+                            <span class="project-tag">لقاء</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
+        <div class="project-item" data-category="workshops">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="Nooman/nooman_With_GreatPerson.jpg" alt="مهرجان صيف العرائس" class="img-fluid">
+                    <div class="project-overlay">
+                        <a href="https://www.facebook.com/photo.php?fbid=925831929588476&set=a.263327189172290&type=3&mibextid=wwXIfr&rdid=sHDcurLD4QxqelVm&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15yi12zfAH%2F%3Fmibextid%3DwwXIfr#" class="project-link">
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Ministère des affaires culturelles -Tunisie وزارة الشؤون الثقافية - تونس</h3>
+                    <div class="project-footer">
+                        <span class="project-date">2024</span>
+                        <div class="project-tags">
+                            <span class="project-tag">لقاء</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+      
+      
+  </div>
 </section>
 
-<!-- Future Projects Section -->
+<!-- Additional Projects Section -->
 <section class="py-5 section-light">
-    <div class="container">
-        <h2 class="section-title text-center mb-5" data-aos="fade-up">مشاريع مستقبلية</h2>
-        
-        <div class="row">
-            <!-- Future Project 1 -->
-            <div class="col-md-6 mb-4" data-aos="fade-up">
-                <div class="future-project-card">
-                    <div class="future-project-icon">
-                        <i class="fas fa-university"></i>
-                    </div>
-                    <div class="future-project-content">
-                        <h3>أكاديمية الفنون التقليدية</h3>
-                        <p>مشروع يهدف إلى إنشاء أكاديمية متخصصة في تعليم وتطوير الفنون والحرف التقليدية في ولاية الكاف، للحفاظ على هذه الفنون ونقلها للأجيال القادمة، مع توفير فرص عمل للشباب في هذا المجال.</p>
-                        <div class="future-project-details">
-                            <div class="future-project-detail">
-                                <i class="fas fa-calendar-alt"></i>
-                                <span>المدة المتوقعة: 3 سنوات</span>
-                            </div>
-                            <div class="future-project-detail">
-                                <i class="fas fa-users"></i>
-                                <span>المستفيدون المتوقعون: 500 شاب وشابة</span>
-                            </div>
-                            <div class="future-project-detail">
-                                <i class="fas fa-handshake"></i>
-                                <span>الشركاء المحتملون: وزارة الثقافة، منظمة اليونسكو، الاتحاد الأوروبي</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Future Project 2 -->
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="future-project-card">
-                    <div class="future-project-icon">
-                        <i class="fas fa-film"></i>
-                    </div>
-                    <div class="future-project-content">
-                        <h3>مهرجان الكاف للسينما</h3>
-                        <p>مشروع يهدف إلى إنشاء مهرجان سينمائي سنوي في مدينة الكاف، يركز على الأفلام التي تتناول قضايا التراث والهوية الثقافية، مع تنظيم ورش تدريبية في مجال صناعة الأفلام للشباب المحلي.</p>
-                        <div class="future-project-details">
-                            <div class="future-project-detail">
-                                <i class="fas fa-calendar-alt"></i>
-                                <span>الانطلاق المتوقع: 2024</span>
-                            </div>
-                            <div class="future-project-detail">
-                                <i class="fas fa-users"></i>
-                                <span>المشاركون المتوقعون: 50 فيلماً و200 مخرج وممثل</span>
-                            </div>
-                            <div class="future-project-detail">
-                                <i class="fas fa-handshake"></i>
-                                <span>الشركاء المحتملون: المركز الوطني للسينما والصورة، المعهد الفرنسي، مؤسسات سينمائية عربية وأوروبية</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Future Project 3 -->
-            <div class="col-md-6 mb-4" data-aos="fade-up">
-                <div class="future-project-card">
-                    <div class="future-project-icon">
-                        <i class="fas fa-book"></i>
-                    </div>
-                    <div class="future-project-content">
-                        <h3>موسوعة التراث الثقافي لولاية الكاف</h3>
-                        <p>مشروع بحثي يهدف إلى إعداد موسوعة شاملة للتراث الثقافي المادي وغير المادي في ولاية الكاف، باستخدام التقنيات الرقمية الحديثة، لتكون مرجعاً للباحثين والمهتمين بالتراث الثقافي.</p>
-                        <div class="future-project-details">
-                            <div class="future-project-detail">
-                                <i class="fas fa-calendar-alt"></i>
-                                <span>المدة المتوقعة: 5 سنوات</span>
-                            </div>
-                            <div class="future-project-detail">
-                                <i class="fas fa-users"></i>
-                                <span>فريق العمل: 20 باحثاً ومتخصصاً</span>
-                            </div>
-                            <div class="future-project-detail">
-                                <i class="fas fa-handshake"></i>
-                                <span>الشركاء المحتملون: جامعة جندوبة، المعهد الوطني للتراث، منظمة اليونسكو</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Future Project 4 -->
-            <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="future-project-card">
-                    <div class="future-project-icon">
-                        <i class="fas fa-globe"></i>
-                    </div>
-                    <div class="future-project-content">
-                        <h3>منصة رقمية للتراث الثقافي</h3>
-                        <p>مشروع تكنولوجي يهدف إلى إنشاء منصة رقمية تفاعلية للتراث الثقافي في تونس، تتيح للمستخدمين استكشاف المواقع التراثية والأساطير والحكايات المرتبطة بها، باستخدام تقنيات الواقع المعزز والواقع الافتراضي.</p>
-                        <div class="future-project-details">
-                            <div class="future-project-detail">
-                                <i class="fas fa-calendar-alt"></i>
-                                <span>المدة المتوقعة: 2 سنة</span>
-                            </div>
-                            <div class="future-project-detail">
-                                <i class="fas fa-users"></i>
-                                <span>فريق العمل: 10 مبرمجين ومصممين ومتخصصين في التراث</span>
-                            </div>
-                            <div class="future-project-detail">
-                                <i class="fas fa-handshake"></i>
-                                <span>الشركاء المحتملون: وزارة تكنولوجيا الاتصال، شركات تكنولوجية، مؤسسات دولية</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  <div class="container">
+      <h2 class="section-title" data-aos="fade-up">مشاريع ثقافية أخرى</h2>
+      
+      <div class="row">
+          <!-- Additional Project 1 -->
+          <div class="col-md-6 mb-4" data-aos="fade-up">
+              <div class="card h-100">
+                  <div class="card-body">
+                      <h3 class="card-title">فعالية "رؤى ومدارات ثقافية"</h3>
+                      <p class="card-text">حدث مخصص للأعمال الأدبية والفنية الحديثة في مجالات القصة والرواية والشعر والدراسات النقدية والتاريخية. يوفر هذا الموعد مساحة للتبادل بين الكتاب والشعراء والفنانين والباحثين.</p>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Additional Project 2 -->
+          <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                  <div class="card-body">
+                      <h3 class="card-title">مهرجان زهرة فايزة للمسرح والتلفزيون</h3>
+                      <p class="card-text">حدث ثقافي يسلط الضوء على الفن المسرحي والإنتاجات التلفزيونية. يحتفي هذا المهرجان بالأعمال الفنية التي تجمع بين الإبداع والابتكار والتميز في مجالي المسرح والتلفزيون.</p>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Additional Project 3 -->
+          <div class="col-md-6 mb-4" data-aos="fade-up">
+              <div class="card h-100">
+                  <div class="card-body">
+                      <h3 class="card-title">مهرجان ينابيع الإبداع</h3>
+                      <p class="card-text">حدث ثقافي مخصص للأدب والشعر والرواية، يسلط الضوء على مختلف أشكال الكتابة والنقد الأدبي. يشكل هذا المهرجان فضاء للقاء وتبادل الأفكار بين الكتاب والشعراء والنقاد وعشاق الأدب.</p>
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Additional Project 4 -->
+          <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="card h-100">
+                  <div class="card-body">
+                      <h3 class="card-title">أيام بلقاسم حمروني للموسيقى</h3>
+                      <p class="card-text">حدث موسيقي يكرم الإرث الفني لبلقاسم حمروني ومساهمته المهمة في الموسيقى. تسلط هذه الأيام الضوء على الموسيقى التقليدية والمعاصرة من خلال حفلات وورش عمل ومؤتمرات ولقاءات.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 </section>
 
-<!-- Collaboration Section -->
-<section class="py-5 section-dark">
-    <div class="container">
-        <h2 class="section-title text-center text-white mb-5" data-aos="fade-up">فرص التعاون</h2>
-        
-        <div class="row">
-            <div class="col-lg-6 mb-4" data-aos="fade-up">
-                <div class="collaboration-content">
-                    <h3 class="text-white mb-4">دعوة للتعاون</h3>
-                    <p class="text-white">نرحب بالتعاون مع المؤسسات والمنظمات والأفراد المهتمين بالثقافة والتراث والتنمية المستدامة. إذا كنتم مهتمين بالتعاون في أي من المشاريع المذكورة أو لديكم أفكار لمشاريع جديدة، يرجى التواصل معنا.</p>
-                    <p class="text-white">نحن نؤمن بأن التعاون والشراكة هما أساس نجاح المشاريع الثقافية والتنموية، ونسعى دائماً إلى بناء شبكة واسعة من الشركاء المحليين والدوليين.</p>
-                    <div class="mt-4">
-                        <a href="contact.html" class="btn btn-light btn-lg">تواصل معنا <i class="fas fa-arrow-left ms-2"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="collaboration-partners">
-                    <h3 class="text-white mb-4">شركاؤنا</h3>
-                    <div class="partners-grid">
-                        <div class="partner-item">
-                            <img src="/placeholder.svg?height=80&width=150" alt="وزارة الشؤون الثقافية" class="img-fluid">
-                        </div>
-                        <div class="partner-item">
-                            <img src="/placeholder.svg?height=80&width=150" alt="المعهد الثقافي الفرنسي" class="img-fluid">
-                        </div>
-                        <div class="partner-item">
-                            <img src="/placeholder.svg?height=80&width=150" alt="منظمة اليونسكو" class="img-fluid">
-                        </div>
-                        <div class="partner-item">
-                            <img src="/placeholder.svg?height=80&width=150" alt="الاتحاد الأوروبي" class="img-fluid">
-                        </div>
-                        <div class="partner-item">
-                            <img src="/placeholder.svg?height=80&width=150" alt="بلدية الكاف" class="img-fluid">
-                        </div>
-                        <div class="partner-item">
-                            <img src="/placeholder.svg?height=80&width=150" alt="جامعة جندوبة" class="img-fluid">
-                        </div>  alt="جامعة جندوبة" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- Statistics Section -->
+<section class="statistics-section">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-3 col-6" data-aos="fade-up">
+              <div class="statistic-item">
+                  <i class="fas fa-project-diagram statistic-icon"></i>
+                  <div class="statistic-number" id="projectsCounter">10+</div>
+                  <div class="statistic-label">مشروع ثقافي</div>
+              </div>
+          </div>
+          
+          <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="statistic-item">
+                  <i class="fas fa-users statistic-icon"></i>
+                  <div class="statistic-number" id="participantsCounter">10,000+</div>
+                  <div class="statistic-label">مشارك</div>
+              </div>
+          </div>
+          
+          <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="statistic-item">
+                  <i class="fas fa-globe statistic-icon"></i>
+                  <div class="statistic-number" id="countriesCounter">15+</div>
+                  <div class="statistic-label">دولة مشاركة</div>
+              </div>
+          </div>
+          
+          <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="statistic-item">
+                  <i class="fas fa-award statistic-icon"></i>
+                  <div class="statistic-number" id="awardsCounter">5+</div>
+                  <div class="statistic-label">تكريمات</div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta-section">
+  <div class="container">
+      <h2 class="cta-title" data-aos="fade-up">هل لديك فكرة لمشروع ثقافي؟</h2>
+      <p class="cta-text" data-aos="fade-up" data-aos-delay="100">أنا متاح للتعاون في المشاريع الثقافية والفنية، وتقديم الاستشارات في مجال الإدارة الثقافية والتراث الثقافي. لا تتردد في التواصل معي لمناقشة فكرتك ومعرفة كيف يمكننا العمل معاً لتحقيقها.</p>
+      <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
+          <a href="contact.html" class="btn btn-primary btn-lg">تواصل معي</a>
+          <a href="about.html" class="btn btn-outline-primary btn-lg">معرفة المزيد عن خدماتي</a>
+      </div>
+  </div>
 </section>
 </main>
 
-<!-- Project Modals -->
-<!-- Project Modal 1: محمية المبدعين -->
-<div class="modal fade" id="projectModal1" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">محمية المبدعين</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<!-- Footer -->
+<footer class="text-center py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>نعمان حباسي</h5>
+                <p>نعمان حباسي، كاتب وروائي، يتمتع بخبرة متميزة في إدارة المؤسسات الثقافية والإشراف على المشاريع الثقافية الكبرى. خبير في تنسيق الفعاليات وتنظيم الأنشطة الثقافية المتنوعة، مع مهارات قيادية تمكنه من إدارة الفرق وتحقيق الأهداف الاستراتيجية للمؤسسات.</p>
             </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-6 mb-3 mb-md-0">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.16.33_20599931.jpg-vU4zWj5R2xagVXVi8xIDuN63o9xn8K.jpeg" alt="محمية المبدعين" class="img-fluid rounded">
+            <div class="col-md-4">
+                <h5>تواصل معنا</h5>
+                <p>البريد الإلكتروني: noomaneh@live.fr<br>الهاتف: 98483759</p>
+            </div>
+            <div class="col-md-4">
+                <h5>تابعنا</h5>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/habassi-noomane-35492a" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/habbassinoomane/profilec" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Visitor Counter -->
+        <div class="visitor-counter mt-4">
+            <h5>إحصائيات الزوار</h5>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="counter-item">
+                        <span class="counter-number" id="all-time-visits">0</span>
+                        <span class="counter-label">إجمالي الزيارات</span>
                     </div>
-                    <div class="col-md-6">
-                        <h4>نبذة عن المشروع</h4>
-                        <p>مشروع ثقافي فريد من نوعه في المنطقة الجبلية بالكاف، يهدف إلى توفير مساحة آمنة للفنانين والمبدعين لتطوير أعمالهم الفنية والإبداعية في بيئة طبيعية ملهمة.</p>
-                        <h4>الأهداف</h4>
-                        <ul>
-                            <li>توفير مساحة للإبداع والإنتاج الفني والثقافي</li>
-                            <li>دعم الفنانين والمبدعين الشباب</li>
-                            <li>تعزيز التبادل الثقافي بين الفنانين المحليين والدوليين</li>
-                            <li>المساهمة في التنمية الثقافية والسياحية للمنطقة</li>
-                        </ul>
-                        <h4>الإنجازات</h4>
-                        <ul>
-                            <li>استضافة أكثر من 50 فناناً ومبدعاً</li>
-                            <li>تنظيم 20 ورشة عمل فنية وثقافية</li>
-                            <li>إنتاج 30 عملاً فنياً متنوعاً</li>
-                            <li>تنظيم 5 معارض فنية</li>
-                        </ul>
+                </div>
+                <div class="col-md-3">
+                    <div class="counter-item">
+                        <span class="counter-number" id="monthly-visits">0</span>
+                        <span class="counter-label">زيارات الشهر</span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="counter-item">
+                        <span class="counter-number" id="weekly-visits">0</span>
+                        <span class="counter-label">زيارات الأسبوع</span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="counter-item">
+                        <span class="counter-number" id="daily-visits">0</span>
+                        <span class="counter-label">زيارات اليوم</span>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
-            </div>
         </div>
+        
+        <hr class="my-3" style="background-color: rgba(255,255,255,0.2);">
+        <p>&copy; 2025 جميع الحقوق محفوظة لنعمان حباسي</p>
     </div>
-</div>
-
-<!-- Project Modal 2: المسلك الأسطوري -->
-<div class="modal fade" id="projectModal2" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">المسلك الأسطوري</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- Modal content for المسلك الأسطوري -->
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Additional Project Modals -->
-<div class="modal fade" id="projectModal3" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">مهرجان الكاف للمسرح</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- Modal content for مهرجان الكاف للمسرح -->
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="projectModal4" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">توثيق التراث الشفوي</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- Modal content for توثيق التراث الشفوي -->
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="projectModal5" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">الثقافة للجميع</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- Modal content for الثقافة للجميع -->
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="projectModal6" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">التراث والسياحة المستدامة</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <!-- Modal content for التراث والسياحة المستدامة -->
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<footer class="text-center py-3">
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <h5>نعمان حباسي</h5>
-            <p>نعمان حباسي، كاتب وروائي، يتمتع بخبرة متميزة في إدارة المؤسسات الثقافية والإشراف على المشاريع الثقافية الكبرى. خبير في تنسيق الفعاليات وتنظيم الأنشطة الثقافية المتنوعة، مع مهارات قيادية تمكنه من إدارة الفرق وتحقيق الأهداف الاستراتيجية للمؤسسات.</p>
-        </div>
-        <div class="col-md-4">
-            <h5>تواصل معنا</h5>
-            <p>البريد الإلكتروني: noomaneh@live.fr<br>الهاتف: 98483759</p>
-        </div>
-        <div class="col-md-4">
-            <h5>تابعنا</h5>
-            <div class="social-links">
-                <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="social-link">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/habassi-noomane-35492ab0" target="_blank" class="social-link">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="https://www.instagram.com/habbassinoomane/profilec" target="_blank" class="social-link">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    <hr class="my-3" style="background-color: rgba(255,255,255,0.2);">
-    <p>&copy; 2025 جميع الحقوق محفوظة لنعمان حباسي</p>
-</div>
 </footer>
 
 <!-- Scroll to Top Button -->
 <button id="scrollToTopBtn" aria-label="العودة إلى الأعلى">
-<i class="fas fa-arrow-up"></i>
+    <i class="fas fa-arrow-up"></i>
 </button>
 
 <button id="darkModeToggle" aria-label="تبديل الوضع الليلي">
-<i class="fas fa-moon"></i>
+    <i class="fas fa-moon"></i>
 </button>
 
+<!-- Add the search modal at the end of the body, before the scripts -->
 <!-- Search Modal -->
 <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="searchModalLabel">بحث في الموقع</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <form id="searchForm" action="search-results.html" method="get">
-                <div class="input-group mb-3">
-                    <input type="text" name="q" class="form-control" placeholder="ابحث عن..." aria-label="Search term">
-                    <button class="btn btn-primary" type="submit">بحث</button>
-                </div>
-            </form>
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">بحث في الموقع</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="searchForm">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="ابحث عن..." aria-label="Search term">
+                        <button class="btn btn-primary" type="submit">بحث</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-</div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
 <script src="script.js"></script>
-<script>
-// Initialize AOS
-AOS.init({
-    duration: 800,
-    easing: 'ease-in-out',
-    once: true
-});
-
-// Projects Filter
-document.addEventListener('DOMContentLoaded', function() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const projectItems = document.querySelectorAll('.project-item');
-    
-    // Filter functionality
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // Remove active class from all buttons
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            
-            // Add active class to clicked button
-            this.classList.add('active');
-            
-            // Get filter value
-            const filterValue = this.getAttribute('data-filter');
-            
-            // Filter project items
-            projectItems.forEach(item => {
-                const categories = item.getAttribute('data-category').split(' ');
-                if (filterValue === 'all' || categories.includes(filterValue)) {
-                    item.style.display = 'block';
-                    // Add animation
-                    item.classList.add('animate__animated', 'animate__fadeIn');
-                    setTimeout(() => {
-                        item.classList.remove('animate__animated', 'animate__fadeIn');
-                    }, 500);
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        });
-    });
-    
-    // Load More Button Functionality
-    const loadMoreBtn = document.getElementById('loadMoreBtn');
-    let currentItems = 6;
-    
-    if (loadMoreBtn) {
-        loadMoreBtn.addEventListener('click', function() {
-            const hiddenItems = Array.from(projectItems).slice(currentItems);
-            const itemsToShow = hiddenItems.slice(0, 3);
-            
-            if (itemsToShow.length === 0) {
-                loadMoreBtn.textContent = 'لا توجد المزيد من المشاريع';
-                loadMoreBtn.disabled = true;
-                return;
-            }
-            
-            itemsToShow.forEach(item => {
-                item.style.display = 'block';
-                item.classList.add('animate__animated', 'animate__fadeIn');
-                setTimeout(() => {
-                    item.classList.remove('animate__animated', 'animate__fadeIn');
-                }, 500);
-            });
-            
-            currentItems += itemsToShow.length;
-            
-            if (currentItems >= projectItems.length) {
-                loadMoreBtn.textContent = 'لا توجد المزيد من المشاريع';
-                loadMoreBtn.disabled = true;
-            }
-        });
-        
-        // Initially hide items beyond the first 6
-        Array.from(projectItems).slice(currentItems).forEach(item => {
-            item.style.display = 'none';
-        });
-    }
-    
-    // Animate impact numbers on scroll
-    const impactNumbers = document.querySelectorAll('.impact-number');
-    let animated = false;
-    
-    function animateImpactNumbers() {
-        if (animated) return;
-        
-        const impactSection = document.querySelector('.section-dark');
-        if (!impactSection) return;
-        
-        const impactSectionTop = impactSection.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-        
-        if (impactSectionTop < windowHeight - 100) {
-            impactNumbers.forEach(number => {
-                const targetValue = parseInt(number.textContent.replace(/\D/g, ''));
-                let currentValue = 0;
-                const duration = 2000; // 2 seconds
-                const increment = targetValue / (duration / 16); // 60fps
-                
-                const timer = setInterval(() => {
-                    currentValue += increment;
-                    if (currentValue >= targetValue) {
-                        clearInterval(timer);
-                        currentValue = targetValue;
-                    }
-                    
-                    // Format the number with + if it has it originally
-                    if (number.textContent.includes('+')) {
-                        number.textContent = Math.floor(currentValue) + '+';
-                    } else {
-                        number.textContent = Math.floor(currentValue);
-                    }
-                }, 16);
-            });
-            
-            animated = true;
-        }
-    }
-    
-    window.addEventListener('scroll', animateImpactNumbers);
-});
-</script>
 </body>
 </html>
 
