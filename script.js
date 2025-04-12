@@ -315,6 +315,7 @@ if (!sessionStorage.getItem("visitCounted")) {
   // Contact Form Submission with EmailJS and enhanced animation
  // Contact Form - Client Side
 const contactForm = document.getElementById("commentForm");
+
 if (contactForm) {
   contactForm.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -326,21 +327,10 @@ if (contactForm) {
       submitBtn.disabled = true;
       submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري الإرسال...';
 
-      const formData = {
-        from_name: document.getElementById("name").value,
-        from_email: document.getElementById("email").value,
-        message: document.getElementById("comment").value,
-        to_name: "نعمان حباسي",
-        reply_to: document.getElementById("email").value
-      };
+      // Optionally, you can trigger the Netlify form submission here if you want custom feedback
+      // No need for fetch or server call with Netlify's built-in form handling.
 
-      const response = await fetch('/.netlify/functions/send-email', {
-        method: 'POST',
-        body: JSON.stringify(formData)
-      });
-
-      if (!response.ok) throw new Error('Failed to send');
-      
+      // Reset the form after submission
       contactForm.reset();
       showSuccessMessage();
       
@@ -362,6 +352,7 @@ function showSuccessMessage() {
 function showErrorMessage() {
   alert("حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة مرة أخرى لاحقًا.");
 }
+
 
   // Search functionality
   const searchForm = document.getElementById("searchForm")
