@@ -106,37 +106,40 @@
                             <div class="card-body">
                                 <h2 class="card-title">أترك تعليقًا</h2>
                                 <form 
-                                    id="commentForm"
-                                    name="contact"
-                                    netlify
-                                    netlify-honeypot="bot-field"
-                                    data-netlify-recaptcha="true">
-    <input type="hidden" name="form-name" value="contact">
-    
-    <!-- Hidden anti-spam field -->
-    <p class="d-none">
-        <label>لا تملأ هذا الحقل: <input name="bot-field"></label>
-    </p>
-
-    <!-- Your existing Arabic form fields (keep all attributes) -->
-    <div class="mb-3">
-        <label for="name" class="form-label">الاسم</label>
-        <input type="text" class="form-control" id="name" name="name" required>
-    </div>
-    <div class="mb-3">
-        <label for="email" class="form-label">البريد الإلكتروني</label>
-        <input type="email" class="form-control" id="email" name="email" required>
-    </div>
-    <div class="mb-3">
-        <label for="comment" class="form-label">التعليق</label>
-        <textarea class="form-control" id="comment" name="comment" rows="4" required></textarea>
-    </div>
-    
-    <!-- reCAPTCHA -->
-    <div data-netlify-recaptcha></div>
-    
-    <button type="submit" class="btn btn-primary">إرسال التعليق</button>
-</form>
+                                id="commentForm"
+                                name="contact"
+                                method="POST"
+                                data-netlify="true"
+                                netlify-honeypot="bot-field"
+                                data-netlify-recaptcha="true"
+                              >
+                                <input type="hidden" name="form-name" value="contact" />
+                              
+                                <!-- Hidden anti-spam field -->
+                                <p class="d-none">
+                                  <label>لا تملأ هذا الحقل: <input name="bot-field" /></label>
+                                </p>
+                              
+                                <!-- Arabic form fields -->
+                                <div class="mb-3">
+                                  <label for="name" class="form-label">الاسم</label>
+                                  <input type="text" class="form-control" id="name" name="name" required />
+                                </div>
+                                <div class="mb-3">
+                                  <label for="email" class="form-label">البريد الإلكتروني</label>
+                                  <input type="email" class="form-control" id="email" name="email" required />
+                                </div>
+                                <div class="mb-3">
+                                  <label for="comment" class="form-label">التعليق</label>
+                                  <textarea class="form-control" id="comment" name="comment" rows="4" required></textarea>
+                                </div>
+                              
+                                <!-- reCAPTCHA -->
+                                <div data-netlify-recaptcha="true"></div>
+                              
+                                <button type="submit" class="btn btn-primary">إرسال التعليق</button>
+                              </form>
+                              
                             </div>
                         </div>
                     </div>
