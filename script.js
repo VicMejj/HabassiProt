@@ -314,45 +314,45 @@ if (!sessionStorage.getItem("visitCounted")) {
 
   // Contact Form Submission with EmailJS and enhanced animation
  // Contact Form - Client Side
- const contactForm = document.getElementById("commentForm");
+const contactForm = document.getElementById("commentForm");
 
- if (contactForm) {
-   contactForm.addEventListener("submit", async (e) => {
-     e.preventDefault();
-     
-     const submitBtn = contactForm.querySelector('button[type="submit"]');
-     const originalBtnText = submitBtn.innerHTML;
-     
-     try {
-       submitBtn.disabled = true;
-       submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري الإرسال...';
- 
-       // Optionally, you can trigger the Netlify form submission here if you want custom feedback
-       // No need for fetch or server call with Netlify's built-in form handling.
- 
-       // Reset the form after submission
-       contactForm.reset();
-       showSuccessMessage();
-       
-     } catch (error) {
-       showErrorMessage();
-     } finally {
-       submitBtn.disabled = false;
-       submitBtn.innerHTML = originalBtnText;
-     }
-   });
- }
- 
- function showSuccessMessage() {
-   const successModal = new bootstrap.Modal(document.getElementById("successModal"));
-   successModal.show();
-   document.querySelector(".modal-content").classList.add("animate__zoomIn");
- }
- 
- function showErrorMessage() {
-   alert("حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة مرة أخرى لاحقًا.");
- }
- 
+if (contactForm) {
+  contactForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+    const originalBtnText = submitBtn.innerHTML;
+    
+    try {
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري الإرسال...';
+
+      // Optionally, you can trigger the Netlify form submission here if you want custom feedback
+      // No need for fetch or server call with Netlify's built-in form handling.
+
+      // Reset the form after submission
+      contactForm.reset();
+      showSuccessMessage();
+      
+    } catch (error) {
+      showErrorMessage();
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalBtnText;
+    }
+  });
+}
+
+function showSuccessMessage() {
+  const successModal = new bootstrap.Modal(document.getElementById("successModal"));
+  successModal.show();
+  document.querySelector(".modal-content").classList.add("animate__zoomIn");
+}
+
+function showErrorMessage() {
+  alert("حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة مرة أخرى لاحقًا.");
+}
+
 
   // Search functionality
   const searchForm = document.getElementById("searchForm")
@@ -893,4 +893,3 @@ if (!sessionStorage.getItem("visitCounted")) {
     })
   }
 })
-
