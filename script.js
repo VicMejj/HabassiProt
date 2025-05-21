@@ -145,6 +145,23 @@ setInterval(updateDateTime, 1000)
 
 
 // Visitor counter
+document.addEventListener("DOMContentLoaded", function() {
+    // Get current path (without query/hash)
+    var path = window.location.pathname.split("/").pop() || "index.html";
+    // Loop through nav links
+    document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
+        // Remove any existing active class
+        link.classList.remove('active');
+        // If link matches current path, set active
+        if (link.getAttribute('href') === path) {
+            link.classList.add('active');
+        }
+        // Special case: if home page is just "/" or "", also activate index.html
+        if ((path === "" || path === "/") && link.getAttribute('href') === "index.html") {
+            link.classList.add('active');
+        }
+    });
+});
 function updateVisitorCounter() {
   // Get current date
   const now = new Date()
