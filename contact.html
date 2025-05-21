@@ -105,7 +105,7 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h2 class="card-title" data-i18n="contact_form_title">أترك تعليقًا</h2>
-                                <form 
+                                 <form 
                                     id="commentForm"
                                     name="contact"
                                     method="POST"
@@ -114,33 +114,48 @@
                                     data-netlify-recaptcha="true"
                                 >
                                     <input type="hidden" name="form-name" value="contact" />
+                                    
                                     <!-- Hidden anti-spam field -->
                                     <p class="d-none">
-                                        <label data-i18n="not_fill_this_field">لا تملأ هذا الحقل:</label>
+                                        <label>لا تملأ هذا الحقل:</label>
                                         <input name="bot-field" />
                                     </p>
+                                    
                                     <!-- Form fields -->
                                     <div class="mb-3">
-                                        <label for="name" class="form-label" data-i18n="contact_form_name">الاسم</label>
+                                        <label for="name" class="form-label">الاسم</label>
                                         <input type="text" class="form-control" id="name" name="name" required />
                                     </div>
+                                    
                                     <div class="mb-3">
-                                        <label for="email" class="form-label" data-i18n="contact_form_email">البريد الإلكتروني</label>
+                                        <label for="email" class="form-label">البريد الإلكتروني</label>
                                         <input type="email" class="form-control" id="email" name="email" required />
                                     </div>
+                                    
                                     <div class="mb-3">
-                                        <label for="comment" class="form-label" data-i18n="contact_form_comment">التعليق</label>
+                                        <label for="comment" class="form-label">التعليق</label>
                                         <textarea class="form-control" id="comment" name="comment" rows="4" required></textarea>
                                     </div>
-                                    <!-- reCAPTCHA -->
+                                    
+                                    <!-- Netlify reCAPTCHA -->
                                     <div data-netlify-recaptcha="true"></div>
-                                    <button type="submit" class="btn btn-primary" data-i18n="contact_form_submit">إرسال التعليق</button>
+                                    
+                                    <button type="submit" class="btn btn-primary">إرسال التعليق</button>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Keep existing footer and other elements -->
+                <!-- Keep existing footer and  other elements -->
+            </div>
+              <!-- Optional: Success Modal (Bootstrap) -->
+            <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-4 text-center">
+                <h5 class="modal-title mb-3">تم الإرسال بنجاح!</h5>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">حسنًا</button>
+                </div>
+            </div>
             </div>
         </section>
     </main>
@@ -243,34 +258,6 @@
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
     <script src="i18n.js"></script>
     <script src="script.js"></script>
-    <script>
-        // Form handling
-        document.getElementById("commentForm").addEventListener("submit", async (e) => {
-            e.preventDefault();
-            const form = e.target;
-            const submitBtn = form.querySelector('button[type="submit"]');
-            const originalBtnText = submitBtn.innerHTML;
-            try {
-                submitBtn.disabled = true;
-                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري الإرسال...';
-                const formData = new FormData(form);
-                await fetch("/", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                    body: new URLSearchParams(formData).toString()
-                });
-                // Show success modal
-                const successModal = new bootstrap.Modal('#successModal');
-                successModal.show();
-                form.reset();
-            } catch (error) {
-                alert("حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى.");
-            } finally {
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = originalBtnText;
-            }
-        });
-    </script>
 </body>
 </html>
 
