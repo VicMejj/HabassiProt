@@ -117,30 +117,30 @@
                                     
                                     <!-- Hidden anti-spam field -->
                                     <p class="d-none">
-                                        <label>لا تملأ هذا الحقل:</label>
+                                        <label data-i18n="not_fill_this_field">لا تملأ هذا الحقل:</label>
                                         <input name="bot-field" />
                                     </p>
                                     
                                     <!-- Form fields -->
                                     <div class="mb-3">
-                                        <label for="name" class="form-label">الاسم</label>
+                                        <label for="name" class="form-label" data-i18n="contact_form_name">الاسم</label>
                                         <input type="text" class="form-control" id="name" name="name" required />
                                     </div>
                                     
                                     <div class="mb-3">
-                                        <label for="email" class="form-label">البريد الإلكتروني</label>
+                                        <label for="email" class="form-label" data-i18n="contact_form_email">البريد الإلكتروني</label>
                                         <input type="email" class="form-control" id="email" name="email" required />
                                     </div>
                                     
                                     <div class="mb-3">
-                                        <label for="comment" class="form-label">التعليق</label>
+                                        <label for="comment" class="form-label" data-i18n="contact_form_comment">التعليق</label>
                                         <textarea class="form-control" id="comment" name="comment" rows="4" required></textarea>
                                     </div>
                                     
                                     <!-- Netlify reCAPTCHA -->
                                     <div data-netlify-recaptcha="true"></div>
                                     
-                                    <button type="submit" class="btn btn-primary">إرسال التعليق</button>
+                                    <button type="submit" class="btn btn-primary" data-i18n="contact_form_submit">إرسال التعليق</button>
                                 </form>
                             </div>
                         </div>
