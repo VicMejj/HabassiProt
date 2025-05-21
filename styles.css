@@ -45,6 +45,55 @@ body {
   direction: rtl;
 }
 
+[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+}
+[dir="ltr"] body {
+  direction: ltr;
+  text-align: left;
+}
+
+/* Navbar Direction Fixes */
+[dir="rtl"] .navbar-nav {
+  margin-left: 0;
+  margin-right: auto;
+  flex-direction: row-reverse;
+}
+[dir="ltr"] .navbar-nav {
+  margin-right: 0;
+  margin-left: auto;
+  flex-direction: row;
+}
+[dir="rtl"] .navbar .navbar-collapse {
+  justify-content: flex-start !important;
+}
+[dir="ltr"] .navbar .navbar-collapse {
+  justify-content: flex-start !important;
+}
+[dir="rtl"] .navbar .d-flex {
+  flex-direction: row-reverse;
+}
+[dir="ltr"] .navbar .d-flex {
+  flex-direction: row;
+}
+[dir="ltr"] .navbar-nav {
+  margin-left: 0;
+  margin-right: auto;
+  flex-direction: row;
+}
+[dir="rtl"] .navbar-nav {
+  margin-right: 0;
+  margin-left: auto;
+  flex-direction: row-reverse;
+}
+
+/* Language switcher active state */
+.language-switcher .active {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  font-weight: bold;
+}
+
 /* Timer Bar Styles - Update to be fixed */
 .timer-bar {
   position: fixed;

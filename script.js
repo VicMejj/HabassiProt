@@ -88,55 +88,57 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 500)
     })
   }
+// ✅ Set your language here: "en", "fr", or "ar"
 
-  // Update date and time in Arabic with animation
-  function updateDateTime() {
-    const now = new Date()
+// ✅ Update date and time with language support and animation
+function updateDateTime() {
+  const now = new Date()
 
-    // Format date in Arabic
-    const dateOptions = {
-      weekday: "long",
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    }
-    const dateStr = new Intl.DateTimeFormat("ar-TN", dateOptions).format(now)
+  // Detect the selected language
+  // Try from <html lang="...">, fallback to 'en'
+  const lang =
+    document.documentElement.lang || localStorage.getItem('lang') || 'en'
 
-    // Format time
-    const timeOptions = {
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-      hour12: true,
-    }
-    const timeStr = new Intl.DateTimeFormat("ar-TN", timeOptions).format(now)
-
-    // Update the DOM with animation
-    const dateElement = document.getElementById("current-date")
-    const timeElement = document.getElementById("current-time")
-
-    if (dateElement) {
-      if (dateElement.textContent !== dateStr) {
-        dateElement.classList.add("fade-in")
-        dateElement.textContent = dateStr
-        setTimeout(() => {
-          dateElement.classList.remove("fade-in")
-        }, 500)
-      }
-    }
-
-    if (timeElement) {
-      timeElement.classList.add("fade-in")
-      timeElement.textContent = timeStr
-      setTimeout(() => {
-        timeElement.classList.remove("fade-in")
-      }, 500)
-    }
+  // Format date based on selected language
+  const dateOptions = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric"
   }
 
-  // Initialize date and time and update every second
-  updateDateTime()
-  setInterval(updateDateTime, 1000)
+  const timeOptions = {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hour12: true
+  }
+
+  const dateStr = new Intl.DateTimeFormat(lang, dateOptions).format(now)
+  const timeStr = new Intl.DateTimeFormat(lang, timeOptions).format(now)
+
+  // Update DOM with animation
+  const dateElement = document.getElementById("current-date")
+  const timeElement = document.getElementById("current-time")
+
+  if (dateElement && dateElement.textContent !== dateStr) {
+    dateElement.classList.add("fade-in")
+    dateElement.textContent = dateStr
+    setTimeout(() => dateElement.classList.remove("fade-in"), 500)
+  }
+
+  if (timeElement) {
+    timeElement.classList.add("fade-in")
+    timeElement.textContent = timeStr
+    setTimeout(() => timeElement.classList.remove("fade-in"), 500)
+  }
+}
+
+// Run every second
+updateDateTime()
+setInterval(updateDateTime, 1000)
+
+
 
   // Visitor counter functionality with animation
   // Visitor Counter - Client Side
@@ -648,22 +650,7 @@ function showErrorMessage() {
     }
   }
 
-  // Language switcher
-  const languageBtns = document.querySelectorAll(".language-switcher button")
-  if (languageBtns.length > 0) {
-    languageBtns.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        // Remove active class from all buttons
-        languageBtns.forEach((b) => b.classList.remove("active"))
-        // Add active class to clicked button
-        btn.classList.add("active")
-
-        // Here you would implement actual language switching
-        // For now, just show an alert
-        alert(`تم تغيير اللغة إلى ${btn.textContent}. هذه الميزة قيد التطوير.`)
-      })
-    })
-  }
+ 
 
   // Add print date to content page for print stylesheet
   const contentPage = document.querySelector(".content-page")

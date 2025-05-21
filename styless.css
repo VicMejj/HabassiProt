@@ -1,3 +1,4 @@
+/* === ROOT COLORS & BASE === */
 :root {
   --primary-color: #0a9396;
   --secondary-color: #005f73;
@@ -13,21 +14,126 @@
   --footer-bg-color: #005f73;
 }
 
-/* Light mode improvements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Cairo", sans-serif;
+  font-family: "Cairo", "Tajawal", "Segoe UI", Arial, sans-serif;
   color: #333;
   background-color: #f8f9fa;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  padding: 0;
   line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-body.dark-mode {
-  color: #f8f9fa;
-  background-color: #212529;
+/* === NAVBAR === */
+.navbar {
+  background-color: var(--dark-bg);
+  padding: 15px 0;
+  margin-top: 39px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 39px;
+  z-index: 100;
 }
 
-/* Timer Bar Styles */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color) !important;
+  letter-spacing: 1px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+  background: var(--primary-color);
+}
+
+.language-switcher {
+  display: flex;
+  gap: 5px;
+  margin-right: 1rem;
+}
+
+.language-switcher .btn {
+  border-radius: 20px;
+  font-size: 0.95rem;
+  padding: 0.25rem 0.9rem;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  transition: background 0.2s, color 0.2s;
+}
+
+.language-switcher .btn.active,
+.language-switcher .btn:hover {
+  background: #fff;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* Navbar Direction Fixes */
+[dir="rtl"] .navbar-nav {
+  margin-left: 0;
+  margin-right: auto;
+  flex-direction: row-reverse;
+}
+[dir="ltr"] .navbar-nav {
+  margin-right: 0;
+  margin-left: auto;
+  flex-direction: row;
+}
+[dir="rtl"] .navbar .navbar-collapse {
+  justify-content: flex-start !important;
+}
+[dir="ltr"] .navbar .navbar-collapse {
+  justify-content: flex-start !important;
+}
+[dir="rtl"] .navbar .d-flex {
+  flex-direction: row-reverse;
+}
+[dir="ltr"] .navbar .d-flex {
+  flex-direction: row;
+}
+
+/* Responsive Navbar */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    flex-direction: column !important;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .navbar .d-flex {
+    flex-direction: row !important;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .language-switcher {
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* === TIMER BAR === */
 .timer-bar {
   background-color: var(--primary-color);
   color: white;
@@ -57,37 +163,7 @@ body.dark-mode {
   margin-left: 5px;
 }
 
-/* Navbar Styles */
-.navbar {
-  background-color: var(--dark-bg);
-  padding: 15px 0;
-  margin-top: 39px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-brand {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 600;
-  padding: 0.5rem 1rem;
-  transition: color 0.3s ease;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active {
-  color: white;
-}
-
-.language-switcher {
-  display: flex;
-  gap: 5px;
-}
-
-/* Breadcrumbs Styles */
+/* === BREADCRUMBS === */
 .breadcrumbs-container {
   background-color: var(--light-bg);
   padding: 10px 0;
@@ -118,7 +194,7 @@ body.dark-mode {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Hero Section Styles */
+/* === HERO SECTION === */
 .hero-section {
   padding: 5rem 0;
   background-color: var(--primary-color);
@@ -161,6 +237,16 @@ body.dark-mode {
   gap: 0.5rem;
 }
 
+.badge.bg-primary {
+  background: #fff !important;
+  color: var(--primary-color) !important;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 20px;
+  padding: 0.5em 1.2em;
+}
+
+/* === PROFILE IMAGE === */
 .profile-image-container {
   position: relative;
   width: 200px;
@@ -198,44 +284,7 @@ body.dark-mode {
   transform: translateY(0);
 }
 
-/* Add this to fix the image display issue */
-.profile-card {
-  display: block;
-  width: 100%;
-  border-radius: 8px;
-  overflow: hidden;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.profile-card img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  aspect-ratio: 3 / 4;
-  display: block;
-}
-
-.profile-card .profile-label {
-  display: block;
-  text-align: center;
-  padding: 10px;
-  background-color: var(--primary-color);
-  color: white;
-  font-weight: 600;
-}
-
-.dark-mode .profile-card {
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-.profile-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-/* Section Styles */
+/* === SECTION STYLES === */
 .section-light {
   background-color: #ffffff;
   color: #333;
@@ -265,6 +314,7 @@ body.dark-mode {
   padding-bottom: 1rem;
   margin-bottom: 2rem;
   font-weight: 700;
+  font-size: 2rem;
 }
 
 .section-title::after {
@@ -279,7 +329,7 @@ body.dark-mode {
   background-color: var(--primary-color);
 }
 
-/* Content Page Styles */
+/* === CONTENT PAGE === */
 .content-page {
   background-color: white;
   border-radius: 8px;
@@ -292,7 +342,7 @@ body.dark-mode {
   box-shadow: var(--shadow-dark);
 }
 
-/* Achievement Styles */
+/* === ACHIEVEMENTS === */
 .achievement-item {
   display: flex;
   margin-bottom: 1.5rem;
@@ -321,7 +371,7 @@ body.dark-mode {
   color: var(--primary-color);
 }
 
-/* Personal Info Styles */
+/* === PERSONAL INFO === */
 .personal-info-card {
   background-color: white;
   border-radius: 8px;
@@ -376,7 +426,7 @@ body.dark-mode {
   background-color: #444;
 }
 
-/* Interest Styles */
+/* === INTERESTS === */
 .interest-item-enhanced {
   background-color: white;
   border-radius: 8px;
@@ -419,7 +469,7 @@ body.dark-mode {
   color: var(--primary-color);
 }
 
-/* Quote Section Styles */
+/* === QUOTE SECTION === */
 .quote-section-enhanced {
   background-color: var(--primary-color);
   color: white;
@@ -461,7 +511,7 @@ body.dark-mode {
   font-size: 1.1rem;
 }
 
-/* Media Appearance Styles */
+/* === MEDIA APPEARANCE === */
 .media-appearance-card {
   position: relative;
   overflow: hidden;
@@ -510,7 +560,7 @@ body.dark-mode {
   font-size: 0.9rem;
 }
 
-/* Fix for publication images */
+/* === PUBLICATION IMAGE === */
 .publication-image {
   position: relative;
   overflow: hidden;
@@ -524,7 +574,7 @@ body.dark-mode {
   object-fit: cover;
 }
 
-/* Download CV Button Styles */
+/* === DOWNLOAD CV BUTTON === */
 .download-cv-enhanced {
   position: relative;
   overflow: hidden;
@@ -559,7 +609,7 @@ body.dark-mode {
   z-index: 2;
 }
 
-/* Footer Styles */
+/* === FOOTER === */
 footer {
   background-color: #212529;
   color: white;
@@ -612,7 +662,7 @@ footer a:hover {
   transform: scale(1.1);
 }
 
-/* Visitor Counter Styles */
+/* === VISITOR COUNTER === */
 .visitor-counter {
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 8px;
@@ -637,37 +687,36 @@ footer a:hover {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Scroll to Top Button Styles */
+/* === SCROLL TO TOP & DARK MODE BUTTONS === */
 #scrollToTopBtn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    background-color: var(--primary-color);
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: all 0.3s;
-    opacity: 0;
-    visibility: hidden;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  #scrollToTopBtn.show {
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  #scrollToTopBtn:hover {
-    background-color: var(--secondary-color);
-    transform: translateY(-5px);
-  }
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
 
-/* Dark Mode Toggle Button Styles */
+#scrollToTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#scrollToTopBtn:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-5px);
+}
+
 #darkModeToggle {
   position: fixed;
   bottom: 20px;
@@ -695,7 +744,7 @@ footer a:hover {
   content: "\f185"; /* sun icon */
 }
 
-/* Search Modal Styles */
+/* === SEARCH MODAL === */
 .modal-content {
   border: none;
   border-radius: 8px;
@@ -727,7 +776,7 @@ footer a:hover {
   color: #aaa;
 }
 
-/* Responsive Styles */
+/* === RESPONSIVE === */
 @media (max-width: 991px) {
   .navbar-brand {
     font-size: 1.2rem;
@@ -806,7 +855,7 @@ footer a:hover {
   }
 }
 
-/* Improved typography */
+/* === TYPOGRAPHY === */
 h1,
 h2,
 h3,
@@ -832,7 +881,7 @@ p {
   line-height: 1.6;
 }
 
-/* Improved card styling */
+/* === CARD STYLING === */
 .card,
 .publication-card,
 .article-card,
@@ -860,7 +909,7 @@ p {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
-/* Improved button styling */
+/* === BUTTONS === */
 .btn-primary {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
@@ -893,4 +942,3 @@ p {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
 }
-

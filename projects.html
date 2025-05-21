@@ -9,7 +9,7 @@
 <meta property="og:description" content="تعرف على مشاريع نعمان حباسي الثقافية والفنية في مجال الثقافة والتراث">
 <meta property="og:image" content="images/og-projects.jpg">
 <meta property="og:url" content="https://www.noomanehabassi.com/projects.html">
-<title>المشاريع - نعمان حباسي، كاتب وروائي وخبير في الإدارة الثقافية</title>
+<title data-i18n="projects_heading">المشاريع - نعمان حباسي، كاتب وروائي وخبير في الإدارة الثقافية</title>
 <link rel="icon" href="habassi - details/project-management.png" type="image/x-icon" />
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -21,59 +21,60 @@
 <body>
 <!-- Timer Bar - Fixed at the top -->
 <div class="timer-bar">
-<div class="container">
-  <div class="timer-content">
+  <div class="container">
+    <div class="timer-content">
       <div class="date-display">
-          <i class="fas fa-calendar-alt"></i>
-          <span id="current-date">جاري تحميل التاريخ...</span>
+        <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+        <span id="current-date" data-i18n="loading_date">جاري تحميل التاريخ...</span>
       </div>
       <div class="time-display">
-          <i class="fas fa-clock"></i>
-          <span id="current-time">جاري تحميل الوقت...</span>
+        <i class="fas fa-clock" aria-hidden="true"></i>
+        <span id="current-time" data-i18n="loading_time">جاري تحميل الوقت...</span>
       </div>
+    </div>
   </div>
 </div>
-</div>
 
-<!-- Main Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark">
-<div class="container">
-<a class="navbar-brand" href="index.html">نعمان حباسي</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-    <span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav me-auto">
-        <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">من أنا</a></li>
-        <li class="nav-item"><a class="nav-link" href="experience.html">الخبرات</a></li>
-        <li class="nav-item"><a class="nav-link active" href="projects.html">المشاريع</a></li>
-        <li class="nav-item"><a class="nav-link" href="media.html">الوسائط</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallery.html">معرض الصور</a></li>
-        <li class="nav-item"><a class="nav-link" href="publications.html">المؤلفات</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بي</a></li>
-    </ul>
-     <!-- Language Switcher -->
-     <div class="language-switcher">
-        <button class="btn btn-sm btn-outline-light active">العربية</button>
-        <button class="btn btn-sm btn-outline-light">English</button>
-        <button class="btn btn-sm btn-outline-light">Français</button>
-    </div>
-    <!-- Search Button -->
-    <button class="btn btn-sm btn-outline-light ms-2" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
-        <i class="fas fa-search"></i>
-    </button>
-</div>
-</div>
-</nav>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" data-i18n="brand_name">نعمان حباسي</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav_about">من أنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="experience.html" data-i18n="nav_experience">الخبرات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html" data-i18n="nav_projects">المشاريع</a></li>
+                    <li class="nav-item"><a class="nav-link" href="media.html" data-i18n="nav_media">الوسائط</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html" data-i18n="nav_gallery">معرض الصور</a></li>
+                    <li class="nav-item"><a class="nav-link" href="publications.html" data-i18n="nav_publications">المؤلفات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav_contact">اتصل بي</a></li>
+                </ul>
+                <!-- Language Switcher -->
+                <div class="language-switcher">
+                    <button class="btn btn-sm btn-outline-light lang-btn active" data-lang="ar" data-i18n="lang_ar">العربية</button>
+                    <button class="btn btn-sm btn-outline-light lang-btn" data-lang="en" data-i18n="lang_en">English</button>
+                    <button class="btn btn-sm btn-outline-light lang-btn" data-lang="fr" data-i18n="lang_fr">Français</button>
+                </div>
+                <!-- Search Button -->
+                <button class="btn btn-sm btn-outline-light ms-2" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
 
 <!-- Breadcrumbs -->
 <div class="breadcrumbs-container" style="margin-top: 39px;">
 <div class="container">
   <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
-          <li class="breadcrumb-item active" aria-current="page">المشاريع</li>
+          <li class="breadcrumb-item"><a href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+          <li class="breadcrumb-item active" aria-current="page" data-i18n="projects_heading">المشاريع</li>
       </ol>
   </nav>
 </div>
@@ -82,8 +83,8 @@
 <!-- Hero Section -->
 <header class="hero-section text-center">
 <div class="container">
-  <h1 class="display-4 mb-4 animate__animated animate__fadeInUp">المشاريع الثقافية والفنية</h1>
-  <p class="lead mb-0 animate__animated animate__fadeInUp animate__delay-1s">تعرف على مشاريعي الثقافية والفنية في مجال الثقافة والتراث</p>
+  <h1 class="display-4 mb-4 animate__animated animate__fadeInUp" data-i18n="projects_hero_title">المشاريع الثقافية والفنية</h1>
+  <p class="lead mb-0 animate__animated animate__fadeInUp animate__delay-1s" data-i18n="projects_hero_desc">تعرف على مشاريعي الثقافية والفنية في مجال الثقافة والتراث</p>
 </div>
 </header>
 
@@ -91,24 +92,23 @@
 <!-- Featured Project Section -->
 <section class="py-5 section-light">
   <div class="container">
-      
       <div class="featured-project" data-aos="fade-up">
           <div class="featured-project-row">
               <div class="featured-project-image">
                   <img src="habassi - details/nooman18.jpg" alt="الأيام السينمائية الدولية بقرطاج" class="img-fluid">
               </div>
               <div class="featured-project-content">
-                  <span class="featured-project-category">مهرجان سينمائي</span>
-                  <h3 class="featured-project-title">الأيام السينمائية الدولية بقرطاج</h3>
+                  <span class="featured-project-category" data-i18n="projects_featured_category">مهرجان سينمائي</span>
+                  <h3 class="featured-project-title" data-i18n="projects_featured_title">الأيام السينمائية الدولية بقرطاج</h3>
                   <div class="featured-project-meta">
-                      <span><i class="fas fa-calendar-alt"></i> 2023 - 2024</span>
-                      <span><i class="fas fa-map-marker-alt"></i> تونس</span>
-                      <span><i class="fas fa-users"></i> آلاف المشاركين</span>
+                      <span><i class="fas fa-calendar-alt"></i> <span data-i18n="projects_featured_date">2023 - 2024</span></span>
+                      <span><i class="fas fa-map-marker-alt"></i> <span data-i18n="projects_featured_location">تونس</span></span>
+                      <span><i class="fas fa-users"></i> <span data-i18n="projects_featured_participants">آلاف المشاركين</span></span>
                   </div>
-                  <p class="featured-project-description">حدث مخصص لتعزيز السينما وروابطها مع أشكال أخرى من الفن، من خلال العروض وورش العمل واللقاءات المهنية، مما يعزز الحوار بين الثقافات والابتكار الفني.</p>
-                  <p class="featured-project-description">يجمع هذا المهرجان المرموق صناع الأفلام والنقاد والجمهور من جميع أنحاء العالم، ويوفر منصة لعرض الأفلام العربية والأفريقية، ويسهم في تطوير صناعة السينما في المنطقة.</p>
+                  <p class="featured-project-description" data-i18n="projects_featured_desc1">حدث مخصص لتعزيز السينما وروابطها مع أشكال أخرى من الفن، من خلال العروض وورش العمل واللقاءات المهنية، مما يعزز الحوار بين الثقافات والابتكار الفني.</p>
+                  <p class="featured-project-description" data-i18n="projects_featured_desc2">يجمع هذا المهرجان المرموق صناع الأفلام والنقاد والجمهور من جميع أنحاء العالم، ويوفر منصة لعرض الأفلام العربية والأفريقية، ويسهم في تطوير صناعة السينما في المنطقة.</p>
                   <div class="featured-project-actions">
-                      <a href="gallery.html" class="btn btn-outline-primary">مشاهدة الصور <i class="fas fa-images ms-2"></i></a>
+                      <a href="gallery.html" class="btn btn-outline-primary" data-i18n="projects_featured_btn">مشاهدة الصور <i class="fas fa-images ms-2"></i></a>
                   </div>
               </div>
           </div>
@@ -119,13 +119,12 @@
 <!-- Projects Filter Section -->
 <section class="py-5 section-dark">
   <div class="container">
-      <h2 class="section-title" data-aos="fade-up">المشاريع</h2>
-      
+      <h2 class="section-title" data-aos="fade-up" data-i18n="projects_heading">المشاريع</h2>
       <div class="project-filters" data-aos="fade-up">
-          <button class="filter-btn active" data-filter="all">الكل</button>
-          <button class="filter-btn" data-filter="cultural-festivals">مهرجانات ثقافية</button>
-          <button class="filter-btn" data-filter="news">ندوات</button>
-          <button class="filter-btn" data-filter="workshops">فعاليات</button>
+          <button class="filter-btn active" data-filter="all" data-i18n="projects_filters_all">الكل</button>
+          <button class="filter-btn" data-filter="cultural-festivals" data-i18n="projects_filters_festivals">مهرجانات ثقافية</button>
+          <button class="filter-btn" data-filter="news" data-i18n="projects_filters_news">ندوات</button>
+          <button class="filter-btn" data-filter="workshops" data-i18n="projects_filters_workshops">فعاليات</button>
       </div>
       
       <div class="projects-grid" data-aos="fade-up">
@@ -761,45 +760,41 @@
 <!-- Additional Projects Section -->
 <section class="py-5 section-light">
   <div class="container">
-      <h2 class="section-title" data-aos="fade-up">مشاريع ثقافية أخرى</h2>
-      
+      <h2 class="section-title" data-aos="fade-up" data-i18n="projects_additional_heading">مشاريع ثقافية أخرى</h2>
       <div class="row">
           <!-- Additional Project 1 -->
           <div class="col-md-6 mb-4" data-aos="fade-up">
               <div class="card h-100">
                   <div class="card-body">
-                      <h3 class="card-title">فعالية "رؤى ومدارات ثقافية"</h3>
-                      <p class="card-text">حدث مخصص للأعمال الأدبية والفنية الحديثة في مجالات القصة والرواية والشعر والدراسات النقدية والتاريخية. يوفر هذا الموعد مساحة للتبادل بين الكتاب والشعراء والفنانين والباحثين.</p>
+                      <h3 class="card-title" data-i18n="projects_additional_1_title">فعالية "رؤى ومدارات ثقافية"</h3>
+                      <p class="card-text" data-i18n="projects_additional_1_desc">حدث مخصص للأعمال الأدبية والفنية الحديثة في مجالات القصة والرواية والشعر والدراسات النقدية والتاريخية. يوفر هذا الموعد مساحة للتبادل بين الكتاب والشعراء والفنانين والباحثين.</p>
                   </div>
               </div>
           </div>
-          
           <!-- Additional Project 2 -->
           <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
               <div class="card h-100">
                   <div class="card-body">
-                      <h3 class="card-title">مهرجان زهرة فايزة للمسرح والتلفزيون</h3>
-                      <p class="card-text">حدث ثقافي يسلط الضوء على الفن المسرحي والإنتاجات التلفزيونية. يحتفي هذا المهرجان بالأعمال الفنية التي تجمع بين الإبداع والابتكار والتميز في مجالي المسرح والتلفزيون.</p>
+                      <h3 class="card-title" data-i18n="projects_additional_2_title">مهرجان زهرة فايزة للمسرح والتلفزيون</h3>
+                      <p class="card-text" data-i18n="projects_additional_2_desc">حدث ثقافي يسلط الضوء على الفن المسرحي والإنتاجات التلفزيونية. يحتفي هذا المهرجان بالأعمال الفنية التي تجمع بين الإبداع والابتكار والتميز في مجالي المسرح والتلفزيون.</p>
                   </div>
               </div>
           </div>
-          
           <!-- Additional Project 3 -->
           <div class="col-md-6 mb-4" data-aos="fade-up">
               <div class="card h-100">
                   <div class="card-body">
-                      <h3 class="card-title">مهرجان ينابيع الإبداع</h3>
-                      <p class="card-text">حدث ثقافي مخصص للأدب والشعر والرواية، يسلط الضوء على مختلف أشكال الكتابة والنقد الأدبي. يشكل هذا المهرجان فضاء للقاء وتبادل الأفكار بين الكتاب والشعراء والنقاد وعشاق الأدب.</p>
+                      <h3 class="card-title" data-i18n="projects_additional_3_title">مهرجان ينابيع الإبداع</h3>
+                      <p class="card-text" data-i18n="projects_additional_3_desc">حدث ثقافي مخصص للأدب والشعر والرواية، يسلط الضوء على مختلف أشكال الكتابة والنقد الأدبي. يشكل هذا المهرجان فضاء للقاء وتبادل الأفكار بين الكتاب والشعراء والنقاد وعشاق الأدب.</p>
                   </div>
               </div>
           </div>
-          
           <!-- Additional Project 4 -->
           <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
               <div class="card h-100">
                   <div class="card-body">
-                      <h3 class="card-title">أيام بلقاسم حمروني للموسيقى</h3>
-                      <p class="card-text">حدث موسيقي يكرم الإرث الفني لبلقاسم حمروني ومساهمته المهمة في الموسيقى. تسلط هذه الأيام الضوء على الموسيقى التقليدية والمعاصرة من خلال حفلات وورش عمل ومؤتمرات ولقاءات.</p>
+                      <h3 class="card-title" data-i18n="projects_additional_4_title">أيام بلقاسم حمروني للموسيقى</h3>
+                      <p class="card-text" data-i18n="projects_additional_4_desc">حدث موسيقي يكرم الإرث الفني لبلقاسم حمروني ومساهمته المهمة في الموسيقى. تسلط هذه الأيام الضوء على الموسيقى التقليدية والمعاصرة من خلال حفلات وورش عمل ومؤتمرات ولقاءات.</p>
                   </div>
               </div>
           </div>
@@ -815,31 +810,28 @@
               <div class="statistic-item">
                   <i class="fas fa-project-diagram statistic-icon"></i>
                   <div class="statistic-number" id="projectsCounter">10+</div>
-                  <div class="statistic-label">مشروع ثقافي</div>
+                  <div class="statistic-label" data-i18n="projects_statistics_projects">مشروع ثقافي</div>
               </div>
           </div>
-          
           <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
               <div class="statistic-item">
                   <i class="fas fa-users statistic-icon"></i>
                   <div class="statistic-number" id="participantsCounter">10,000+</div>
-                  <div class="statistic-label">مشارك</div>
+                  <div class="statistic-label" data-i18n="projects_statistics_participants">مشارك</div>
               </div>
           </div>
-          
           <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
               <div class="statistic-item">
                   <i class="fas fa-globe statistic-icon"></i>
                   <div class="statistic-number" id="countriesCounter">15+</div>
-                  <div class="statistic-label">دولة مشاركة</div>
+                  <div class="statistic-label" data-i18n="projects_statistics_countries">دولة مشاركة</div>
               </div>
           </div>
-          
           <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="300">
               <div class="statistic-item">
                   <i class="fas fa-award statistic-icon"></i>
                   <div class="statistic-number" id="awardsCounter">5+</div>
-                  <div class="statistic-label">تكريمات</div>
+                  <div class="statistic-label" data-i18n="projects_statistics_awards">تكريمات</div>
               </div>
           </div>
       </div>
@@ -849,11 +841,11 @@
 <!-- Call to Action Section -->
 <section class="cta-section">
   <div class="container">
-      <h2 class="cta-title" data-aos="fade-up">هل لديك فكرة لمشروع ثقافي؟</h2>
-      <p class="cta-text" data-aos="fade-up" data-aos-delay="100">أنا متاح للتعاون في المشاريع الثقافية والفنية، وتقديم الاستشارات في مجال الإدارة الثقافية والتراث الثقافي. لا تتردد في التواصل معي لمناقشة فكرتك ومعرفة كيف يمكننا العمل معاً لتحقيقها.</p>
+      <h2 class="cta-title" data-aos="fade-up" data-i18n="projects_cta_title">هل لديك فكرة لمشروع ثقافي؟</h2>
+      <p class="cta-text" data-aos="fade-up" data-aos-delay="100" data-i18n="projects_cta_text">أنا متاح للتعاون في المشاريع الثقافية والفنية، وتقديم الاستشارات في مجال الإدارة الثقافية والتراث الثقافي. لا تتردد في التواصل معي لمناقشة فكرتك ومعرفة كيف يمكننا العمل معاً لتحقيقها.</p>
       <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
-          <a href="contact.html" class="btn btn-primary btn-lg">تواصل معي</a>
-          <a href="about.html" class="btn btn-outline-primary btn-lg">معرفة المزيد عن خدماتي</a>
+          <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="projects_cta_btn_contact">تواصل معي</a>
+          <a href="about.html" class="btn btn-outline-primary btn-lg" data-i18n="projects_cta_btn_about">معرفة المزيد عن خدماتي</a>
       </div>
   </div>
 </section>
@@ -861,102 +853,103 @@
 
 <!-- Footer -->
 <footer class="text-center py-3">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h5>نعمان حباسي</h5>
-                <p>نعمان حباسي، كاتب وروائي، يتمتع بخبرة متميزة في إدارة المؤسسات الثقافية والإشراف على المشاريع الثقافية الكبرى. خبير في تنسيق الفعاليات وتنظيم الأنشطة الثقافية المتنوعة، مع مهارات قيادية تمكنه من إدارة الفرق وتحقيق الأهداف الاستراتيجية للمؤسسات.</p>
-            </div>
-            <div class="col-md-4">
-                <h5>تواصل معنا</h5>
-                <p>البريد الإلكتروني: noomaneh@live.fr<br>الهاتف: 98483759</p>
-            </div>
-            <div class="col-md-4">
-                <h5>تابعنا</h5>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="social-link">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/habassi-noomane-35492a" target="_blank" class="social-link">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://www.instagram.com/habbassinoomane/profilec" target="_blank" class="social-link">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Visitor Counter -->
-        <div class="visitor-counter mt-4">
-            <h5>إحصائيات الزوار</h5>
+        <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <div class="counter-item">
-                        <span class="counter-number" id="all-time-visits">0</span>
-                        <span class="counter-label">إجمالي الزيارات</span>
-                    </div>
+                <div class="col-md-4">
+                    <h5 data-i18n="brand_name">نعمان حباسي</h5>
+                    <p data-i18n="footer_about">نعمان حباسي، كاتب وروائي، يتمتع بخبرة متميزة في إدارة المؤسسات الثقافية والإشراف على المشاريع الثقافية الكبرى. خبير في تنسيق الفعاليات وتنظيم الأنشطة الثقافية المتنوعة، مع مهارات قيادية تمكنه من إدارة الفرق وتحقيق الأهداف الاستراتيجية للمؤسسات.</p>
                 </div>
-                <div class="col-md-3">
-                    <div class="counter-item">
-                        <span class="counter-number" id="monthly-visits">0</span>
-                        <span class="counter-label">زيارات الشهر</span>
-                    </div>
+                <div class="col-md-4">
+                    <h5 data-i18n="footer_contact">تواصل معنا</h5>
+                    <p>
+                        <span data-i18n="footer_email">البريد الإلكتروني: noomaneh@live.fr</span><br>
+                        <span data-i18n="footer_phone">الهاتف: 98483759</span>
+                    </p>
                 </div>
-                <div class="col-md-3">
-                    <div class="counter-item">
-                        <span class="counter-number" id="weekly-visits">0</span>
-                        <span class="counter-label">زيارات الأسبوع</span>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="counter-item">
-                        <span class="counter-number" id="daily-visits">0</span>
-                        <span class="counter-label">زيارات اليوم</span>
+                <div class="col-md-4">
+                    <h5 data-i18n="footer_follow">تابعنا</h5>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/habassi-noomane-35492a" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/habbassinoomane/profilec" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
             </div>
+            <!-- Visitor Counter -->
+            <div class="visitor-counter mt-4">
+                <h5 data-i18n="visitor_title">إحصائيات الزوار</h5>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="counter-item">
+                            <span class="counter-number" id="all-time-visits">0</span>
+                            <span class="counter-label" data-i18n="all_time">إجمالي الزيارات</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="counter-item">
+                            <span class="counter-number" id="monthly-visits">0</span>
+                            <span class="counter-label" data-i18n="monthly">زيارات الشهر</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="counter-item">
+                            <span class="counter-number" id="weekly-visits">0</span>
+                            <span class="counter-label" data-i18n="weekly">زيارات الأسبوع</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="counter-item">
+                            <span class="counter-number" id="daily-visits">0</span>
+                            <span class="counter-label" data-i18n="daily">زيارات اليوم</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3" style="background-color: rgba(255,255,255,0.2);">
+            <p>&copy; 2025 <span data-i18n="copyright">جميع الحقوق محفوظة لنعمان حباسي</span></p>
+            <p data-i18n="developed_by">Developed By <a href="https://www.linkedin.com/in/montassar-mejri-b5467021a/" target="_blank">@Victor Mejj</a></p>
         </div>
-        
-        <hr class="my-3" style="background-color: rgba(255,255,255,0.2);">
-        <p>&copy; 2025 جميع الحقوق محفوظة لنعمان حباسي</p>
-    </div>
-</footer>
+    </footer>
 
-<!-- Scroll to Top Button -->
-<button id="scrollToTopBtn" aria-label="العودة إلى الأعلى">
+    <!-- Scroll to Top Button -->
+   <button id="scrollToTopBtn" aria-label="العودة إلى الأعلى">
     <i class="fas fa-arrow-up"></i>
-</button>
-
-<button id="darkModeToggle" aria-label="تبديل الوضع الليلي">
+   </button>
+   
+   <button id="darkModeToggle" aria-label="تبديل الوضع الليلي">
     <i class="fas fa-moon"></i>
-</button>
-
-<!-- Add the search modal at the end of the body, before the scripts -->
-<!-- Search Modal -->
-<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="searchModalLabel">بحث في الموقع</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form id="searchForm">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="ابحث عن..." aria-label="Search term">
-                        <button class="btn btn-primary" type="submit">بحث</button>
-                    </div>
-                </form>
+   </button>
+   
+   <!-- Search Modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="searchModalLabel" data-i18n="search_title">بحث في الموقع</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-i18n="btn_close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="searchForm">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="ابحث عن..." aria-label="Search term" data-i18n="search_placeholder">
+                            <button class="btn btn-primary" type="submit" data-i18n="search_button">بحث</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
-<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-
