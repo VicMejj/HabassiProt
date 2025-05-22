@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="نتائج البحث - نعمان حباسي">
+    <meta name="description" content="" data-i18n="search_results_meta_description">
     <meta name="robots" content="noindex, follow">
-    <title>نتائج البحث - نعمان حباسي</title>
+    <title data-i18n="search_results_title">نتائج البحث - نعمان حباسي</title>
     <link rel="icon" href="habassi - details/noomane.png" type="image/x-icon" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/css/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="styles.css" rel="stylesheet">
@@ -20,11 +20,11 @@
             <div class="timer-content">
                 <div class="date-display">
                     <i class="fas fa-calendar-alt"></i>
-                    <span id="current-date">جاري تحميل التاريخ...</span>
+                    <span id="current-date" data-i18n="loading_date">جاري تحميل التاريخ...</span>
                 </div>
                 <div class="time-display">
                     <i class="fas fa-clock"></i>
-                    <span id="current-time">جاري تحميل الوقت...</span>
+                    <span id="current-time" data-i18n="loading_time">جاري تحميل الوقت...</span>
                 </div>
             </div>
         </div>
@@ -33,32 +33,32 @@
     <!-- Main Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-        <a class="navbar-brand" href="index.html">نعمان حباسي</a>
+        <a class="navbar-brand" href="index.html" data-i18n="brand_name">نعمان حباسي</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">من أنا</a></li>
-                <li class="nav-item"><a class="nav-link" href="experience.html">الخبرات</a></li>
-                <li class="nav-item"><a class="nav-link" href="projects.html">المشاريع</a></li>
-                <li class="nav-item"><a class="nav-link" href="media.html">الوسائط</a></li>
-                <li class="nav-item"><a class="nav-link" href="gallery.html">معرض الصور</a></li>
-                <li class="nav-item"><a class="nav-link" href="publications.html">المؤلفات</a></li>
-                <li class="nav-item"><a class="nav-link" href="content.html">أقسام الموقع</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بي</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav_about">من أنا</a></li>
+                <li class="nav-item"><a class="nav-link" href="experience.html" data-i18n="nav_experience">الخبرات</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html" data-i18n="nav_projects">المشاريع</a></li>
+                <li class="nav-item"><a class="nav-link" href="media.html" data-i18n="nav_media">الوسائط</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html" data-i18n="nav_gallery">معرض الصور</a></li>
+                <li class="nav-item"><a class="nav-link" href="publications.html" data-i18n="nav_publications">المؤلفات</a></li>
+                <li class="nav-item"><a class="nav-link" href="content.html" data-i18n="nav_content">أقسام الموقع</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav_contact">اتصل بي</a></li>
             </ul>
-            <!-- Language Switcher -->
-            <div class="language-switcher">
-                <button class="btn btn-sm btn-outline-light active">العربية</button>
-                <button class="btn btn-sm btn-outline-light">English</button>
-                <button class="btn btn-sm btn-outline-light">Français</button>
-            </div>
-            <!-- Search Button -->
-            <button class="btn btn-sm btn-outline-light ms-2" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
-                <i class="fas fa-search"></i>
-            </button>
+           <!-- Language Switcher -->
+                <div class="language-switcher">
+                    <button class="btn btn-sm btn-outline-light lang-btn active" data-lang="ar" data-i18n="lang_ar">العربية</button>
+                    <button class="btn btn-sm btn-outline-light lang-btn" data-lang="en" data-i18n="lang_en">English</button>
+                    <button class="btn btn-sm btn-outline-light lang-btn" data-lang="fr" data-i18n="lang_fr">Français</button>
+                </div>
+                <!-- Search Button -->
+                <button class="btn btn-sm btn-outline-light ms-2" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <i class="fas fa-search"></i>
+                </button>
         </div>
     </div>
 </nav>
@@ -68,8 +68,8 @@
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">نتائج البحث</li>
+                    <li class="breadcrumb-item"><a href="index.html" data-i18n="breadcrumb_home">الرئيسية</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" data-i18n="search_results_breadcrumbs">نتائج البحث</li>
                 </ol>
             </nav>
         </div>
@@ -78,15 +78,15 @@
     <main>
         <section class="py-5 section-light">
             <div class="container">
-                <h1 class="mb-4" data-aos="fade-up">نتائج البحث</h1>
+                <h1 class="mb-4" data-aos="fade-up" data-i18n="search_results_heading">نتائج البحث</h1>
                 
                 <!-- Search Form -->
                 <div class="card mb-4" data-aos="fade-up">
                     <div class="card-body">
                         <form id="searchForm">
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="ابحث عن..." aria-label="Search term" id="search-input" value="">
-                                <button class="btn btn-primary" type="submit">بحث</button>
+                                <input type="text" class="form-control" placeholder="" aria-label="Search term" id="search-input" value="" data-i18n="search_placeholder">
+                                <button class="btn btn-primary" type="submit" data-i18n="search_button">بحث</button>
                             </div>
                         </form>
                     </div>
@@ -94,31 +94,35 @@
                 
                 <!-- Search Results -->
                 <div class="search-results-container" data-aos="fade-up">
-                    <h2>نتائج البحث عن: <span id="search-term"></span></h2>
+                    <h2 data-i18n="search_results_about">نتائج البحث عن: <span id="search-term"></span></h2>
                     <!-- Results will be loaded dynamically via JavaScript -->
+                    <div id="no-results-message" style="display:none;" data-i18n="search_results_no_results">لم يتم العثور على نتائج.</div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="text-center py-3">
+<footer class="text-center py-3">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h5>نعمان حباسي</h5>
-                    <p>مدير مؤسسة عامة وتعاون ثقافي<br>كاتب وروائي، خبير في الإدارة الثقافية</p>
+                    <h5 data-i18n="brand_name">نعمان حباسي</h5>
+                    <p data-i18n="footer_about">نعمان حباسي، كاتب وروائي، يتمتع بخبرة متميزة في إدارة المؤسسات الثقافية والإشراف على المشاريع الثقافية الكبرى. خبير في تنسيق الفعاليات وتنظيم الأنشطة الثقافية المتنوعة، مع مهارات قيادية تمكنه من إدارة الفرق وتحقيق الأهداف الاستراتيجية للمؤسسات.</p>
                 </div>
                 <div class="col-md-4">
-                    <h5>تواصل معنا</h5>
-                    <p>البريد الإلكتروني: noomaneh@live.fr<br>الهاتف: 98483759</p>
+                    <h5 data-i18n="footer_contact">تواصل معنا</h5>
+                    <p>
+                        <span data-i18n="footer_email">البريد الإلكتروني: noomaneh@live.fr</span><br>
+                        <span data-i18n="footer_phone">الهاتف: 98483759</span>
+                    </p>
                 </div>
                 <div class="col-md-4">
-                    <h5>تابعنا</h5>
+                    <h5 data-i18n="footer_follow">تابعنا</h5>
                     <div class="social-links">
                         <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="social-link">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/habassi-noomane-35492ab0" target="_blank" class="social-link">
+                        <a href="https://www.linkedin.com/in/habassi-noomane-35492a" target="_blank" class="social-link">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                         <a href="https://www.instagram.com/habbassinoomane/profilec" target="_blank" class="social-link">
@@ -127,34 +131,64 @@
                     </div>
                 </div>
             </div>
-            
+            <!-- Visitor Counter -->
+            <div class="visitor-counter mt-4">
+                <h5 data-i18n="visitor_title">إحصائيات الزوار</h5>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="counter-item">
+                            <span class="counter-number" id="all-time-visits">0</span>
+                            <span class="counter-label" data-i18n="all_time">إجمالي الزيارات</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="counter-item">
+                            <span class="counter-number" id="monthly-visits">0</span>
+                            <span class="counter-label" data-i18n="monthly">زيارات الشهر</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="counter-item">
+                            <span class="counter-number" id="weekly-visits">0</span>
+                            <span class="counter-label" data-i18n="weekly">زيارات الأسبوع</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="counter-item">
+                            <span class="counter-number" id="daily-visits">0</span>
+                            <span class="counter-label" data-i18n="daily">زيارات اليوم</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <hr class="my-3" style="background-color: rgba(255,255,255,0.2);">
-            <p>&copy; 2025 جميع الحقوق محفوظة لنعمان حباسي</p>
+            <p>&copy; 2025 <span data-i18n="copyright">جميع الحقوق محفوظة لنعمان حباسي</span></p>
+            <p data-i18n="developed_by">Developed By <a href="https://www.linkedin.com/in/montassar-mejri-b5467021a/" target="_blank">@Victor Mejj</a></p>
         </div>
     </footer>
 
     <!-- Scroll to Top Button -->
-    <button id="scrollToTopBtn" aria-label="العودة إلى الأعلى">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <button id="darkModeToggle" aria-label="تبديل الوضع الليلي">
-        <i class="fas fa-moon"></i>
-    </button>
-
-    <!-- Search Modal -->
+   <button id="scrollToTopBtn" aria-label="العودة إلى الأعلى">
+    <i class="fas fa-arrow-up"></i>
+   </button>
+   
+   <button id="darkModeToggle" aria-label="تبديل الوضع الليلي">
+    <i class="fas fa-moon"></i>
+   </button>
+   
+   <!-- Search Modal -->
     <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="searchModalLabel">بحث في الموقع</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="searchModalLabel" data-i18n="search_title">بحث في الموقع</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-i18n="btn_close"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="modalSearchForm">
+                    <form id="searchForm">
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="ابحث عن..." aria-label="Search term">
-                            <button class="btn btn-primary" type="submit">بحث</button>
+                            <input type="text" class="form-control" placeholder="ابحث عن..." aria-label="Search term" data-i18n="search_placeholder">
+                            <button class="btn btn-primary" type="submit" data-i18n="search_button">بحث</button>
                         </div>
                     </form>
                 </div>
@@ -164,7 +198,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-

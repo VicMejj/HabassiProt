@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="معرض الصور والفيديوهات - نعمان حباسي">
-    <meta name="keywords" content="نعمان حباسي, معرض, صور, فيديوهات, ثقافة, تونس">
-    <meta property="og:title" content="معرض الصور والفيديوهات - نعمان حباسي">
-    <meta property="og:description" content="استكشف معرض الصور والفيديوهات الخاص بنعمان حباسي">
+    <meta name="description" content="" data-i18n="gallery_meta_description">
+    <meta name="keywords" content="" data-i18n="gallery_meta_keywords">
+    <meta property="og:title" content="" data-i18n="gallery_og_title">
+    <meta property="og:description" content="" data-i18n="gallery_og_description">
     <meta property="og:image" content="images/og-gallery.jpg">
     <meta property="og:url" content="https://www.noomanehabassi.com/gallery.html">
-    <title>معرض الصور والفيديوهات - نعمان حباسي</title>
+    <title data-i18n="gallery_hero_title">معرض الصور والفيديوهات - نعمان حباسي</title>
     <link rel="icon" href="habassi - details/image-gallery.png" type="image/x-icon" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -26,11 +26,11 @@
             <div class="timer-content">
                 <div class="date-display">
                     <i class="fas fa-calendar-alt"></i>
-                    <span id="current-date">جاري تحميل التاريخ...</span>
+                    <span id="current-date" data-i18n="loading_date">جاري تحميل التاريخ...</span>
                 </div>
                 <div class="time-display">
                     <i class="fas fa-clock"></i>
-                    <span id="current-time">جاري تحميل الوقت...</span>
+                    <span id="current-time" data-i18n="loading_time">جاري تحميل الوقت...</span>
                 </div>
             </div>
         </div>
@@ -39,31 +39,31 @@
     <!-- Main Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-        <a class="navbar-brand" href="index.html">نعمان حباسي</a>
+        <a class="navbar-brand" href="index.html" data-i18n="brand_name">نعمان حباسي</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">من أنا</a></li>
-                <li class="nav-item"><a class="nav-link" href="experience.html">الخبرات</a></li>
-                <li class="nav-item"><a class="nav-link" href="projects.html">المشاريع</a></li>
-                <li class="nav-item"><a class="nav-link" href="media.html">الوسائط</a></li>
-                <li class="nav-item"><a class="nav-link" href="gallery.html">معرض الصور</a></li>
-                <li class="nav-item"><a class="nav-link" href="publications.html">المؤلفات</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بي</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html" data-i18n="nav_home">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav_about">من أنا</a></li>
+                <li class="nav-item"><a class="nav-link" href="experience.html" data-i18n="nav_experience">الخبرات</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html" data-i18n="nav_projects">المشاريع</a></li>
+                <li class="nav-item"><a class="nav-link" href="media.html" data-i18n="nav_media">الوسائط</a></li>
+                <li class="nav-item"><a class="nav-link active" href="gallery.html" data-i18n="nav_gallery">معرض الصور</a></li>
+                <li class="nav-item"><a class="nav-link" href="publications.html" data-i18n="nav_publications">المؤلفات</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav_contact">اتصل بي</a></li>
             </ul>
-            <!-- Language Switcher -->
-            <div class="language-switcher">
-                <button class="btn btn-sm btn-outline-light active">العربية</button>
-                <button class="btn btn-sm btn-outline-light">English</button>
-                <button class="btn btn-sm btn-outline-light">Français</button>
-            </div>
-            <!-- Search Button -->
-            <button class="btn btn-sm btn-outline-light ms-2" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
-                <i class="fas fa-search"></i>
-            </button>
+           <!-- Language Switcher -->
+                <div class="language-switcher">
+                    <button class="btn btn-sm btn-outline-light lang-btn active" data-lang="ar" data-i18n="lang_ar">العربية</button>
+                    <button class="btn btn-sm btn-outline-light lang-btn" data-lang="en" data-i18n="lang_en">English</button>
+                    <button class="btn btn-sm btn-outline-light lang-btn" data-lang="fr" data-i18n="lang_fr">Français</button>
+                </div>
+                <!-- Search Button -->
+                <button class="btn btn-sm btn-outline-light ms-2" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <i class="fas fa-search"></i>
+                </button>
         </div>
     </div>
 </nav>
@@ -73,8 +73,8 @@
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">معرض الصور والفيديوهات</li>
+                    <li class="breadcrumb-item"><a href="index.html" data-i18n="breadcrumb_home">الرئيسية</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" data-i18n="gallery_breadcrumbs">معرض الصور والفيديوهات</li>
                 </ol>
             </nav>
         </div>
@@ -83,8 +83,8 @@
     <!-- Hero Section -->
     <header class="hero-section text-center">
         <div class="container">
-            <h1 class="display-4 mb-4" data-aos="fade-up">معرض الصور والفيديوهات</h1>
-            <p class="lead mb-0" data-aos="fade-up" data-aos-delay="200">استكشف لحظات من مسيرتي المهنية والثقافية</p>
+            <h1 class="display-4 mb-4" data-aos="fade-up" data-i18n="gallery_hero_title">معرض الصور والفيديوهات</h1>
+            <p class="lead mb-0" data-aos="fade-up" data-aos-delay="200" data-i18n="gallery_hero_subtitle">استكشف لحظات من مسيرتي المهنية والثقافية</p>
         </div>
     </header>
 
@@ -94,16 +94,14 @@
                 <!-- Gallery Filters -->
                 <div class="publication-filters mb-5" data-aos="fade-up">
                     <div class="d-flex justify-content-center flex-wrap">
-                        <button class="filter-btn active" data-filter="all">الكل</button>
-                        <button class="filter-btn" data-filter="events">فعاليات</button>
-                        <button class="filter-btn" data-filter="conferences">ندوات</button>
-                        <button class="filter-btn" data-filter="festivals">مهرجانات</button>
-                        <button class="filter-btn" data-filter="interviews">مقابلات</button>
-                        <button class="filter-btn" data-filter="modakhelet">مداخلات</button>
-
+                        <button class="filter-btn active" data-filter="all" data-i18n="gallery_filter_all">الكل</button>
+                        <button class="filter-btn" data-filter="events" data-i18n="gallery_filter_events">فعاليات</button>
+                        <button class="filter-btn" data-filter="conferences" data-i18n="gallery_filter_conferences">ندوات</button>
+                        <button class="filter-btn" data-filter="festivals" data-i18n="gallery_filter_festivals">مهرجانات</button>
+                        <button class="filter-btn" data-filter="interviews" data-i18n="gallery_filter_interviews">مقابلات</button>
+                        <button class="filter-btn" data-filter="modakhelet" data-i18n="gallery_filter_modakhelet">مداخلات</button>
                     </div>
                 </div>
-
                 <!-- Gallery Grid -->
                 <div class="gallery-container">
                     <!-- Gallery Item 1 -->
@@ -643,9 +641,9 @@
             </div>
         </section>
 
-        <section class="py-5 section-dark">
+      <section class="py-5 section-dark">
             <div class="container">
-                <h2 class="section-title text-center mb-5" data-aos="fade-up">فيديوهات مختارة</h2>
+                <h2 class="section-title text-center mb-5" data-aos="fade-up" data-i18n="gallery_section_videos">فيديوهات مختارة</h2>
                 <div class="row">
                     <div class="col-md-6 mb-4" data-aos="fade-up">
                         <div class="card h-100">
@@ -653,13 +651,12 @@
                                 <iframe src="https://www.youtube.com/embed/SOMzprwsKdE" title="فيديو 1" allowfullscreen></iframe>
                             </div>
                             <div class="card-body">
-                                <h3 class="card-title">المهرجان الدولي لسينما المناجم بالجريصة</h3>
+                                <h3 class="card-title" data-i18n="gallery_video_title_1">المهرجان الدولي لسينما المناجم بالجريصة</h3>
                                 <p class="card-text">
                                     نعمان الحباسي: المهرجان الدولي لسينما المناجم بالجريصة هو نتاج لتاريخ علاقة وشغف الكافية بالسينما
                                 </p>
-                                <p class="text-muted"><i class="fas fa-calendar-alt me-2"></i>دسمبر, 2022</p>
+                                <p class="text-muted"><i class="fas fa-calendar-alt me-2"></i><span data-i18n="gallery_video_date_1">دسمبر, 2022</span></p>
                             </div>
-                            
                         </div>
                     </div>
                     <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
@@ -668,10 +665,9 @@
                                 <iframe src="https://www.youtube.com/embed/xOmc7oUpbV8" title="فيديو 2" allowfullscreen></iframe>
                             </div>
                             <div class="card-body">
-                                <h3 class="card-title">الذكرى 11 لرحيل الأديب مصطفى الفارسي</h3></a>
-                                <p class="card-text">الذكرى 11 لرحيل الأديب مصطفى الفارسي : كلمة الأستاذ نعمان حباسي ( المندوب الجهوي للثقافة بالكاف )
-                                </p>
-                                <p class="text-muted"><i class="fas fa-calendar-alt me-2"></i> فبراير 2019</p>
+                                <h3 class="card-title" data-i18n="gallery_video_title_2">الذكرى 11 لرحيل الأديب مصطفى الفارسي</h3>
+                                <p class="card-text">الذكرى 11 لرحيل الأديب مصطفى الفارسي : كلمة الأستاذ نعمان حباسي ( المندوب الجهوي للثقافة بالكاف )</p>
+                                <p class="text-muted"><i class="fas fa-calendar-alt me-2"></i><span data-i18n="gallery_video_date_2">فبراير 2019</span></p>
                             </div>
                         </div>
                     </div>
@@ -681,28 +677,22 @@
                                 <iframe src="https://www.youtube.com/embed/FrEZXwaC5vg" title="فيديو 3" allowfullscreen></iframe>
                             </div>
                             <div class="card-body">
-                                <h3 class="card-title"> مهرجان أسوان الدولي لأفلام المرأة</h3>
-                                <p class="card-text">الإبداع في مصر| لقاء مع نعمان الحباسي وحديث عن تكريم دولة تونس في مهرجان أسوان الدولي لأفلام المرأة
-                                </p>
-                                <p class="text-muted"><i class="fas fa-calendar-alt me-2"></i>2024</p>
+                                <h3 class="card-title" data-i18n="gallery_video_title_3">مهرجان أسوان الدولي لأفلام المرأة</h3>
+                                <p class="card-text">الإبداع في مصر| لقاء مع نعمان الحباسي وحديث عن تكريم دولة تونس في مهرجان أسوان الدولي لأفلام المرأة</p>
+                                <p class="text-muted"><i class="fas fa-calendar-alt me-2"></i><span data-i18n="gallery_video_date_3">2024</span></p>
                             </div>
-                            
                         </div>
                     </div>
-
                     <div class="col-md-6 mb-4" data-aos="fade-up">
                         <div class="card h-100">
                             <div class="ratio ratio-16x9">
                                 <iframe src="https://www.youtube.com/embed/RHyud8tnzJY" title="فيديو 4" allowfullscreen></iframe>
                             </div>
                             <div class="card-body">
-                                <h3 class="card-title"> لقاء مع المندوب الجهوي للشؤون الثقافية بالكاف نعمان الحباسي
-                                </h3>
-                                <p class="card-text">لقاء مع المندوب الجهوي للشؤون الثقافية بالكاف نعمان الحباسي
-                                </p>
-                                <p class="text-muted"><i class="fas fa-calendar-alt me-2"></i></p>
+                                <h3 class="card-title" data-i18n="gallery_video_title_4">لقاء مع المندوب الجهوي للشؤون الثقافية بالكاف نعمان الحباسي</h3>
+                                <p class="card-text">لقاء مع المندوب الجهوي للشؤون الثقافية بالكاف نعمان الحباسي</p>
+                                <p class="text-muted"><i class="fas fa-calendar-alt me-2"></i><span data-i18n="gallery_video_date_4"></span></p>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
@@ -710,19 +700,22 @@
         </section>
     </main>
 
-    <footer class="text-center py-3">
+   <footer class="text-center py-3">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h5>نعمان حباسي</h5>
-                    <p>مدير مؤسسة عامة وتعاون ثقافي<br>كاتب وروائي، خبير في الإدارة الثقافية</p>
+                    <h5 data-i18n="brand_name">نعمان حباسي</h5>
+                    <p data-i18n="gallery_footer_about">مدير مؤسسة عامة وتعاون ثقافي<br>كاتب وروائي، خبير في الإدارة الثقافية</p>
                 </div>
                 <div class="col-md-4">
-                    <h5>تواصل معنا</h5>
-                    <p>البريد الإلكتروني: noomaneh@live.fr<br>الهاتف: 98483759</p>
+                    <h5 data-i18n="gallery_footer_contact">تواصل معنا</h5>
+                    <p>
+                        <span data-i18n="footer_email">البريد الإلكتروني</span>: noomaneh@live.fr<br>
+                        <span data-i18n="footer_phone">الهاتف</span>: 98483759
+                    </p>
                 </div>
                 <div class="col-md-4">
-                    <h5>تابعنا</h5>
+                    <h5 data-i18n="gallery_footer_follow">تابعنا</h5>
                     <div class="social-links">
                         <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="social-link">
                             <i class="fab fa-facebook-f"></i>
@@ -739,37 +732,37 @@
             
             <!-- Visitor Counter -->
             <div class="visitor-counter mt-4">
-                <h5>إحصائيات الزوار</h5>
+                <h5 data-i18n="gallery_footer_visits">إحصائيات الزوار</h5>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="counter-item">
                             <span class="counter-number" id="all-time-visits">0</span>
-                            <span class="counter-label">إجمالي الزيارات</span>
+                            <span class="counter-label" data-i18n="gallery_footer_all_time">إجمالي الزيارات</span>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="counter-item">
                             <span class="counter-number" id="monthly-visits">0</span>
-                            <span class="counter-label">زيارات الشهر</span>
+                            <span class="counter-label" data-i18n="gallery_footer_month">زيارات الشهر</span>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="counter-item">
                             <span class="counter-number" id="weekly-visits">0</span>
-                            <span class="counter-label">زيارات الأسبوع</span>
+                            <span class="counter-label" data-i18n="gallery_footer_week">زيارات الأسبوع</span>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="counter-item">
                             <span class="counter-number" id="daily-visits">0</span>
-                            <span class="counter-label">زيارات اليوم</span>
+                            <span class="counter-label" data-i18n="gallery_footer_day">زيارات اليوم</span>
                         </div>
                     </div>
                 </div>
             </div>
             
             <hr class="my-3" style="background-color: rgba(255,255,255,0.2);">
-            <p>&copy; 2025 جميع الحقوق محفوظة لنعمان حباسي</p>
+            <p data-i18n="gallery_footer_rights">&copy; 2025 جميع الحقوق محفوظة لنعمان حباسي</p>
         </div>
     </footer>
 
@@ -782,17 +775,17 @@
         <i class="fas fa-moon"></i>
     </button>
 
-    <!-- Gallery Modal -->
+   <!-- Gallery Modal -->
     <div class="modal fade gallery-modal" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body p-0">
                     <img src="/placeholder.svg" class="modal-gallery-image w-100" alt="صورة معرض">
                     <div class="gallery-navigation">
-                        <button class="gallery-nav-btn gallery-prev">
+                        <button class="gallery-nav-btn gallery-prev" data-i18n="gallery_modal_prev">
                             <i class="fas fa-chevron-right"></i>
                         </button>
-                        <button class="gallery-nav-btn gallery-next">
+                        <button class="gallery-nav-btn gallery-next" data-i18n="gallery_modal_next">
                             <i class="fas fa-chevron-left"></i>
                         </button>
                     </div>
@@ -800,6 +793,7 @@
                 <div class="modal-footer">
                     <h5 class="modal-gallery-title"></h5>
                     <p class="modal-gallery-description"></p>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-i18n="gallery_modal_close">إغلاق</button>
                 </div>
             </div>
         </div>
@@ -810,14 +804,14 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="searchModalLabel">بحث في الموقع</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="searchModalLabel" data-i18n="search_title">بحث في الموقع</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-i18n="btn_close"></button>
                 </div>
                 <div class="modal-body">
                     <form id="searchForm">
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="ابحث عن..." aria-label="Search term">
-                            <button class="btn btn-primary" type="submit">بحث</button>
+                            <input type="text" class="form-control" placeholder="ابحث عن..." aria-label="Search term" data-i18n="search_placeholder">
+                            <button class="btn btn-primary" type="submit" data-i18n="search_button">بحث</button>
                         </div>
                     </form>
                 </div>
@@ -827,6 +821,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
