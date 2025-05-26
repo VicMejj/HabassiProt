@@ -53,10 +53,16 @@
         <li class="nav-item"><a class="nav-link active" href="publications.html" data-i18n="nav_publications">المؤلفات</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav_contact">اتصل بي</a></li>
       </ul>
-      <!-- Search Button -->
-      <button class="btn btn-sm btn-outline-light ms-2" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
-          <i class="fas fa-search"></i>
-      </button>
+        <!-- Language Switcher -->
+        <div class="language-switcher">
+            <button class="btn btn-sm btn-outline-light lang-btn active" data-lang="ar" data-i18n="lang_ar">العربية</button>
+            <button class="btn btn-sm btn-outline-light lang-btn" data-lang="en" data-i18n="lang_en">English</button>
+            <button class="btn btn-sm btn-outline-light lang-btn" data-lang="fr" data-i18n="lang_fr">Français</button>
+        </div>
+        <!-- Search Button -->
+        <button class="btn btn-sm btn-outline-light ms-2" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
+            <i class="fas fa-search"></i>
+        </button>
   </div>
 </div>
 </nav>
@@ -244,30 +250,30 @@
   <div class="container">
     <h2 class="section-title text-center text-white mb-5" data-aos="fade-up" data-i18n="publications_articles_title">مقالات منشورة</h2>
     <div class="article-grid" data-aos="fade-up">
-            <!-- Article 1 -->
-            <div class="article-card">
-                <div class="article-image">
-                    <img src="Nooman/WhatsApp Image 2025-04-05 à 22.13.05_475c7612.jpg" alt="الثقافة والتنمية المستدامة" class="img-fluid">
-                </div>
-                <div class="article-content">
-                    <div class="article-meta">
-                        <span><i class="fas fa-calendar-alt"></i> 15 مارس 2020</span>
-                        <span><i class="fas fa-user"></i> نعمان حباسي</span>
-                    </div>
-                    <span class="article-category">الثقافة والتنمية</span>
-                    <h3>محضنة المشاريع الثقافية</h3>
-                    <p>نعمان الحباسي: إصدار جديد بعنوان”محضنة المشاريع الثقافية”</p>
-                    <div class="article-footer">
-                        <a href="https://www.new-media.tn/2020/09/20/%D9%86%D8%B9%D9%85%D8%A7%D9%86-%D8%A7%D9%84%D8%AD%D8%A8%D8%A7%D8%B3%D9%8A-%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1-%D8%AC%D8%AF%D9%8A%D8%AF-%D8%A8%D8%B9%D9%86%D9%88%D8%A7%D9%86%D9%85%D8%AD%D8%B6%D9%86%D8%A9/" class="article-read-more" target="_blank">قراءة المزيد</a>
-                        <div class="article-social">
-                            <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="article-social-link">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-           
-                        </div>
-                    </div>
-                </div>
+      <!-- For each article, wrap category, read more, etc. in data-i18n -->
+      <!-- Example for one article: -->
+      <div class="article-card">
+        <div class="article-image">
+          <img src="Nooman/WhatsApp Image 2025-04-05 à 22.13.05_475c7612.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="article-content">
+          <div class="article-meta">
+            <span><i class="fas fa-calendar-alt"></i> 15 مارس 2020</span>
+            <span><i class="fas fa-user"></i> نعمان حباسي</span>
+          </div>
+          <span class="article-category" data-i18n="article_category_culture_development">الثقافة والتنمية</span>
+          <h3>محضنة المشاريع الثقافية</h3>
+          <p>نعمان الحباسي: إصدار جديد بعنوان”محضنة المشاريع الثقافية”</p>
+          <div class="article-footer">
+            <a href="https://www.new-media.tn/2020/09/20/%D9%86%D8%B9%D9%85%D8%A7%D9%86-%D8%A7%D9%84%D8%AD%D8%A8%D8%A7%D8%B3%D9%8A-%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1-%D8%AC%D8%AF%D9%8A%D8%AF-%D8%A8%D8%B9%D9%86%D9%88%D8%A7%D9%86%D9%85%D8%AD%D8%B6%D9%86%D8%A9/" class="article-read-more" target="_blank" data-i18n="article_read_more">قراءة المزيد</a>
+            <div class="article-social">
+              <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="article-social-link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
             </div>
+          </div>
+        </div>
+      </div>
             
             <!-- Article 2 -->
             <div class="article-card">
@@ -283,7 +289,7 @@
                     <h3>الكاف موطن لكل الفنون</h3>
                     <P>الروائي نعمان الحباسي لتوانسة: الكاف موطن لكل الفنون، وهذه حكايتي مع الرواية                    </P>
                     <div class="article-footer">
-                        <a href="https://www.touwensa.com/index.php/dialogues/27785-2023-02-07-15-39-39.html" target="_blank" class="article-read-more">قراءة المزيد</a>
+                        <a href="https://www.touwensa.com/index.php/dialogues/27785-2023-02-07-15-39-39.html" target="_blank" class="article-read-more" data-i18n="article_read_more">قراءة المزيد</a>
                         <div class="article-social">
                             <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="article-social-link">
                                 <i class="fab fa-facebook-f"></i>
@@ -306,7 +312,7 @@
                     <h3>مكلفا بتسيير المركز الوطني للسينما والصورة</h3>
                     <P>تعيين السيد نعمان الحباسي مكلفا بتسيير المركز الوطني للسينما والصورة</P>
                     <div class="article-footer">
-                        <a href="https://cnci.tn/%D8%AA%D8%B9%D9%8A%D9%8A%D9%86-%D8%A7%D9%84%D8%B3%D9%8A%D8%AF-%D9%86%D8%B9%D9%85%D8%A7%D9%86-%D8%A7%D9%84%D8%AD%D8%A8%D8%A7%D8%B3%D9%8A-%D9%85%D9%83%D9%84%D9%81%D8%A7-%D8%A8%D8%AA%D8%B3%D9%8A%D9%8A/" target="_blank" class="article-read-more">قراءة المزيد</a>
+                        <a href="https://cnci.tn/%D8%AA%D8%B9%D9%8A%D9%8A%D9%86-%D8%A7%D9%84%D8%B3%D9%8A%D8%AF-%D9%86%D8%B9%D9%85%D8%A7%D9%86-%D8%A7%D9%84%D8%AD%D8%A8%D8%A7%D8%B3%D9%8A-%D9%85%D9%83%D9%84%D9%81%D8%A7-%D8%A8%D8%AA%D8%B3%D9%8A%D9%8A/" target="_blank" class="article-read-more" data-i18n="article_read_more">قراءة المزيد</a>
                         <div class="article-social">
                             <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="article-social-link">
                                 <i class="fab fa-facebook-f"></i>
@@ -330,7 +336,7 @@
                     <h3>رواية حالمة واهمة مبدئيّة</h3>
                     <p>'شقائق الشيطان' تبحث في دواخلنا عن نقصنا أو كمالنا                    </p>
                     <div class="article-footer">
-                        <a href="https://middle-east-online.com/%D8%B4%D9%82%D8%A7%D8%A6%D9%82-%D8%A7%D9%84%D8%B4%D9%8A%D8%B7%D8%A7%D9%86-%D8%AA%D8%A8%D8%AD%D8%AB-%D9%81%D9%8A-%D8%AF%D9%88%D8%A7%D8%AE%D9%84%D9%86%D8%A7-%D8%B9%D9%86-%D9%86%D9%82%D8%B5%D9%86%D8%A7-%D8%A7%D9%94%D9%88-%D9%83%D9%85%D8%A7%D9%84%D9%86%D8%A7" target="_blank" class="article-read-more">قراءة المزيد</a>
+                        <a href="https://middle-east-online.com/%D8%B4%D9%82%D8%A7%D8%A6%D9%82-%D8%A7%D9%84%D8%B4%D9%8A%D8%B7%D8%A7%D9%86-%D8%AA%D8%A8%D8%AD%D8%AB-%D9%81%D9%8A-%D8%AF%D9%88%D8%A7%D8%AE%D9%84%D9%86%D8%A7-%D8%B9%D9%86-%D9%86%D9%82%D8%B5%D9%86%D8%A7-%D8%A7%D9%94%D9%88-%D9%83%D9%85%D8%A7%D9%84%D9%86%D8%A7" target="_blank" class="article-read-more" data-i18n="article_read_more">قراءة المزيد</a>
                         <div class="article-social">
                             <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="article-social-link">
                                 <i class="fab fa-facebook-f"></i>
@@ -354,7 +360,7 @@
                     <h3>رواية حالمة واهمة مبدئيّة</h3>
                     <p>'شقائق الشيطان' رواية حالمة تغوص في دواخلنا </p>
                     <div class="article-footer">
-                        <a href="https://middle-east-online.com/%D8%B4%D9%82%D8%A7%D8%A6%D9%82-%D8%A7%D9%84%D8%B4%D9%8A%D8%B7%D8%A7%D9%86-%D8%B1%D9%88%D8%A7%D9%8A%D8%A9-%D8%AD%D8%A7%D9%84%D9%85%D8%A9-%D8%AA%D8%BA%D9%88%D8%B5-%D9%81%D9%8A-%D8%AF%D9%88%D8%A7%D8%AE%D9%84%D9%86%D8%A7" target="_blank" class="article-read-more">قراءة المزيد</a>
+                        <a href="https://middle-east-online.com/%D8%B4%D9%82%D8%A7%D8%A6%D9%82-%D8%A7%D9%84%D8%B4%D9%8A%D8%B7%D8%A7%D9%86-%D8%B1%D9%88%D8%A7%D9%8A%D8%A9-%D8%AD%D8%A7%D9%84%D9%85%D8%A9-%D8%AA%D8%BA%D9%88%D8%B5-%D9%81%D9%8A-%D8%AF%D9%88%D8%A7%D8%AE%D9%84%D9%86%D8%A7" target="_blank" class="article-read-more" data-i18n="article_read_more">قراءة المزيد</a>
                         <div class="article-social">
                             <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="article-social-link">
                                 <i class="fab fa-facebook-f"></i>
@@ -379,7 +385,7 @@
                     <p>الكاف التونسية تسدل الستار عن 'أيام سيكا الشعرية'
                     </p>
                     <div class="article-footer">
-                        <a href="https://middle-east-online.com/%D8%A7%D9%84%D9%83%D8%A7%D9%81-%D8%A7%D9%84%D8%AA%D9%88%D9%86%D8%B3%D9%8A%D8%A9-%D8%AA%D8%B3%D8%AF%D9%84-%D8%A7%D9%84%D8%B3%D8%AA%D8%A7%D8%B1-%D8%B9%D9%86-%D8%A3%D9%8A%D8%A7%D9%85-%D8%B3%D9%8A%D9%83%D8%A7-%D8%A7%D9%84%D8%B4%D8%B9%D8%B1%D9%8A%D8%A9" target="_blank" class="article-read-more">قراءة المزيد</a>
+                        <a href="https://middle-east-online.com/%D8%A7%D9%84%D9%83%D8%A7%D9%81-%D8%A7%D9%84%D8%AA%D9%88%D9%86%D8%B3%D9%8A%D8%A9-%D8%AA%D8%B3%D8%AF%D9%84-%D8%A7%D9%84%D8%B3%D8%AA%D8%A7%D8%B1-%D8%B9%D9%86-%D8%A3%D9%8A%D8%A7%D9%85-%D8%B3%D9%8A%D9%83%D8%A7-%D8%A7%D9%84%D8%B4%D8%B9%D8%B1%D9%8A%D8%A9" target="_blank" class="article-read-more" data-i18n="article_read_more">قراءة المزيد</a>
                         <div class="article-social">
                             <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="article-social-link">
                                 <i class="fab fa-facebook-f"></i>
@@ -403,7 +409,7 @@
                     <h3>الكاف موطن لكل الفنون</h3>
                     <p>في دورته الدولية الأولى: الكاف تحتفي بالفنون في مهرجان بومخلوف الصيفي</p>
                     <div class="article-footer">
-                        <a href="https://www.touwensa.com/index.php/dialogues/15400-2019-07-22-11-53-07.html" target="_blank" class="article-read-more">قراءة المزيد</a>
+                        <a href="https://www.touwensa.com/index.php/dialogues/15400-2019-07-22-11-53-07.html" target="_blank" class="article-read-more" data-i18n="article_read_more">قراءة المزيد</a>
                         <div class="article-social">
                             <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="article-social-link">
                                 <i class="fab fa-facebook-f"></i>
@@ -427,7 +433,7 @@
                     <h3>مهرجان أسوان الدولي لأفلام المرأة</h3>
                     <p>صناعة السينما التونسية محور نقاش في مهرجان أسوان الدولي لأفلام المرأة</p>
                     <div class="article-footer">
-                        <a href="https://www.arabesque.tn/ar/article/print/115516/%D8%B5%D9%86%D8%A7%D8%B9%D8%A9-%D8%A7%D9%84%D8%B3%D9%8A%D9%86%D9%85%D8%A7-%D8%A7%D9%84%D8%AA%D9%88%D9%86%D8%B3%D9%8A%D8%A9-%D9%85%D8%AD%D9%88%D8%B1-%D9%86%D9%82%D8%A7%D8%B4-%D9%81%D9%8A-%D9%85%D9%87%D8%B1%D8%AC%D8%A7%D9%86-%D8%A3%D8%B3%D9%88%D8%A7%D9%86-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A-%D9%84%D8%A3%D9%81%D9%84%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%B1%D8%A3%D8%A9" target="_blank" class="article-read-more">قراءة المزيد</a>
+                        <a href="https://www.arabesque.tn/ar/article/print/115516/%D8%B5%D9%86%D8%A7%D8%B9%D8%A9-%D8%A7%D9%84%D8%B3%D9%8A%D9%86%D9%85%D8%A7-%D8%A7%D9%84%D8%AA%D9%88%D9%86%D8%B3%D9%8A%D8%A9-%D9%85%D8%AD%D9%88%D8%B1-%D9%86%D9%82%D8%A7%D8%B4-%D9%81%D9%8A-%D9%85%D9%87%D8%B1%D8%AC%D8%A7%D9%86-%D8%A3%D8%B3%D9%88%D8%A7%D9%86-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A-%D9%84%D8%A3%D9%81%D9%84%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%B1%D8%A3%D8%A9" target="_blank" class="article-read-more" data-i18n="article_read_more">قراءة المزيد</a>
                         <div class="article-social">
                             <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="article-social-link">
                                 <i class="fab fa-facebook-f"></i>
@@ -451,7 +457,7 @@
                     <h3>سهرة لم تشهد حضورا جماهيريا</h3>
                     <p>جمهور سيكا جاز: وما أحوج الجهة لتظاهرات مماثلة (فيديو)                    </p>
                     <div class="article-footer">
-                        <a href="https://www.mosaiquefm.net/ar/%D9%85%D9%88%D8%B3%D9%8A%D9%82%D9%89-%D8%AA%D9%88%D9%86%D8%B3-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/111158/%D8%AC%D9%85%D9%87%D9%88%D8%B1-%D8%B3%D9%8A%D9%83%D8%A7-%D8%AC%D8%A7%D8%B2-%D9%88%D9%85%D8%A7-%D8%A3%D8%AD%D9%88%D8%AC-%D8%A7%D9%84%D8%AC%D9%87%D8%A9-%D9%84%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D8%A7%D8%AA-%D9%85%D9%85%D8%A7%D8%AB%D9%84%D8%A9-%D9%81%D9%8A%D8%AF%D9%8A%D9%88" target="_blank" class="article-read-more">قراءة المزيد</a>
+                        <a href="https://www.mosaiquefm.net/ar/%D9%85%D9%88%D8%B3%D9%8A%D9%82%D9%89-%D8%AA%D9%88%D9%86%D8%B3-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/111158/%D8%AC%D9%85%D9%87%D9%88%D8%B1-%D8%B3%D9%8A%D9%83%D8%A7-%D8%AC%D8%A7%D8%B2-%D9%88%D9%85%D8%A7-%D8%A3%D8%AD%D9%88%D8%AC-%D8%A7%D9%84%D8%AC%D9%87%D8%A9-%D9%84%D8%AA%D8%B8%D8%A7%D9%87%D8%B1%D8%A7%D8%AA-%D9%85%D9%85%D8%A7%D8%AB%D9%84%D8%A9-%D9%81%D9%8A%D8%AF%D9%8A%D9%88" target="_blank" class="article-read-more" data-i18n="article_read_more">قراءة المزيد</a>
                         <div class="article-social">
                             <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="article-social-link">
                                 <i class="fab fa-facebook-f"></i>
@@ -475,7 +481,7 @@
                     <h3>اليوم “تونس تغني صليحة”                    </h3>
                     <p>تحي ولاية الكاف اليوم الخميس الذكرى 62 لوفاة سيدة الاغنية […]                    </p>
                     <div class="article-footer">
-                        <a href="https://www.tunisnow.tn/%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%AA%D9%88%D9%86%D8%B3-%D8%AA%D8%BA%D9%86%D9%8A-%D8%B5%D9%84%D9%8A%D8%AD%D8%A9/" target="_blank" class="article-read-more">قراءة المزيد</a>
+                        <a href="https://www.tunisnow.tn/%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%AA%D9%88%D9%86%D8%B3-%D8%AA%D8%BA%D9%86%D9%8A-%D8%B5%D9%84%D9%8A%D8%AD%D8%A9/" target="_blank" class="article-read-more" data-i18n="article_read_more">قراءة المزيد</a>
                         <div class="article-social">
                             <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="article-social-link">
                                 <i class="fab fa-facebook-f"></i>
@@ -499,7 +505,7 @@
                     <h3>شاشات الحمامات</h3>
                     <p>حدث مخصص لتعزيز السينما التونسية، يسلط الضوء على الإنتاجات المحلية في المهرجانات الصيفية من خلال العروض والمناقشات والتبادلات المهنية.</p>
                     <div class="article-footer">
-                        <a href="https://alfnoun.com/festival-hammamet/" target="_blank" class="article-read-more">قراءة المزيد</a>
+                        <a href="https://alfnoun.com/festival-hammamet/" target="_blank" class="article-read-more" data-i18n="article_read_more">قراءة المزيد</a>
                         <div class="article-social">
                             <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="article-social-link">
                                 <i class="fab fa-facebook-f"></i>
@@ -523,7 +529,7 @@
                     <h3>الكاف موطن لكل الفنون</h3>
                     <p>رواية " شقائق الشيطان " للكاتب نعمان الحباسي في بيت الرواية</p>
                     <div class="article-footer">
-                        <a href="https://www.sampress.net/portal/news-45654.htm" target="_blank" class="article-read-more">قراءة المزيد</a>
+                        <a href="https://www.sampress.net/portal/news-45654.htm" target="_blank" class="article-read-more" data-i18n="article_read_more">قراءة المزيد</a>
                         <div class="article-social">
                             <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="article-social-link">
                                 <i class="fab fa-facebook-f"></i>
@@ -547,7 +553,7 @@
                     <h3>Le Centre culturel international de Hammamet</h3>
                     <p>Démarrage de la première édition du festival « Les écrans de Hammamet »: Des veillées cinématographiques en plein air</p>
                     <div class="article-footer">
-                        <a href="https://lapresse.tn/2024/08/07/demarrage-de-la-premiere-edition-du-festival-les-ecrans-de-hammamet-des-veillees-cinematographiques-en-plein-air/" target="_blank" class="article-read-more">قراءة المزيد</a>
+                        <a href="https://lapresse.tn/2024/08/07/demarrage-de-la-premiere-edition-du-festival-les-ecrans-de-hammamet-des-veillees-cinematographiques-en-plein-air/" target="_blank" class="article-read-more" data-i18n="article_read_more">قراءة المزيد</a>
                         <div class="article-social">
                             <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="article-social-link">
                                 <i class="fab fa-facebook-f"></i>
@@ -571,7 +577,7 @@
                     <h3>la mort de la chanteuse tunisienne Saliha</h3>
                     <p>Le Kef commémore le 62ème anniversaire de la mort de la chanteuse tunisienne Saliha</p>
                     <div class="article-footer">
-                        <a href="https://www.nessma.tv/fr/culture/actu/le-kef-commemore-le-62eme-anniversaire-de-la-mort-de-la-chanteuse-tunisienne-saliha/263308" target="_blank" class="article-read-more">قراءة المزيد</a>
+                        <a href="https://www.nessma.tv/fr/culture/actu/le-kef-commemore-le-62eme-anniversaire-de-la-mort-de-la-chanteuse-tunisienne-saliha/263308" target="_blank" class="article-read-more" data-i18n="article_read_more">قراءة المزيد</a>
                         <div class="article-social">
                             <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="article-social-link">
                                 <i class="fab fa-facebook-f"></i>
@@ -594,7 +600,7 @@
                     <span class="article-category"> شقائق الشيطان</span>
                     <p>Ce roman est à la fois rêveur et délirant, car dès le début, nous y découvrons l'élément du « schisme » et de l'illusion dans son thème et son image complexe qui cherche notre intérieur,</p>
                     <div class="article-footer">
-                        <a href="https://mediatheques.institutfrancais-tunisie.com/index.php?lvl=author_see&id=51312" target="_blank" class="article-read-more">قراءة المزيد</a>
+                        <a href="https://mediatheques.institutfrancais-tunisie.com/index.php?lvl=author_see&id=51312" target="_blank" class="article-read-more" data-i18n="article_read_more">قراءة المزيد</a>
                         <div class="article-social">
                             <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="article-social-link">
                                 <i class="fab fa-facebook-f"></i>
@@ -615,7 +621,7 @@
                     </div>
                     <div class="article-footer">
                         <p>Writer and novelist with distinguished experience in managing cultural institutions and overseeing major cultural project</p>
-                        <a href="https://tn.bold.pro/my/habassi-noomane" target="_blank" class="article-read-more">قراءة المزيد</a>
+                        <a href="https://tn.bold.pro/my/habassi-noomane" target="_blank" class="article-read-more" data-i18n="article_read_more">قراءة المزيد</a>
                         <div class="article-social">
                             <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="article-social-link">
                                 <i class="fab fa-facebook-f"></i>
@@ -639,7 +645,7 @@
                     <h3>قائمة الكتب باللغة العربية</h3>
                     <P>Liste définitive des livres participant à la 26éme session des prix littéraires “COMAR D’OR”</P>
                     <div class="article-footer">
-                        <a href="https://www.tunisienumerique.com/liste-definitive-des-livres-participant-a-la-26eme-session-des-prix-litteraires-comar-dor/" target="_blank" class="article-read-more">قراءة المزيد</a>
+                        <a href="https://www.tunisienumerique.com/liste-definitive-des-livres-participant-a-la-26eme-session-des-prix-litteraires-comar-dor/" target="_blank" class="article-read-more" data-i18n="article_read_more">قراءة المزيد</a>
                         <div class="article-social">
                             <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="article-social-link">
                                 <i class="fab fa-facebook-f"></i>
@@ -663,7 +669,7 @@
                     <h3>مهرجان بومخلوف الصيفي</h3>
                     <p>في دورته الدولية الأولى: الكاف تحتفي بالفنون في مهرجان بومخلوف الصيفي</p>
                     <div class="article-footer">
-                        <a href="https://ar.lemaghreb.tn/%D8%AB%D9%82%D8%A7%D9%81%D8%A9-%D9%88-%D9%81%D9%86%D9%88%D9%86/item/38238-%D9%81%D9%8A-%D8%AF%D9%88%D8%B1%D8%AA%D9%87-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-%D8%A7%D9%84%D9%83%D8%A7%D9%81-%D8%AA%D8%AD%D8%AA%D9%81%D9%8A-%D8%A8%D8%A7%D9%84%D9%81%D9%86%D9%88%D9%86-%D9%81%D9%8A-%D9%85%D9%87%D8%B1%D8%AC%D8%A7%D9%86-%D8%A8%D9%88%D9%85%D8%AE%D9%84%D9%88%D9%81-%D8%A7%D9%84%D8%B5%D9%8A%D9%81%D9%8A?tmpl=component&print=1" target="_blank" class="article-read-more">قراءة المزيد</a>
+                        <a href="https://ar.lemaghreb.tn/%D8%AB%D9%82%D8%A7%D9%81%D8%A9-%D9%88-%D9%81%D9%86%D9%88%D9%86/item/38238-%D9%81%D9%8A-%D8%AF%D9%88%D8%B1%D8%AA%D9%87-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-%D8%A7%D9%84%D9%83%D8%A7%D9%81-%D8%AA%D8%AD%D8%AA%D9%81%D9%8A-%D8%A8%D8%A7%D9%84%D9%81%D9%86%D9%88%D9%86-%D9%81%D9%8A-%D9%85%D9%87%D8%B1%D8%AC%D8%A7%D9%86-%D8%A8%D9%88%D9%85%D8%AE%D9%84%D9%88%D9%81-%D8%A7%D9%84%D8%B5%D9%8A%D9%81%D9%8A?tmpl=component&print=1" target="_blank" class="article-read-more" data-i18n="article_read_more">قراءة المزيد</a>
                         <div class="article-social">
                             <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="article-social-link">
                                 <i class="fab fa-facebook-f"></i>
@@ -687,7 +693,7 @@
                     <h3>«محمية المبدعين»</h3>
                     <p>في ولاية الكاف: أيام مفتوحة للمشروع الثقافي «محمية المبدعين»</p>
                     <div class="article-footer">
-                        <a href="https://ar.lemaghreb.tn/%D8%AB%D9%82%D8%A7%D9%81%D8%A9-%D9%88-%D9%81%D9%86%D9%88%D9%86/item/11278-%D9%81%D9%8A-%D9%88%D9%84%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D9%83%D8%A7%D9%81-%D8%A3%D9%8A%D8%A7%D9%85-%D9%85%D9%81%D8%AA%D9%88%D8%AD%D8%A9-%D9%84%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%A7%D9%84%D8%AB%D9%82%D8%A7%D9%81%D9%8A-%C2%AB%D9%85%D8%AD%D9%85%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%A8%D8%AF%D8%B9%D9%8A%D9%86%C2%BBl" target="_blank" class="article-read-more">قراءة المزيد</a>
+                        <a href="https://ar.lemaghreb.tn/%D8%AB%D9%82%D8%A7%D9%81%D8%A9-%D9%88-%D9%81%D9%86%D9%88%D9%86/item/11278-%D9%81%D9%8A-%D9%88%D9%84%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D9%83%D8%A7%D9%81-%D8%A3%D9%8A%D8%A7%D9%85-%D9%85%D9%81%D8%AA%D9%88%D8%AD%D8%A9-%D9%84%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%A7%D9%84%D8%AB%D9%82%D8%A7%D9%81%D9%8A-%C2%AB%D9%85%D8%AD%D9%85%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%A8%D8%AF%D8%B9%D9%8A%D9%86%C2%BBl" target="_blank" class="article-read-more" data-i18n="article_read_more">قراءة المزيد</a>
                         <div class="article-social">
                             <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="article-social-link">
                                 <i class="fab fa-facebook-f"></i>
@@ -711,7 +717,7 @@
                     <h3>حراك أدبي وفكري مميّز</h3>
                     <p>من «كاف الفنون» إلى «رؤى ومدارات»: حراك أدبي وفكري مميّز ومتنوّع احتفاء بمبدعي الجهة                    </p>
                     <div class="article-footer">
-                        <a href="https://ar.lemaghreb.tn/%D8%AB%D9%82%D8%A7%D9%81%D8%A9-%D9%88-%D9%81%D9%86%D9%88%D9%86/item/50175-%D9%85%D9%86-%C2%AB%D9%83%D8%A7%D9%81-%D8%A7%D9%84%D9%81%D9%86%D9%88%D9%86%C2%BB-%D8%A5%D9%84%D9%89-%C2%AB%D8%B1%D8%A4%D9%89-%D9%88%D9%85%D8%AF%D8%A7%D8%B1%D8%A7%D8%AA%C2%BB-%D8%AD%D8%B1%D8%A7%D9%83-%D8%A3%D8%AF%D8%A8%D9%8A-%D9%88%D9%81%D9%83%D8%B1%D9%8A-%D9%85%D9%85%D9%8A%D9%91%D8%B2-%D9%88%D9%85%D8%AA%D9%86%D9%88%D9%91%D8%B9-%D8%A7%D8%AD%D8%AA%D9%81%D8%A7%D8%A1-%D8%A8%D9%85%D8%A8%D8%AF%D8%B9%D9%8A-%D8%A7%D9%84%D8%AC%D9%87%D8%A9?tmpl=component&print=1" target="_blank" class="article-read-more">قراءة المزيد</a>
+                        <a href="https://ar.lemaghreb.tn/%D8%AB%D9%82%D8%A7%D9%81%D8%A9-%D9%88-%D9%81%D9%86%D9%88%D9%86/item/50175-%D9%85%D9%86-%C2%AB%D9%83%D8%A7%D9%81-%D8%A7%D9%84%D9%81%D9%86%D9%88%D9%86%C2%BB-%D8%A5%D9%84%D9%89-%C2%AB%D8%B1%D8%A4%D9%89-%D9%88%D9%85%D8%AF%D8%A7%D8%B1%D8%A7%D8%AA%C2%BB-%D8%AD%D8%B1%D8%A7%D9%83-%D8%A3%D8%AF%D8%A8%D9%8A-%D9%88%D9%81%D9%83%D8%B1%D9%8A-%D9%85%D9%85%D9%8A%D9%91%D8%B2-%D9%88%D9%85%D8%AA%D9%86%D9%88%D9%91%D8%B9-%D8%A7%D8%AD%D8%AA%D9%81%D8%A7%D8%A1-%D8%A8%D9%85%D8%A8%D8%AF%D8%B9%D9%8A-%D8%A7%D9%84%D8%AC%D9%87%D8%A9?tmpl=component&print=1" target="_blank" class="article-read-more" data-i18n="article_read_more">قراءة المزيد</a>
                         <div class="article-social">
                             <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="article-social-link">
                                 <i class="fab fa-facebook-f"></i>
@@ -732,7 +738,7 @@
                     </div>
                     <p>The Centre national du Cinéma et de l’Image (CNCI) is a public administrative organization committed to support and promote the Tunisian film industry</p>
                     <div class="article-footer">
-                        <a href="https://cinando.com/en/Company/centre_national_du_cinema_et_de_limage_tunisie_52397/Detail" target="_blank" class="article-read-more">قراءة المزيد</a>
+                        <a href="https://cinando.com/en/Company/centre_national_du_cinema_et_de_limage_tunisie_52397/Detail" target="_blank" class="article-read-more" data-i18n="article_read_more">قراءة المزيد</a>
                         <div class="article-social">
                             <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="article-social-link">
                                 <i class="fab fa-facebook-f"></i>
@@ -755,7 +761,7 @@
                     <span class="article-category"> culture</span>
                     <p>Les festivals de cinéma : L’espoir d’une nouvelle dynamique</p>
                     <div class="article-footer">
-                        <a href="https://lapresse.tn/2024/09/21/les-festivals-de-cinema-lespoir-dune-nouvelle-dynamique/" target="_blank" class="article-read-more">قراءة المزيد</a>
+                        <a href="https://lapresse.tn/2024/09/21/les-festivals-de-cinema-lespoir-dune-nouvelle-dynamique/" target="_blank" class="article-read-more" data-i18n="article_read_more">قراءة المزيد</a>
                         <div class="article-social">
                             <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="article-social-link">
                                 <i class="fab fa-facebook-f"></i>
@@ -1218,7 +1224,7 @@ new Chart(ctx, {
                                         <div class="card-body">
                                             <h5 class="card-title">شقائق الشيطان</h5>
                                             <p class="card-text">رواية حالمة واهمة، مبدئية الموضع مركبة الصورة تبحث عن نقصنا أو كمالنا، في دواخلنا.</p>
-                                            <a href="article2.html" class="btn btn-sm btn-primary">قراءة المزيد</a>
+                                            <a href="article2.html" class="btn btn-sm btn-primary" data-i18n="article_read_more">قراءة المزيد</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1228,7 +1234,7 @@ new Chart(ctx, {
                                         <div class="card-body">
                                             <h5 class="card-title">محضنة المشاريع الثقافية</h5>
                                             <p class="card-text">إستراتيجية العمل الثقافي في ولاية الكاف وخصوصية البرمجة والتكوين.</p>
-                                            <a href="article3.html" class="btn btn-sm btn-primary">قراءة المزيد</a>
+                                            <a href="article3.html" class="btn btn-sm btn-primary" data-i18n="article_read_more">قراءة المزيد</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1238,7 +1244,7 @@ new Chart(ctx, {
                                         <div class="card-body">
                                             <h5 class="card-title">الأساطير بجهة الكاف</h5>
                                             <p class="card-text">دراسة أكاديمية حول المسلك الأسطوري كنموذج للتراث الثقافي غير المادي.</p>
-                                            <a href="assatir.html" class="btn btn-sm btn-primary">قراءة المزيد</a>
+                                            <a href="assatir.html" class="btn btn-sm btn-primary" data-i18n="article_read_more">قراءة المزيد</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1367,7 +1373,7 @@ new Chart(ctx, {
                                                 <div class="card-body">
                                                     <h5 class="card-title">شقائق الشيطان</h5>
                                                     <p class="card-text">رواية حالمة واهمة، مبدئية الموضع مركبة الصورة تبحث عن نقصنا أو كمالنا، في دواخلنا.</p>
-                                                    <a href="article2.html" class="btn btn-sm btn-primary">قراءة المزيد</a>
+                                                    <a href="article2.html" class="btn btn-sm btn-primary" data-i18n="article_read_more">قراءة المزيد</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1377,7 +1383,7 @@ new Chart(ctx, {
                                                 <div class="card-body">
                                                     <h5 class="card-title">محضنة المشاريع الثقافية</h5>
                                                     <p class="card-text">إستراتيجية العمل الثقافي في ولاية الكاف وخصوصية البرمجة والتكوين.</p>
-                                                    <a href="article3.html" class="btn btn-sm btn-primary">قراءة المزيد</a>
+                                                    <a href="article3.html" class="btn btn-sm btn-primary" data-i18n="article_read_more">قراءة المزيد</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1387,7 +1393,7 @@ new Chart(ctx, {
                                                 <div class="card-body">
                                                     <h5 class="card-title">الأساطير بجهة الكاف</h5>
                                                     <p class="card-text">دراسة أكاديمية حول المسلك الأسطوري كنموذج للتراث الثقافي غير المادي.</p>
-                                                    <a href="assatir.html" class="btn btn-sm btn-primary">قراءة المزيد</a>
+                                                    <a href="assatir.html" class="btn btn-sm btn-primary" data-i18n="article_read_more">قراءة المزيد</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1526,7 +1532,7 @@ new Chart(ctx, {
                                         <div class="card-body">
                                             <h5 class="card-title">شقائق الشيطان</h5>
                                             <p class="card-text">رواية حالمة واهمة، مبدئية الموضع مركبة الصورة تبحث عن نقصنا أو كمالنا، في دواخلنا.</p>
-                                            <a href="article2.html" class="btn btn-sm btn-primary">قراءة المزيد</a>
+                                            <a href="article2.html" class="btn btn-sm btn-primary" data-i18n="article_read_more">قراءة المزيد</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1536,7 +1542,7 @@ new Chart(ctx, {
                                         <div class="card-body">
                                             <h5 class="card-title">محضنة المشاريع الثقافية</h5>
                                             <p class="card-text">إستراتيجية العمل الثقافي في ولاية الكاف وخصوصية البرمجة والتكوين.</p>
-                                            <a href="article3.html" class="btn btn-sm btn-primary">قراءة المزيد</a>
+                                            <a href="article3.html" class="btn btn-sm btn-primary" data-i18n="article_read_more">قراءة المزيد</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1546,7 +1552,7 @@ new Chart(ctx, {
                                         <div class="card-body">
                                             <h5 class="card-title">الأساطير بجهة الكاف</h5>
                                             <p class="card-text">دراسة أكاديمية حول المسلك الأسطوري كنموذج للتراث الثقافي غير المادي.</p>
-                                            <a href="article-festivals.html" class="btn btn-sm btn-primary">قراءة المزيد</a>
+                                            <a href="article-festivals.html" class="btn btn-sm btn-primary" data-i18n="article_read_more">قراءة المزيد</a>
                                         </div>
                                     </div>
                                 </div>

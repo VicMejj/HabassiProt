@@ -54,15 +54,15 @@
           <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav_contact">اتصل بي</a></li>
       </ul>
        <!-- Language Switcher -->
-       <div class="language-switcher">
-        <button class="btn btn-sm btn-outline-light active" data-i18n="lang_ar">العربية</button>
-        <button class="btn btn-sm btn-outline-light" data-i18n="lang_en">English</button>
-        <button class="btn btn-sm btn-outline-light" data-i18n="lang_fr">Français</button>
-    </div>
-    <!-- Search Button -->
-    <button class="btn btn-sm btn-outline-light ms-2" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
-        <i class="fas fa-search"></i>
-    </button>
+        <div class="language-switcher">
+            <button class="btn btn-sm btn-outline-light lang-btn active" data-lang="ar" data-i18n="lang_ar">العربية</button>
+            <button class="btn btn-sm btn-outline-light lang-btn" data-lang="en" data-i18n="lang_en">English</button>
+            <button class="btn btn-sm btn-outline-light lang-btn" data-lang="fr" data-i18n="lang_fr">Français</button>
+        </div>
+        <!-- Search Button -->
+        <button class="btn btn-sm btn-outline-light ms-2" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
+            <i class="fas fa-search"></i>
+        </button>
   </div>
 </div>
 </nav>
@@ -87,13 +87,11 @@
 </div>
 </header>
 
-
 <main>
 <!-- Professional Experience Section -->
 <section class="py-5 section-light">
     <div class="container">
         <h2 class="section-title" data-aos="fade-up" data-i18n="experience_professional_heading">الخبرات المهنية</h2>
-        
         <div class="timeline" data-aos="fade-up">
             <!-- Experience 1 -->
             <div class="timeline-item clearfix">
@@ -107,9 +105,9 @@
                     </div>
                     <h3 class="timeline-title" data-i18n="exp1_title">مكلف بالإدارة</h3>
                     <h4 class="timeline-subtitle" data-i18n="exp1_institution">المركز الوطني للسينما والصورة، تونس</h4>
-                    <p class="timeline-text" data-i18n="exp1_leadership">القيادة المؤسسية: الإشراف على الفرق، وإدارة الميزانيات، وتنسيق أنشطة المركز.</p>
-                    <p class="timeline-text" data-i18n="exp1_cinema">تعزيز السينما التونسية: تنظيم العروض والمهرجانات الدولية وورش العمل لدعم السينمائيين الشباب وتعزيز رؤية الأعمال الوطنية.</p>
-                    <p class="timeline-text" data-i18n="exp1_innovation">الابتكار التعليمي: إنشاء برامج تعليمية ومهنية لتوعية الجمهور المدرسي بالسينما وفن السرد.</p>
+                    <p class="timeline-text" data-i18n="exp1_leadership"></p>
+                    <p class="timeline-text" data-i18n="exp1_cinema"></p>
+                    <p class="timeline-text" data-i18n="exp1_innovation"></p>
                 </div>
             </div>
             <!-- Experience 2 -->
@@ -122,10 +120,10 @@
                     <div class="timeline-image mb-3">
                         <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.24.04_7343ea50.jpg-2YG28j5TPu41X3yWCZdRm9cOFD2XKH.jpeg" alt="" class="img-fluid rounded">
                     </div>
-                    <h3 class="timeline-title" data-i18n="exp2_title">المندوب الجهوي للشؤون الثقافية</h3>
-                    <h4 class="timeline-subtitle" data-i18n="exp2_institution">المندوبية الجهوية بالكاف، وزارة الشؤون الثقافية، تونس</h4>
-                    <p class="timeline-text" data-i18n="exp2_strategy">الاستراتيجية الثقافية: وضع وتنفيذ خطط إقليمية متوافقة مع الأولويات الوطنية لتعزيز الفنون والثقافة.</p>
-                    <p class="timeline-text" data-i18n="exp2_projects">إدارة المشاريع الكبرى: تنظيم المهرجانات الإقليمية والوطنية، والفعاليات الأدبية، والمعارض الفنية، التي تجذب آلاف المشاركين وتعزز الصورة الثقافية للمنطقة.</p>
+                    <h3 class="timeline-title" data-i18n="exp2_title"></h3>
+                    <h4 class="timeline-subtitle" data-i18n="exp2_institution"></h4>
+                    <p class="timeline-text" data-i18n="exp2_strategy"></p>
+                    <p class="timeline-text" data-i18n="exp2_projects"></p>
                 </div>
             </div>
             <!-- Experience 3 -->
@@ -138,10 +136,10 @@
                     <div class="timeline-image mb-3">
                         <img src="Nooman/noomanEduc.jpg" alt="" class="img-fluid rounded">
                     </div>
-                    <h3 class="timeline-title" data-i18n="exp3_title">أستاذ متعاقد بالجامعة</h3>
-                    <h4 class="timeline-subtitle" data-i18n="exp3_institution">المعهد العالي للدراسات التطبيقية في العلوم الإنسانية بالكاف، جامعة جندوبة، تونس</h4>
-                    <p class="timeline-text" data-i18n="exp3_teaching">تدريس مقررات الوساطة الثقافية والإدارة الثقافية. تشمل مهامي إعداد وتقديم المحتوى التعليمي، ومرافقة الطلاب في تعلمهم، وتقييم أعمالهم.</p>
-                    <p class="timeline-text" data-i18n="exp3_students">أتعامل بشكل أساسي مع طلاب [المستوى: الإجازة، الماجستير] مع التركيز على القضايا المعاصرة لإدارة وتثمين الثقافة.</p>
+                    <h3 class="timeline-title" data-i18n="exp3_title"></h3>
+                    <h4 class="timeline-subtitle" data-i18n="exp3_institution"></h4>
+                    <p class="timeline-text" data-i18n="exp3_teaching"></p>
+                    <p class="timeline-text" data-i18n="exp3_students"></p>
                 </div>
             </div>
             <!-- Experience 4 -->
@@ -154,10 +152,10 @@
                     <div class="timeline-image mb-3">
                         <img src="Nooman/nooman__med.jpg" alt="" class="img-fluid rounded">
                     </div>
-                    <h3 class="timeline-title" data-i18n="exp4_title">مدير</h3>
-                    <h4 class="timeline-subtitle" data-i18n="exp4_institution">المركب الثقافي صحبي مسراطي، الكاف، تونس</h4>
-                    <p class="timeline-text" data-i18n="exp4_management">الإدارة متعددة التخصصات: تخطيط وإدارة مجموعة متنوعة من الفعاليات، بما في ذلك الحفلات الموسيقية والمسرحيات والمؤتمرات وورش العمل.</p>
-                    <p class="timeline-text" data-i18n="exp4_activation">التنشيط الثقافي: تنفيذ برامج يسهل الوصول إليها لتشجيع مشاركة الشباب وتعزيز المواهب المحلية.</p>
+                    <h3 class="timeline-title" data-i18n="exp4_title"></h3>
+                    <h4 class="timeline-subtitle" data-i18n="exp4_institution"></h4>
+                    <p class="timeline-text" data-i18n="exp4_management"></p>
+                    <p class="timeline-text" data-i18n="exp4_activation"></p>
                 </div>
             </div>
         </div>
@@ -167,15 +165,15 @@
 <!-- Skills Section -->
 <section class="py-5 section-dark">
     <div class="container">
-        <h2 class="section-title" data-aos="fade-up" data-i18n="experience_skills_heading">المهارات</h2>
+        <h2 class="section-title" data-aos="fade-up" data-i18n="experience_skills_heading"></h2>
         <div class="row skills-container">
             <!-- Professional Skills -->
             <div class="col-lg-6 mb-4" data-aos="fade-up">
                 <div class="skill-category">
-                    <h3 class="skill-category-title" data-i18n="experience_professional_skills">المهارات المهنية</h3>
+                    <h3 class="skill-category-title" data-i18n="experience_professional_skills"></h3>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span data-i18n="experience_skill_strategy">الإدارة الاستراتيجية والقيادة</span>
+                            <span data-i18n="experience_skill_strategy"></span>
                             <span class="skill-percentage">95%</span>
                         </div>
                         <div class="skill-bar">
@@ -184,7 +182,7 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span data-i18n="experience_skill_events">تنظيم الفعاليات الثقافية</span>
+                            <span data-i18n="experience_skill_events"></span>
                             <span class="skill-percentage">90%</span>
                         </div>
                         <div class="skill-bar">
@@ -193,7 +191,7 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span data-i18n="experience_skill_projects">إدارة المشاريع الثقافية</span>
+                            <span data-i18n="experience_skill_projects"></span>
                             <span class="skill-percentage">85%</span>
                         </div>
                         <div class="skill-bar">
@@ -202,7 +200,7 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span data-i18n="experience_skill_communication">الاتصال والعلاقات العامة</span>
+                            <span data-i18n="experience_skill_communication"></span>
                             <span class="skill-percentage">90%</span>
                         </div>
                         <div class="skill-bar">
@@ -211,7 +209,7 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span data-i18n="experience_skill_creative_writing">الكتابة الإبداعية</span>
+                            <span data-i18n="experience_skill_creative_writing"></span>
                             <span class="skill-percentage">80%</span>
                         </div>
                         <div class="skill-bar">
@@ -223,10 +221,10 @@
             <!-- Language Skills & Associations -->
             <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="skill-category">
-                    <h3 class="skill-category-title" data-i18n="experience_language_skills">المهارات اللغوية</h3>
+                    <h3 class="skill-category-title" data-i18n="experience_language_skills"></h3>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span data-i18n="experience_skill_arabic">العربية</span>
+                            <span data-i18n="experience_skill_arabic"></span>
                             <span class="skill-percentage">100%</span>
                         </div>
                         <div class="skill-bar">
@@ -235,7 +233,7 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span data-i18n="experience_skill_french">الفرنسية</span>
+                            <span data-i18n="experience_skill_french"></span>
                             <span class="skill-percentage">90%</span>
                         </div>
                         <div class="skill-bar">
@@ -244,7 +242,7 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span data-i18n="experience_skill_english">الإنجليزية</span>
+                            <span data-i18n="experience_skill_english"></span>
                             <span class="skill-percentage">80%</span>
                         </div>
                         <div class="skill-bar">
@@ -253,10 +251,10 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3 class="skill-category-title" data-i18n="experience_associative_skills">الخبرات الجمعياتية</h3>
+                    <h3 class="skill-category-title" data-i18n="experience_associative_skills"></h3>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span data-i18n="experience_association_culture_for_all">رئيس جمعية الثقافة للجميع (منذ 2022)</span>
+                            <span data-i18n="experience_association_culture_for_all"></span>
                             <span class="skill-percentage">95%</span>
                         </div>
                         <div class="skill-bar">
@@ -265,7 +263,7 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-name">
-                            <span data-i18n="experience_association_union">نائب رئيس رابطة المثقفين المصريين والشعوب العربية (2020-2022)</span>
+                            <span data-i18n="experience_association_union"></span>
                             <span class="skill-percentage">85%</span>
                         </div>
                         <div class="skill-bar">
@@ -281,7 +279,7 @@
 <!-- Education Section -->
 <section class="py-5 section-light">
     <div class="container">
-        <h2 class="section-title" data-aos="fade-up" data-i18n="experience_education_heading">التعليم والشهادات</h2>
+        <h2 class="section-title" data-aos="fade-up" data-i18n="experience_education_heading"></h2>
         <div class="row">
             <!-- Education 1 -->
             <div class="col-lg-6 mb-4" data-aos="fade-up">
@@ -290,9 +288,9 @@
                     <div class="education-image mb-3">
                         <img src="Nooman/nooman_educc.jpg" alt="" class="img-fluid rounded">
                     </div>
-                    <h3 class="education-degree" data-i18n="experience_education_master">ماجستير مهني في التراث والسمعي البصري</h3>
-                    <h4 class="education-institution" data-i18n="experience_education_institute">المعهد العالي للدراسات التطبيقية في العلوم الإنسانية بالكاف، جامعة جندوبة، تونس</h4>
-                    <p class="education-description" data-i18n="experience_education_master_desc">دراسة متخصصة في مجال التراث الثقافي والسمعي البصري، مع التركيز على تقنيات التوثيق والحفظ والترويج للتراث من خلال الوسائط السمعية البصرية.</p>
+                    <h3 class="education-degree" data-i18n="experience_education_master"></h3>
+                    <h4 class="education-institution" data-i18n="experience_education_institute"></h4>
+                    <p class="education-description" data-i18n="experience_education_master_desc"></p>
                 </div>
             </div>
             <!-- Education 2 -->
@@ -302,9 +300,9 @@
                     <div class="education-image mb-3">
                         <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.16.17_d2dbdb2c.jpg-Hw9csei4BFIXBngUn3kqDfSr62twIf.jpeg" alt="" class="img-fluid rounded">
                     </div>
-                    <h3 class="education-degree" data-i18n="experience_education_training">تدريب في الإدارة الثقافية</h3>
-                    <h4 class="education-institution" data-i18n="experience_education_goethe">معهد جوته - نموذج دينك، ألمانيا</h4>
-                    <p class="education-description" data-i18n="experience_education_training_desc">تدريب متخصص في مجال الإدارة الثقافية والتبادل الثقافي، مع التركيز على أفضل الممارسات الأوروبية في إدارة المؤسسات الثقافية وتنظيم الفعاليات.</p>
+                    <h3 class="education-degree" data-i18n="experience_education_training"></h3>
+                    <h4 class="education-institution" data-i18n="experience_education_goethe"></h4>
+                    <p class="education-description" data-i18n="experience_education_training_desc"></p>
                 </div>
             </div>
             <!-- Education 3 -->
@@ -314,9 +312,9 @@
                     <div class="education-image mb-3">
                         <img src="Nooman/WhatsApp Image 2025-04-05 à 22.13.13_696dd169.jpg" alt="" class="img-fluid rounded">
                     </div>
-                    <h3 class="education-degree" data-i18n="experience_education_license">الإجازة</h3>
-                    <h4 class="education-institution" data-i18n="experience_education_youth">المعهد العالي للتنشيط الثقافي والشباب، تونس</h4>
-                    <p class="education-description" data-i18n="experience_education_license_desc">دراسة شاملة في مجال التنشيط الثقافي وإدارة المؤسسات الثقافية والشبابية، مع التركيز على تقنيات التنشيط والتواصل والإدارة الثقافية.</p>
+                    <h3 class="education-degree" data-i18n="experience_education_license"></h3>
+                    <h4 class="education-institution" data-i18n="experience_education_youth"></h4>
+                    <p class="education-description" data-i18n="experience_education_license_desc"></p>
                 </div>
             </div>
         </div>
@@ -326,7 +324,7 @@
 <!-- Associations Section -->
 <section class="py-5 section-dark">
     <div class="container">
-        <h2 class="section-title" data-aos="fade-up" data-i18n="experience_associations_heading">الخبرات الجمعياتية</h2>
+        <h2 class="section-title" data-aos="fade-up" data-i18n="experience_associations_heading"></h2>
         <div class="row">
         <div class="col-md-4 mb-4" data-aos="fade-up">
             <div class="card h-100">
@@ -334,9 +332,9 @@
                 <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.23.16_678266a3.jpg-ofMOl9JDAWEFx7FuTlVYKSq38GQV63.jpeg" alt="جمعية الثقافة للجميع" class="img-fluid">
             </div>
             <div class="card-body">
-                <h3 class="card-title">رئيس</h3>
-                <h4 class="card-subtitle mb-2 text-muted">جمعية الثقافة للجميع، الكاف، تونس</h4>
-                <p class="card-text">منذ مارس 2022</p>
+                <h3 class="card-title" data-i18n="association_president">رئيس</h3>
+                <h4 class="card-subtitle mb-2 text-muted" data-i18n="association_culture_for_all">جمعية الثقافة للجميع، الكاف، تونس</h4>
+                <p class="card-text" data-i18n="association_since_2022">منذ مارس 2022</p>
             </div>
     </div>
 </div>
@@ -347,9 +345,9 @@
             <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/buggee.jpg-6xsJWuKP9EV3EyPYevouJ1dlrFWDdA.jpeg" alt="رابطة المثقفين المصريين والشعوب العربية" class="img-fluid">
         </div>
         <div class="card-body">
-            <h3 class="card-title">نائب رئيس</h3>
-            <h4 class="card-subtitle mb-2 text-muted">رابطة المثقفين المصريين والشعوب العربية</h4>
-            <p class="card-text">2020 - 2022</p>
+            <h3 class="card-title" data-i18n="association_vice_president">نائب رئيس</h3>
+            <h4 class="card-subtitle mb-2 text-muted" data-i18n="association_union">رابطة المثقفين المصريين والشعوب العربية</h4>
+            <p class="card-text" data-i18n="association_2020_2022">2020 - 2022</p>
         </div>
     </div>
 </div>
@@ -360,9 +358,9 @@
             <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.24.04_7343ea50.jpg-2YG28j5TPu41X3yWCZdRm9cOFD2XKH.jpeg" alt="فرع المنظمة الوطنية للإرادة" class="img-fluid">
         </div>
         <div class="card-body">
-            <h3 class="card-title">الأمين العام</h3>
-            <h4 class="card-subtitle mb-2 text-muted">فرع المنظمة الوطنية للإرادة، تونس</h4>
-            <p class="card-text">2018 - 2021</p>
+            <h3 class="card-title" data-i18n="association_secretary_general">الأمين العام</h3>
+            <h4 class="card-subtitle mb-2 text-muted" data-i18n="association_national_will">فرع المنظمة الوطنية للإرادة، تونس</h4>
+            <p class="card-text" data-i18n="association_2018_2021">2018 - 2021</p>
         </div>
     </div>
 </div>
@@ -373,9 +371,9 @@
             <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.14.42_bcd8e970.jpg-91nV3lFlRnxpy8aYDiSY5SLnYQFxGu.jpeg" alt="الجمعية الجهوية للعمل البلدي" class="img-fluid">
         </div>
         <div class="card-body">
-            <h3 class="card-title">المنسق العام الجهوي</h3>
-            <h4 class="card-subtitle mb-2 text-muted">الجمعية الجهوية للعمل البلدي، الكاف، تونس</h4>
-            <p class="card-text">2018 - 2021</p>
+            <h3 class="card-title" data-i18n="association_regional_coordinator">المنسق العام الجهوي</h3>
+            <h4 class="card-subtitle mb-2 text-muted" data-i18n="association_regional_action">الجمعية الجهوية للعمل البلدي، الكاف، تونس</h4>
+            <p class="card-text" data-i18n="association_2018_2021">2018 - 2021</p>
         </div>
     </div>
 </div>
@@ -386,9 +384,9 @@
             <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.15.23_7f7c5cc1.jpg-UahPevYphxWhijiuMeK6S9D1q6VIuu.jpeg" alt="جمعية أصدقاء المكتبة والكتاب" class="img-fluid">
         </div>
         <div class="card-body">
-            <h3 class="card-title">أمين المال</h3>
-            <h4 class="card-subtitle mb-2 text-muted">جمعية أصدقاء المكتبة والكتاب، الكاف، تونس</h4>
-            <p class="card-text">2014 - 2017</p>
+            <h3 class="card-title" data-i18n="association_treasurer">أمين المال</h3>
+            <h4 class="card-subtitle mb-2 text-muted" data-i18n="association_friends_library">جمعية أصدقاء المكتبة والكتاب، الكاف، تونس</h4>
+            <p class="card-text" data-i18n="association_2014_2017">2014 - 2017</p>
         </div>
     </div>
 </div>
@@ -399,10 +397,10 @@
             <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-28%20%C3%A0%2020.16.17_d2dbdb2c.jpg-Hw9csei4BFIXBngUn3kqDfSr62twIf.jpeg" alt="جمعية العمل الثقافي" class="img-fluid">
         </div>
         <div class="card-body">
-            <h3 class="card-title">عضو مكلف بالاتصال</h3>
-            <h4 class="card-subtitle mb-2 text-muted">جمعية العمل الثقافي، الكاف، تونس</h4>
-            <p class="card-text">2013 - 2016</p>
-            <p class="card-text">تأسست من قبل مديري دور الثقافة خلال منتدى جربة</p>
+            <h3 class="card-title" data-i18n="association_communications_member">عضو مكلف بالاتصال</h3>
+            <h4 class="card-subtitle mb-2 text-muted" data-i18n="association_cultural_work">جمعية العمل الثقافي، الكاف، تونس</h4>
+            <p class="card-text" data-i18n="association_2013_2016">2013 - 2016</p>
+            <p class="card-text" data-i18n="association_founded_by_directors">تأسست من قبل مديري دور الثقافة خلال منتدى جربة</p>
         </div>
     </div>
 </div>
@@ -418,28 +416,28 @@
                 <div class="statistic-item">
                     <i class="fas fa-calendar-alt statistic-icon"></i>
                     <div class="statistic-number" id="yearsCounter">15+</div>
-                    <div class="statistic-label" data-i18n="experience_statistics_years">سنوات الخبرة</div>
+                    <div class="statistic-label" data-i18n="experience_statistics_years"></div>
                 </div>
             </div>
             <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="statistic-item">
                     <i class="fas fa-project-diagram statistic-icon"></i>
                     <div class="statistic-number" id="projectsCounter">20+</div>
-                    <div class="statistic-label" data-i18n="experience_statistics_projects">مشروع ثقافي</div>
+                    <div class="statistic-label" data-i18n="experience_statistics_projects"></div>
                 </div>
             </div>
             <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="statistic-item">
                     <i class="fas fa-users statistic-icon"></i>
                     <div class="statistic-number" id="partnersCounter">6+</div>
-                    <div class="statistic-label" data-i18n="experience_statistics_associations">جمعيات</div>
+                    <div class="statistic-label" data-i18n="experience_statistics_associations"></div>
                 </div>
             </div>
             <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="statistic-item">
                     <i class="fas fa-award statistic-icon"></i>
                     <div class="statistic-number" id="awardsCounter">5+</div>
-                    <div class="statistic-label" data-i18n="experience_statistics_awards">تكريمات دولية</div>
+                    <div class="statistic-label" data-i18n="experience_statistics_awards"></div>
                 </div>
             </div>
         </div>
@@ -448,11 +446,11 @@
 <!-- Call to Action Section -->
 <section class="cta-section">
     <div class="container">
-        <h2 class="cta-title" data-aos="fade-up" data-i18n="experience_cta_title">هل تبحث عن خبير في الإدارة الثقافية؟</h2>
-        <p class="cta-text" data-aos="fade-up" data-aos-delay="100" data-i18n="experience_cta_text">أنا متاح للاستشارات والمشاريع في مجال الإدارة الثقافية، والتراث الثقافي، وتنظيم الفعاليات الثقافية. لا تتردد في التواصل معي لمناقشة كيف يمكنني المساهمة في نجاح مشروعك الثقافي.</p>
+        <h2 class="cta-title" data-aos="fade-up" data-i18n="experience_cta_title"></h2>
+        <p class="cta-text" data-aos="fade-up" data-aos-delay="100" data-i18n="experience_cta_text"></p>
         <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
-            <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="experience_cta_contact">تواصل معي</a>
-            <a href="projects.html" class="btn btn-outline-primary btn-lg" data-i18n="experience_cta_projects">مشاهدة المشاريع</a>
+            <a href="contact.html" class="btn btn-primary btn-lg" data-i18n="experience_cta_contact"></a>
+            <a href="projects.html" class="btn btn-outline-primary btn-lg" data-i18n="experience_cta_projects"></a>
         </div>
     </div>
 </section>
@@ -463,18 +461,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h5 data-i18n="brand_name">نعمان حباسي</h5>
-                    <p data-i18n="footer_about">نعمان حباسي، كاتب وروائي، يتمتع بخبرة متميزة في إدارة المؤسسات الثقافية والإشراف على المشاريع الثقافية الكبرى. خبير في تنسيق الفعاليات وتنظيم الأنشطة الثقافية المتنوعة، مع مهارات قيادية تمكنه من إدارة الفرق وتحقيق الأهداف الاستراتيجية للمؤسسات.</p>
+                    <h5 data-i18n="brand_name"></h5>
+                    <p data-i18n="footer_about"></p>
                 </div>
                 <div class="col-md-4">
-                    <h5 data-i18n="footer_contact">تواصل معنا</h5>
+                    <h5 data-i18n="footer_contact"></h5>
                     <p>
-                        <span data-i18n="footer_email">البريد الإلكتروني: noomaneh@live.fr</span><br>
-                        <span data-i18n="footer_phone">الهاتف: 98483759</span>
+                        <span data-i18n="footer_email"></span><br>
+                        <span data-i18n="footer_phone"></span>
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <h5 data-i18n="footer_follow">تابعنا</h5>
+                    <h5 data-i18n="footer_follow"></h5>
                     <div class="social-links">
                         <a href="https://www.facebook.com/habassi.noomane" target="_blank" class="social-link">
                             <i class="fab fa-facebook-f"></i>
@@ -490,62 +488,61 @@
             </div>
             <!-- Visitor Counter -->
             <div class="visitor-counter mt-4">
-                <h5 data-i18n="visitor_title">إحصائيات الزوار</h5>
+                <h5 data-i18n="visitor_title"></h5>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="counter-item">
                             <span class="counter-number" id="all-time-visits">0</span>
-                            <span class="counter-label" data-i18n="all_time">إجمالي الزيارات</span>
+                            <span class="counter-label" data-i18n="all_time"></span>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="counter-item">
                             <span class="counter-number" id="monthly-visits">0</span>
-                            <span class="counter-label" data-i18n="monthly">زيارات الشهر</span>
+                            <span class="counter-label" data-i18n="monthly"></span>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="counter-item">
                             <span class="counter-number" id="weekly-visits">0</span>
-                            <span class="counter-label" data-i18n="weekly">زيارات الأسبوع</span>
+                            <span class="counter-label" data-i18n="weekly"></span>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="counter-item">
                             <span class="counter-number" id="daily-visits">0</span>
-                            <span class="counter-label" data-i18n="daily">زيارات اليوم</span>
+                            <span class="counter-label" data-i18n="daily"></span>
                         </div>
                     </div>
                 </div>
             </div>
             <hr class="my-3" style="background-color: rgba(255,255,255,0.2);">
-            <p>&copy; 2025 <span data-i18n="copyright">جميع الحقوق محفوظة لنعمان حباسي</span></p>
-            <p data-i18n="developed_by">Developed By <a href="https://www.linkedin.com/in/montassar-mejri-b5467021a/" target="_blank">@Victor Mejj</a></p>
+            <p>&copy; 2025 <span data-i18n="copyright"></span></p>
+            <p data-i18n="developed_by"></p>
         </div>
     </footer>
 
     <!-- Scroll to Top Button -->
-   <button id="scrollToTopBtn" aria-label="العودة إلى الأعلى">
-    <i class="fas fa-arrow-up"></i>
-   </button>
-   
-   <button id="darkModeToggle" aria-label="تبديل الوضع الليلي">
-    <i class="fas fa-moon"></i>
-   </button>
-   
-   <!-- Search Modal -->
+    <button id="scrollToTopBtn" aria-label="العودة إلى الأعلى">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <button id="darkModeToggle" aria-label="تبديل الوضع الليلي">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Search Modal -->
     <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="searchModalLabel" data-i18n="search_title">بحث في الموقع</h5>
+                    <h5 class="modal-title" id="searchModalLabel" data-i18n="search_title"></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-i18n="btn_close"></button>
                 </div>
                 <div class="modal-body">
                     <form id="searchForm">
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="ابحث عن..." aria-label="Search term" data-i18n="search_placeholder">
-                            <button class="btn btn-primary" type="submit" data-i18n="search_button">بحث</button>
+                            <input type="text" class="form-control" placeholder="" aria-label="Search term" data-i18n="search_placeholder">
+                            <button class="btn btn-primary" type="submit" data-i18n="search_button"></button>
                         </div>
                     </form>
                 </div>
@@ -553,12 +550,10 @@
         </div>
     </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
-<script src="i18n.js"></script>
-<script src="script.js"></script>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+    <script src="i18n.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
